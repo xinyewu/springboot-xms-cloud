@@ -1,3 +1,6 @@
 # 此为注释 – 将被 Git 忽略
-test_*/   # 忽略test_命名的文件夹
+test_*/
 */target/
+.idea/*.xml
+.idea/dataSources/
+/test_*/
