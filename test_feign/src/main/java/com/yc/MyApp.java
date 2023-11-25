@@ -15,6 +15,5 @@ public class MyApp {
         for (Contributor contributor : contributors) {
             System.out.println(contributor);
         }
-        System.out.println("cs");
     }
 }
