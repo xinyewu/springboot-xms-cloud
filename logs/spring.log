@@ -916,3 +916,48 @@ java.lang.ClassNotFoundException: org.apache.ibatis.type.JdbcType
 2023-11-25 11:56:58.792 DEBUG 17448 --- [http-nio-8000-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
 2023-11-25 11:56:58.793 DEBUG 17448 --- [http-nio-8000-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sat Nov 25 11:56:58 CST 2023, status=500, error=Internal Server Error, path=/resorder/add (truncated)...]
 2023-11-25 11:56:58.802 DEBUG 17448 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2023-11-25 11:58:40.567  INFO 12324 --- [main] c.a.n.client.env.SearchableProperties    : properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+2023-11-25 11:58:40.659  INFO 12324 --- [main] com.yc.ResorderApp                       : Starting ResorderApp using Java 1.8.0_372 on DESKTOP-2GHSLBQ with PID 12324 (D:\workspaceYC134\res134_cloud\res_order\target\classes started by xinye in D:\workspaceYC134\res134_cloud)
+2023-11-25 11:58:40.660  INFO 12324 --- [main] com.yc.ResorderApp                       : No active profile set, falling back to 1 default profile: "default"
+2023-11-25 11:58:41.174  INFO 12324 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5959851d-704d-3c27-baac-ad219f006024
+2023-11-25 11:58:41.373  INFO 12324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2023-11-25 11:58:41.379  INFO 12324 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-25 11:58:41.380  INFO 12324 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-11-25 11:58:41.471  INFO 12324 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-25 11:58:41.472  INFO 12324 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 781 ms
+2023-11-25 11:58:41.615  INFO 12324 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'resfood' URL not provided. Will try picking an instance via load-balancing.
+2023-11-25 11:58:41.733 DEBUG 12324 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-25 11:58:41.775 DEBUG 12324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2023-11-25 11:58:41.787 DEBUG 12324 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-11-25 11:58:41.793 DEBUG 12324 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-11-25 11:58:42.408  WARN 12324 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-11-25 11:58:42.495  INFO 12324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2023-11-25 11:58:42.524  INFO 12324 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-11-25 11:58:42.524  INFO 12324 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-11-25 11:58:43.526  INFO 12324 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP resorder 192.168.186.105:8000 register finished
+2023-11-25 11:58:43.730  INFO 12324 --- [main] com.yc.ResorderApp                       : Started ResorderApp in 3.69 seconds (JVM running for 4.275)
+2023-11-25 11:58:47.644  INFO 12324 --- [http-nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-25 11:58:47.644  INFO 12324 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-25 11:58:47.644 DEBUG 12324 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-11-25 11:58:47.644 DEBUG 12324 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-11-25 11:58:47.644 DEBUG 12324 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-11-25 11:58:47.645 DEBUG 12324 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6c338aa6
+2023-11-25 11:58:47.645 DEBUG 12324 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@73a43906
+2023-11-25 11:58:47.645 DEBUG 12324 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-11-25 11:58:47.646  INFO 12324 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-11-25 11:58:47.652 DEBUG 12324 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/resorder/addCart?fid=2&num=1", parameters={masked}
+2023-11-25 11:58:47.655 DEBUG 12324 --- [http-nio-8000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.yc.web.controller.ResorderController#addCart(Integer, Integer, HttpSession)
+2023-11-25 11:58:47.773  INFO 12324 --- [http-nio-8000-exec-1] com.yc.config.OnlyOneLoadBalancer        : 自定义负载
+2023-11-25 11:58:47.799 DEBUG 12324 --- [http-nio-8000-exec-1] o.s.w.c.HttpMessageConverterExtractor    : Reading to [java.util.Map<java.lang.String, java.lang.Object>]
+2023-11-25 11:58:47.804  INFO 12324 --- [http-nio-8000-exec-1] c.yc.web.controller.ResorderController   : 发送请求后得到商品信息：{fid=2, fname=蛋炒饭, normprice=22.0, realprice=20.0, detail=营养丰富, fphoto=500022.jpg, detail_count=null}
+2023-11-25 11:58:47.809 DEBUG 12324 --- [http-nio-8000-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 11:58:47.810 DEBUG 12324 --- [http-nio-8000-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [{}]
+2023-11-25 11:58:47.817 DEBUG 12324 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-11-25 14:20:31.422 DEBUG 12324 --- [http-nio-8000-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/resorder/addCart/2/2", parameters={}
+2023-11-25 14:20:31.426 DEBUG 12324 --- [http-nio-8000-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-25 14:20:31.429 DEBUG 12324 --- [http-nio-8000-exec-7] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-11-25 14:20:31.430 DEBUG 12324 --- [http-nio-8000-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-11-25 14:20:31.434 DEBUG 12324 --- [http-nio-8000-exec-7] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2023-11-25 14:20:31.435 DEBUG 12324 --- [http-nio-8000-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-11-25 14:20:31.449 DEBUG 12324 --- [http-nio-8000-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2023-11-25 14:20:31.453 DEBUG 12324 --- [http-nio-8000-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
