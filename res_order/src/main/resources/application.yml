@@ -1,0 +1,18 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: resorder  #resorder是此服务注册到nacos的服务名
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+
+logging:
+  level:
+    root: info
+    org.springframework.web: debug
+    com.apache: error
+  file:
+    #name: mylog.log
+    path: logs/
