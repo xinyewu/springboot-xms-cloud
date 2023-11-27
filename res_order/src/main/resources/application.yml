@@ -13,6 +13,8 @@ logging:
     root: info
     org.springframework.web: debug
     com.apache: error
+    com.yc.api: debug
   file:
     #name: mylog.log
     path: logs/
+

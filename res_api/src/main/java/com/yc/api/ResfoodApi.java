@@ -1,13 +1,12 @@
 package com.yc.api;
 
-import com.yc.bean.Resfood;
-import com.yc.web.model.MyPageBean;
+
+import com.yc.api.configuration.ResfoodApiConfiguration;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 import java.util.Map;
-@FeignClient("resfood")
+@FeignClient(name = "resfood",configuration = ResfoodApiConfiguration.class)//服务名：http://
 public interface ResfoodApi {
     @RequestMapping(value = "resfood/detailCountAdd",method = {RequestMethod.GET})
     public Map<String, Object> detailCountAdd(Integer fid);
