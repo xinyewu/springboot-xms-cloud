@@ -12,9 +12,8 @@
         <module>res_entity</module>
         <module>res_food</module>
         <module>res_order</module>
-        <module>test_jdkproxy</module>
-        <module>test_feign</module>
         <module>res_api</module>
+        <module>test_builderDesignPattern fluentAPI</module>
     </modules>
 
     <parent>

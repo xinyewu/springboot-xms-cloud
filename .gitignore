@@ -1,3 +1,5 @@
 /test_feign/
 /test_jdkproxy/
-
+/test_builderDesignPattern fluentAPI/
+/test_* */
+/test_*/
