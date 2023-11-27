@@ -13,7 +13,7 @@
         <module>res_food</module>
         <module>res_order</module>
         <module>res_api</module>
-        <module>test_builderDesignPattern fluentAPI</module>
+        <module>test_builderDesignPattern_fluentAPI</module>
     </modules>
 
     <parent>
