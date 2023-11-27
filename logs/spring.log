@@ -134,3 +134,50 @@
 2023-11-27 19:39:52.755  INFO 12012 --- [RMI TCP Connection(4)-192.168.186.105] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-11-27 19:39:52.755  INFO 12012 --- [RMI TCP Connection(4)-192.168.186.105] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2023-11-27 19:39:52.756  INFO 12012 --- [RMI TCP Connection(4)-192.168.186.105] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-27 19:42:40.888  INFO 9604 --- [http-nio-8000-exec-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-27 19:42:40.888  INFO 9604 --- [http-nio-8000-exec-6] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-27 19:42:40.888 DEBUG 9604 --- [http-nio-8000-exec-6] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-11-27 19:42:40.888 DEBUG 9604 --- [http-nio-8000-exec-6] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-11-27 19:42:40.888 DEBUG 9604 --- [http-nio-8000-exec-6] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-11-27 19:42:40.889 DEBUG 9604 --- [http-nio-8000-exec-6] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@73eadf4c
+2023-11-27 19:42:40.890 DEBUG 9604 --- [http-nio-8000-exec-6] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@7d32291
+2023-11-27 19:42:40.890 DEBUG 9604 --- [http-nio-8000-exec-6] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-11-27 19:42:40.890  INFO 9604 --- [http-nio-8000-exec-6] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-11-27 19:42:40.897 DEBUG 9604 --- [http-nio-8000-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/resorder/addCart?fid=2&num=1", parameters={masked}
+2023-11-27 19:42:40.901 DEBUG 9604 --- [http-nio-8000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.yc.web.controller.ResorderController#addCart(Integer, Integer, HttpSession)
+2023-11-27 19:42:40.919 DEBUG 9604 --- [http-nio-8000-exec-6] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] ---> GET http://resfood/resfood/findById/2 HTTP/1.1
+2023-11-27 19:42:40.920 DEBUG 9604 --- [http-nio-8000-exec-6] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] ---> END HTTP (0-byte body)
+2023-11-27 19:42:41.031  INFO 9604 --- [http-nio-8000-exec-6] com.yc.config.OnlyOneLoadBalancer        : 自定义负载
+2023-11-27 19:42:41.313 DEBUG 9604 --- [http-nio-8000-exec-6] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] <--- HTTP/1.1 200 (390ms)
+2023-11-27 19:42:41.313 DEBUG 9604 --- [http-nio-8000-exec-6] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] connection: keep-alive
+2023-11-27 19:42:41.314 DEBUG 9604 --- [http-nio-8000-exec-6] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] content-type: application/json
+2023-11-27 19:42:41.314 DEBUG 9604 --- [http-nio-8000-exec-6] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] date: Mon, 27 Nov 2023 11:42:41 GMT
+2023-11-27 19:42:41.314 DEBUG 9604 --- [http-nio-8000-exec-6] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] keep-alive: timeout=60
+2023-11-27 19:42:41.314 DEBUG 9604 --- [http-nio-8000-exec-6] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] transfer-encoding: chunked
+2023-11-27 19:42:41.314 DEBUG 9604 --- [http-nio-8000-exec-6] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] 
+2023-11-27 19:42:41.315 DEBUG 9604 --- [http-nio-8000-exec-6] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] {"code":1,"data":{"fid":2,"fname":"蛋炒饭","normprice":22.0,"realprice":20.0,"detail":"营养丰富","fphoto":"500022.jpg","detail_count":null}}
+2023-11-27 19:42:41.315 DEBUG 9604 --- [http-nio-8000-exec-6] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] <--- END HTTP (147-byte body)
+2023-11-27 19:42:41.319 DEBUG 9604 --- [http-nio-8000-exec-6] o.s.w.c.HttpMessageConverterExtractor    : Reading to [java.util.Map<java.lang.String, java.lang.Object>]
+2023-11-27 19:42:41.322  INFO 9604 --- [http-nio-8000-exec-6] c.yc.web.controller.ResorderController   : 发送请求后得到商品信息：{code=1, data={fid=2, fname=蛋炒饭, normprice=22.0, realprice=20.0, detail=营养丰富, fphoto=500022.jpg, detail_count=null}}
+2023-11-27 19:42:41.329 DEBUG 9604 --- [http-nio-8000-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-27 19:42:41.329 DEBUG 9604 --- [http-nio-8000-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [{}]
+2023-11-27 19:42:41.338 DEBUG 9604 --- [http-nio-8000-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-11-27 19:43:42.661 DEBUG 9604 --- [http-nio-8000-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/resorder/addCart?fid=2&num=1", parameters={masked}
+2023-11-27 19:43:42.662 DEBUG 9604 --- [http-nio-8000-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.yc.web.controller.ResorderController#addCart(Integer, Integer, HttpSession)
+2023-11-27 19:43:42.664 DEBUG 9604 --- [http-nio-8000-exec-5] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] ---> GET http://resfood/resfood/findById/2 HTTP/1.1
+2023-11-27 19:43:42.664 DEBUG 9604 --- [http-nio-8000-exec-5] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] ---> END HTTP (0-byte body)
+2023-11-27 19:43:42.665  INFO 9604 --- [http-nio-8000-exec-5] com.yc.config.OnlyOneLoadBalancer        : 自定义负载
+2023-11-27 19:43:42.676 DEBUG 9604 --- [http-nio-8000-exec-5] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] <--- HTTP/1.1 200 (12ms)
+2023-11-27 19:43:42.677 DEBUG 9604 --- [http-nio-8000-exec-5] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] connection: keep-alive
+2023-11-27 19:43:42.677 DEBUG 9604 --- [http-nio-8000-exec-5] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] content-type: application/json
+2023-11-27 19:43:42.677 DEBUG 9604 --- [http-nio-8000-exec-5] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] date: Mon, 27 Nov 2023 11:43:42 GMT
+2023-11-27 19:43:42.677 DEBUG 9604 --- [http-nio-8000-exec-5] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] keep-alive: timeout=60
+2023-11-27 19:43:42.677 DEBUG 9604 --- [http-nio-8000-exec-5] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] transfer-encoding: chunked
+2023-11-27 19:43:42.677 DEBUG 9604 --- [http-nio-8000-exec-5] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] 
+2023-11-27 19:43:42.677 DEBUG 9604 --- [http-nio-8000-exec-5] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] {"code":1,"data":{"fid":2,"fname":"蛋炒饭","normprice":22.0,"realprice":20.0,"detail":"营养丰富","fphoto":"500022.jpg","detail_count":null}}
+2023-11-27 19:43:42.677 DEBUG 9604 --- [http-nio-8000-exec-5] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] <--- END HTTP (147-byte body)
+2023-11-27 19:43:42.678 DEBUG 9604 --- [http-nio-8000-exec-5] o.s.w.c.HttpMessageConverterExtractor    : Reading to [java.util.Map<java.lang.String, java.lang.Object>]
+2023-11-27 19:43:42.678  INFO 9604 --- [http-nio-8000-exec-5] c.yc.web.controller.ResorderController   : 发送请求后得到商品信息：{code=1, data={fid=2, fname=蛋炒饭, normprice=22.0, realprice=20.0, detail=营养丰富, fphoto=500022.jpg, detail_count=null}}
+2023-11-27 19:43:42.678 DEBUG 9604 --- [http-nio-8000-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-27 19:43:42.678 DEBUG 9604 --- [http-nio-8000-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [{}]
+2023-11-27 19:43:42.679 DEBUG 9604 --- [http-nio-8000-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
