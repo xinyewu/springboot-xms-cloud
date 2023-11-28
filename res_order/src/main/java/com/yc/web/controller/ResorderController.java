@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
+import javax.annotation.security.RolesAllowed;
 import javax.servlet.http.HttpSession;
 import java.util.HashMap;
 import java.util.Map;
@@ -31,6 +32,7 @@ public class ResorderController {
 //    }
 
 
+    //@RolesAllowed(value = "r1")
     @RequestMapping(value = "addCart", method = {RequestMethod.GET, RequestMethod.POST})
     public Map<String, Object> addCart(@RequestParam Integer fid, @RequestParam Integer num, HttpSession session) {
         Map<String, Object> map = new HashMap<>();

@@ -1,233 +1,610 @@
-2023-11-27 18:48:24.203  INFO 8112 --- [restartedMain] c.a.n.client.env.SearchableProperties    : properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
-2023-11-27 18:48:24.334  INFO 8112 --- [restartedMain] com.yc.ResfoodApp                        : Starting ResfoodApp using Java 1.8.0_372 on DESKTOP-2GHSLBQ with PID 8112 (D:\workspaceYC134\res134_cloud\res_food\target\classes started by xinye in D:\workspaceYC134\res134_cloud)
-2023-11-27 18:48:24.335  INFO 8112 --- [restartedMain] com.yc.ResfoodApp                        : No active profile set, falling back to 1 default profile: "default"
-2023-11-27 18:48:24.409  INFO 8112 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-11-27 18:48:24.410  INFO 8112 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-11-27 18:48:25.323  INFO 8112 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-11-27 18:48:25.325  INFO 8112 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2023-11-27 18:48:25.345  INFO 8112 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
-2023-11-27 18:48:25.503  INFO 8112 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=687256cf-2ea5-388d-9056-54b0e363ecfd
-2023-11-27 18:48:25.864  INFO 8112 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
-2023-11-27 18:48:25.893  INFO 8112 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-11-27 18:48:25.893  INFO 8112 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
-2023-11-27 18:48:26.027  INFO 8112 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-11-27 18:48:26.027  INFO 8112 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1617 ms
-2023-11-27 18:48:26.139  INFO 8112 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2023-11-27 18:48:26.716  INFO 8112 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2023-11-27 18:48:28.996  INFO 8112 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-11-27 18:48:29.225  INFO 8112 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2023-11-27 18:48:29.288  INFO 8112 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
-2023-11-27 18:48:29.333  INFO 8112 --- [restartedMain] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
-2023-11-27 18:48:29.333  INFO 8112 --- [restartedMain] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
-2023-11-27 18:48:30.555  INFO 8112 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP resfood 192.168.186.105:9001 register finished
-2023-11-27 18:48:30.833  INFO 8112 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
-2023-11-27 18:48:30.841  INFO 8112 --- [restartedMain] com.yc.ResfoodApp                        : Started ResfoodApp in 7.245 seconds (JVM running for 8.154)
-2023-11-27 18:48:31.363  INFO 8112 --- [RMI TCP Connection(1)-192.168.186.105] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-11-27 18:48:31.363  INFO 8112 --- [RMI TCP Connection(1)-192.168.186.105] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-11-27 18:48:31.365  INFO 8112 --- [RMI TCP Connection(1)-192.168.186.105] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2023-11-27 19:17:39.610  INFO 19936 --- [main] c.a.n.client.env.SearchableProperties    : properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
-2023-11-27 19:17:39.706  INFO 19936 --- [main] com.yc.ResorderApp                       : Starting ResorderApp using Java 1.8.0_372 on DESKTOP-2GHSLBQ with PID 19936 (D:\workspaceYC134\res134_cloud\res_order\target\classes started by xinye in D:\workspaceYC134\res134_cloud)
-2023-11-27 19:17:39.707  INFO 19936 --- [main] com.yc.ResorderApp                       : No active profile set, falling back to 1 default profile: "default"
-2023-11-27 19:17:40.255  INFO 19936 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5959851d-704d-3c27-baac-ad219f006024
-2023-11-27 19:17:40.428  INFO 19936 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
-2023-11-27 19:17:40.434  INFO 19936 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-11-27 19:17:40.434  INFO 19936 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
-2023-11-27 19:17:40.520  INFO 19936 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-11-27 19:17:40.520  INFO 19936 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 778 ms
-2023-11-27 19:17:40.646  INFO 19936 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'resfood' URL not provided. Will try picking an instance via load-balancing.
-2023-11-27 19:17:40.745 DEBUG 19936 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2023-11-27 19:17:40.781 DEBUG 19936 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
-2023-11-27 19:17:40.791 DEBUG 19936 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2023-11-27 19:17:40.797 DEBUG 19936 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2023-11-27 19:17:41.421  WARN 19936 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2023-11-27 19:17:41.507  INFO 19936 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
-2023-11-27 19:17:41.536  INFO 19936 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
-2023-11-27 19:17:41.536  INFO 19936 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
-2023-11-27 19:17:42.577  INFO 19936 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP resorder 192.168.186.105:8000 register finished
-2023-11-27 19:17:42.780  INFO 19936 --- [main] com.yc.ResorderApp                       : Started ResorderApp in 3.67 seconds (JVM running for 4.31)
-2023-11-27 19:19:12.413  INFO 19936 --- [http-nio-8000-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-11-27 19:19:12.413  INFO 19936 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-11-27 19:19:12.413 DEBUG 19936 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2023-11-27 19:19:12.414 DEBUG 19936 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2023-11-27 19:19:12.414 DEBUG 19936 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2023-11-27 19:19:12.415 DEBUG 19936 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7e2f4343
-2023-11-27 19:19:12.415 DEBUG 19936 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@6368e306
-2023-11-27 19:19:12.415 DEBUG 19936 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2023-11-27 19:19:12.415  INFO 19936 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2023-11-27 19:19:12.422 DEBUG 19936 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/resorder/addCart?fid=2&num=1", parameters={masked}
-2023-11-27 19:19:12.426 DEBUG 19936 --- [http-nio-8000-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.yc.web.controller.ResorderController#addCart(Integer, Integer, HttpSession)
-2023-11-27 19:19:12.574  INFO 19936 --- [http-nio-8000-exec-2] com.yc.config.OnlyOneLoadBalancer        : 自定义负载
-2023-11-27 19:19:12.654 DEBUG 19936 --- [http-nio-8000-exec-2] o.s.w.c.HttpMessageConverterExtractor    : Reading to [java.util.Map<java.lang.String, java.lang.Object>]
-2023-11-27 19:19:12.658  INFO 19936 --- [http-nio-8000-exec-2] c.yc.web.controller.ResorderController   : 发送请求后得到商品信息：{code=1, data={fid=2, fname=蛋炒饭, normprice=22.0, realprice=20.0, detail=营养丰富, fphoto=500022.jpg, detail_count=null}}
-2023-11-27 19:19:12.664 DEBUG 19936 --- [http-nio-8000-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-11-27 19:19:12.665 DEBUG 19936 --- [http-nio-8000-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [{}]
-2023-11-27 19:19:12.673 DEBUG 19936 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2023-11-27 19:19:17.053 DEBUG 19936 --- [http-nio-8000-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
-2023-11-27 19:19:17.056 DEBUG 19936 --- [http-nio-8000-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2023-11-27 19:19:17.059 DEBUG 19936 --- [http-nio-8000-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
-2023-11-27 19:19:17.059 DEBUG 19936 --- [http-nio-8000-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2023-11-27 19:19:17.063 DEBUG 19936 --- [http-nio-8000-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
-2023-11-27 19:19:17.066 DEBUG 19936 --- [http-nio-8000-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-2023-11-27 19:19:17.083 DEBUG 19936 --- [http-nio-8000-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
-2023-11-27 19:19:17.086 DEBUG 19936 --- [http-nio-8000-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
-2023-11-27 19:19:17.149 DEBUG 19936 --- [http-nio-8000-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
-2023-11-27 19:19:17.153 DEBUG 19936 --- [http-nio-8000-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2023-11-27 19:19:17.155 DEBUG 19936 --- [http-nio-8000-exec-8] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
-2023-11-27 19:19:17.156 DEBUG 19936 --- [http-nio-8000-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2023-11-27 19:19:17.156 DEBUG 19936 --- [http-nio-8000-exec-8] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
-2023-11-27 19:19:17.157 DEBUG 19936 --- [http-nio-8000-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2023-11-27 19:19:17.159 DEBUG 19936 --- [http-nio-8000-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-11-27 19:19:17.160 DEBUG 19936 --- [http-nio-8000-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Mon Nov 27 19:19:17 CST 2023, status=404, error=Not Found, path=/favicon.ico}]
-2023-11-27 19:19:17.177 DEBUG 19936 --- [http-nio-8000-exec-8] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
-2023-11-27 19:19:38.442 DEBUG 19936 --- [http-nio-8000-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/resorder/addCart?fid=2&num=1", parameters={masked}
-2023-11-27 19:19:38.443 DEBUG 19936 --- [http-nio-8000-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.yc.web.controller.ResorderController#addCart(Integer, Integer, HttpSession)
-2023-11-27 19:19:38.446  INFO 19936 --- [http-nio-8000-exec-5] com.yc.config.OnlyOneLoadBalancer        : 自定义负载
-2023-11-27 19:19:38.457 DEBUG 19936 --- [http-nio-8000-exec-5] o.s.w.c.HttpMessageConverterExtractor    : Reading to [java.util.Map<java.lang.String, java.lang.Object>]
-2023-11-27 19:19:38.458  INFO 19936 --- [http-nio-8000-exec-5] c.yc.web.controller.ResorderController   : 发送请求后得到商品信息：{code=1, data={fid=2, fname=蛋炒饭, normprice=22.0, realprice=20.0, detail=营养丰富, fphoto=500022.jpg, detail_count=null}}
-2023-11-27 19:19:38.458 DEBUG 19936 --- [http-nio-8000-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-11-27 19:19:38.458 DEBUG 19936 --- [http-nio-8000-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [{}]
-2023-11-27 19:19:38.459 DEBUG 19936 --- [http-nio-8000-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2023-11-27 19:39:27.458  INFO 9604 --- [main] c.a.n.client.env.SearchableProperties    : properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
-2023-11-27 19:39:27.545  INFO 9604 --- [main] com.yc.ResorderApp                       : Starting ResorderApp using Java 1.8.0_372 on DESKTOP-2GHSLBQ with PID 9604 (D:\workspaceYC134\res134_cloud\res_order\target\classes started by xinye in D:\workspaceYC134\res134_cloud)
-2023-11-27 19:39:27.546  INFO 9604 --- [main] com.yc.ResorderApp                       : No active profile set, falling back to 1 default profile: "default"
-2023-11-27 19:39:28.030  INFO 9604 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=bbaeae97-7aae-3a10-b47e-4e66cc881a27
-2023-11-27 19:39:28.197  INFO 9604 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
-2023-11-27 19:39:28.202  INFO 9604 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-11-27 19:39:28.203  INFO 9604 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
-2023-11-27 19:39:28.286  INFO 9604 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-11-27 19:39:28.286  INFO 9604 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 713 ms
-2023-11-27 19:39:28.410  INFO 9604 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'resfood' URL not provided. Will try picking an instance via load-balancing.
-2023-11-27 19:39:28.506 DEBUG 9604 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2023-11-27 19:39:28.543 DEBUG 9604 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
-2023-11-27 19:39:28.554 DEBUG 9604 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2023-11-27 19:39:28.559 DEBUG 9604 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2023-11-27 19:39:29.167  WARN 9604 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2023-11-27 19:39:29.254  INFO 9604 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
-2023-11-27 19:39:29.281  INFO 9604 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
-2023-11-27 19:39:29.282  INFO 9604 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
-2023-11-27 19:39:30.249  INFO 9604 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP resorder 192.168.186.105:8000 register finished
-2023-11-27 19:39:30.455  INFO 9604 --- [main] com.yc.ResorderApp                       : Started ResorderApp in 3.5 seconds (JVM running for 4.193)
-2023-11-27 19:39:45.955  INFO 12012 --- [restartedMain] c.a.n.client.env.SearchableProperties    : properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
-2023-11-27 19:39:46.081  INFO 12012 --- [restartedMain] com.yc.ResfoodApp                        : Starting ResfoodApp using Java 1.8.0_372 on DESKTOP-2GHSLBQ with PID 12012 (D:\workspaceYC134\res134_cloud\res_food\target\classes started by xinye in D:\workspaceYC134\res134_cloud)
-2023-11-27 19:39:46.082  INFO 12012 --- [restartedMain] com.yc.ResfoodApp                        : No active profile set, falling back to 1 default profile: "default"
-2023-11-27 19:39:46.118  INFO 12012 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-11-27 19:39:46.118  INFO 12012 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-11-27 19:39:46.951  INFO 12012 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-11-27 19:39:46.953  INFO 12012 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2023-11-27 19:39:46.970  INFO 12012 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
-2023-11-27 19:39:47.217  INFO 12012 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=687256cf-2ea5-388d-9056-54b0e363ecfd
-2023-11-27 19:39:47.555  INFO 12012 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9000 (http)
-2023-11-27 19:39:47.562  INFO 12012 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-11-27 19:39:47.563  INFO 12012 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
-2023-11-27 19:39:47.688  INFO 12012 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-11-27 19:39:47.688  INFO 12012 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1569 ms
-2023-11-27 19:39:47.806  INFO 12012 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2023-11-27 19:39:48.314  INFO 12012 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2023-11-27 19:39:50.563  WARN 12012 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2023-11-27 19:39:50.782  INFO 12012 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2023-11-27 19:39:50.841  INFO 12012 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9000 (http) with context path ''
-2023-11-27 19:39:50.875  INFO 12012 --- [restartedMain] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
-2023-11-27 19:39:50.875  INFO 12012 --- [restartedMain] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
-2023-11-27 19:39:51.944  INFO 12012 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP resfood 192.168.186.105:9000 register finished
-2023-11-27 19:39:52.212  INFO 12012 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
-2023-11-27 19:39:52.218  INFO 12012 --- [restartedMain] com.yc.ResfoodApp                        : Started ResfoodApp in 6.831 seconds (JVM running for 7.6)
-2023-11-27 19:39:52.755  INFO 12012 --- [RMI TCP Connection(4)-192.168.186.105] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-11-27 19:39:52.755  INFO 12012 --- [RMI TCP Connection(4)-192.168.186.105] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-11-27 19:39:52.756  INFO 12012 --- [RMI TCP Connection(4)-192.168.186.105] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-11-27 19:42:40.888  INFO 9604 --- [http-nio-8000-exec-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-11-27 19:42:40.888  INFO 9604 --- [http-nio-8000-exec-6] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-11-27 19:42:40.888 DEBUG 9604 --- [http-nio-8000-exec-6] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2023-11-27 19:42:40.888 DEBUG 9604 --- [http-nio-8000-exec-6] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2023-11-27 19:42:40.888 DEBUG 9604 --- [http-nio-8000-exec-6] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2023-11-27 19:42:40.889 DEBUG 9604 --- [http-nio-8000-exec-6] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@73eadf4c
-2023-11-27 19:42:40.890 DEBUG 9604 --- [http-nio-8000-exec-6] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@7d32291
-2023-11-27 19:42:40.890 DEBUG 9604 --- [http-nio-8000-exec-6] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2023-11-27 19:42:40.890  INFO 9604 --- [http-nio-8000-exec-6] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2023-11-27 19:42:40.897 DEBUG 9604 --- [http-nio-8000-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/resorder/addCart?fid=2&num=1", parameters={masked}
-2023-11-27 19:42:40.901 DEBUG 9604 --- [http-nio-8000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.yc.web.controller.ResorderController#addCart(Integer, Integer, HttpSession)
-2023-11-27 19:42:40.919 DEBUG 9604 --- [http-nio-8000-exec-6] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] ---> GET http://resfood/resfood/findById/2 HTTP/1.1
-2023-11-27 19:42:40.920 DEBUG 9604 --- [http-nio-8000-exec-6] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] ---> END HTTP (0-byte body)
-2023-11-27 19:42:41.031  INFO 9604 --- [http-nio-8000-exec-6] com.yc.config.OnlyOneLoadBalancer        : 自定义负载
-2023-11-27 19:42:41.313 DEBUG 9604 --- [http-nio-8000-exec-6] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] <--- HTTP/1.1 200 (390ms)
-2023-11-27 19:42:41.313 DEBUG 9604 --- [http-nio-8000-exec-6] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] connection: keep-alive
-2023-11-27 19:42:41.314 DEBUG 9604 --- [http-nio-8000-exec-6] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] content-type: application/json
-2023-11-27 19:42:41.314 DEBUG 9604 --- [http-nio-8000-exec-6] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] date: Mon, 27 Nov 2023 11:42:41 GMT
-2023-11-27 19:42:41.314 DEBUG 9604 --- [http-nio-8000-exec-6] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] keep-alive: timeout=60
-2023-11-27 19:42:41.314 DEBUG 9604 --- [http-nio-8000-exec-6] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] transfer-encoding: chunked
-2023-11-27 19:42:41.314 DEBUG 9604 --- [http-nio-8000-exec-6] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] 
-2023-11-27 19:42:41.315 DEBUG 9604 --- [http-nio-8000-exec-6] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] {"code":1,"data":{"fid":2,"fname":"蛋炒饭","normprice":22.0,"realprice":20.0,"detail":"营养丰富","fphoto":"500022.jpg","detail_count":null}}
-2023-11-27 19:42:41.315 DEBUG 9604 --- [http-nio-8000-exec-6] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] <--- END HTTP (147-byte body)
-2023-11-27 19:42:41.319 DEBUG 9604 --- [http-nio-8000-exec-6] o.s.w.c.HttpMessageConverterExtractor    : Reading to [java.util.Map<java.lang.String, java.lang.Object>]
-2023-11-27 19:42:41.322  INFO 9604 --- [http-nio-8000-exec-6] c.yc.web.controller.ResorderController   : 发送请求后得到商品信息：{code=1, data={fid=2, fname=蛋炒饭, normprice=22.0, realprice=20.0, detail=营养丰富, fphoto=500022.jpg, detail_count=null}}
-2023-11-27 19:42:41.329 DEBUG 9604 --- [http-nio-8000-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-11-27 19:42:41.329 DEBUG 9604 --- [http-nio-8000-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [{}]
-2023-11-27 19:42:41.338 DEBUG 9604 --- [http-nio-8000-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2023-11-27 19:43:42.661 DEBUG 9604 --- [http-nio-8000-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/resorder/addCart?fid=2&num=1", parameters={masked}
-2023-11-27 19:43:42.662 DEBUG 9604 --- [http-nio-8000-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.yc.web.controller.ResorderController#addCart(Integer, Integer, HttpSession)
-2023-11-27 19:43:42.664 DEBUG 9604 --- [http-nio-8000-exec-5] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] ---> GET http://resfood/resfood/findById/2 HTTP/1.1
-2023-11-27 19:43:42.664 DEBUG 9604 --- [http-nio-8000-exec-5] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] ---> END HTTP (0-byte body)
-2023-11-27 19:43:42.665  INFO 9604 --- [http-nio-8000-exec-5] com.yc.config.OnlyOneLoadBalancer        : 自定义负载
-2023-11-27 19:43:42.676 DEBUG 9604 --- [http-nio-8000-exec-5] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] <--- HTTP/1.1 200 (12ms)
-2023-11-27 19:43:42.677 DEBUG 9604 --- [http-nio-8000-exec-5] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] connection: keep-alive
-2023-11-27 19:43:42.677 DEBUG 9604 --- [http-nio-8000-exec-5] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] content-type: application/json
-2023-11-27 19:43:42.677 DEBUG 9604 --- [http-nio-8000-exec-5] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] date: Mon, 27 Nov 2023 11:43:42 GMT
-2023-11-27 19:43:42.677 DEBUG 9604 --- [http-nio-8000-exec-5] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] keep-alive: timeout=60
-2023-11-27 19:43:42.677 DEBUG 9604 --- [http-nio-8000-exec-5] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] transfer-encoding: chunked
-2023-11-27 19:43:42.677 DEBUG 9604 --- [http-nio-8000-exec-5] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] 
-2023-11-27 19:43:42.677 DEBUG 9604 --- [http-nio-8000-exec-5] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] {"code":1,"data":{"fid":2,"fname":"蛋炒饭","normprice":22.0,"realprice":20.0,"detail":"营养丰富","fphoto":"500022.jpg","detail_count":null}}
-2023-11-27 19:43:42.677 DEBUG 9604 --- [http-nio-8000-exec-5] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] <--- END HTTP (147-byte body)
-2023-11-27 19:43:42.678 DEBUG 9604 --- [http-nio-8000-exec-5] o.s.w.c.HttpMessageConverterExtractor    : Reading to [java.util.Map<java.lang.String, java.lang.Object>]
-2023-11-27 19:43:42.678  INFO 9604 --- [http-nio-8000-exec-5] c.yc.web.controller.ResorderController   : 发送请求后得到商品信息：{code=1, data={fid=2, fname=蛋炒饭, normprice=22.0, realprice=20.0, detail=营养丰富, fphoto=500022.jpg, detail_count=null}}
-2023-11-27 19:43:42.678 DEBUG 9604 --- [http-nio-8000-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-11-27 19:43:42.678 DEBUG 9604 --- [http-nio-8000-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [{}]
-2023-11-27 19:43:42.679 DEBUG 9604 --- [http-nio-8000-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2023-11-27 19:57:54.747  INFO 19360 --- [main] c.a.n.client.env.SearchableProperties    : properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
-2023-11-27 19:57:54.835  INFO 19360 --- [main] com.yc.ResorderApp                       : Starting ResorderApp using Java 1.8.0_372 on DESKTOP-2GHSLBQ with PID 19360 (D:\workspaceYC134\res134_cloud\res_order\target\classes started by xinye in D:\workspaceYC134\res134_cloud)
-2023-11-27 19:57:54.835  INFO 19360 --- [main] com.yc.ResorderApp                       : No active profile set, falling back to 1 default profile: "default"
-2023-11-27 19:57:55.310  INFO 19360 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=63af6bbc-f630-3df6-b07e-b3c772573554
-2023-11-27 19:57:55.477  INFO 19360 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
-2023-11-27 19:57:55.484  INFO 19360 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-11-27 19:57:55.484  INFO 19360 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
-2023-11-27 19:57:55.568  INFO 19360 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-11-27 19:57:55.568  INFO 19360 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 682 ms
-2023-11-27 19:57:55.694  INFO 19360 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'resfood' URL not provided. Will try picking an instance via load-balancing.
-2023-11-27 19:57:55.794 DEBUG 19360 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2023-11-27 19:57:55.831 DEBUG 19360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
-2023-11-27 19:57:55.843 DEBUG 19360 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2023-11-27 19:57:55.848 DEBUG 19360 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2023-11-27 19:57:56.476  WARN 19360 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2023-11-27 19:57:56.562  INFO 19360 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
-2023-11-27 19:57:56.591  INFO 19360 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
-2023-11-27 19:57:56.591  INFO 19360 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
-2023-11-27 19:57:57.635  INFO 19360 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP resorder 192.168.186.105:8000 register finished
-2023-11-27 19:57:57.844  INFO 19360 --- [main] com.yc.ResorderApp                       : Started ResorderApp in 3.615 seconds (JVM running for 4.235)
-2023-11-27 19:58:23.358  INFO 19360 --- [http-nio-8000-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-11-27 19:58:23.359  INFO 19360 --- [http-nio-8000-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-11-27 19:58:23.359 DEBUG 19360 --- [http-nio-8000-exec-4] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2023-11-27 19:58:23.359 DEBUG 19360 --- [http-nio-8000-exec-4] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2023-11-27 19:58:23.359 DEBUG 19360 --- [http-nio-8000-exec-4] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2023-11-27 19:58:23.360 DEBUG 19360 --- [http-nio-8000-exec-4] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6793447f
-2023-11-27 19:58:23.360 DEBUG 19360 --- [http-nio-8000-exec-4] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@11655580
-2023-11-27 19:58:23.360 DEBUG 19360 --- [http-nio-8000-exec-4] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2023-11-27 19:58:23.360  INFO 19360 --- [http-nio-8000-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-11-27 19:58:23.367 DEBUG 19360 --- [http-nio-8000-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/resorder/addCart?fid=2&num=1", parameters={masked}
-2023-11-27 19:58:23.371 DEBUG 19360 --- [http-nio-8000-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.yc.web.controller.ResorderController#addCart(Integer, Integer, HttpSession)
-2023-11-27 19:58:23.388 DEBUG 19360 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] ---> GET http://resfood/resfood/findById/2 HTTP/1.1
-2023-11-27 19:58:23.389 DEBUG 19360 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] Accept-Encoding: gzip
-2023-11-27 19:58:23.389 DEBUG 19360 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] Accept-Encoding: deflate
-2023-11-27 19:58:23.389 DEBUG 19360 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] ---> END HTTP (0-byte body)
-2023-11-27 19:58:23.493  INFO 19360 --- [http-nio-8000-exec-4] com.yc.config.OnlyOneLoadBalancer        : 自定义负载
-2023-11-27 19:58:23.515 DEBUG 19360 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] <--- HTTP/1.1 200 (124ms)
-2023-11-27 19:58:23.516 DEBUG 19360 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] connection: keep-alive
-2023-11-27 19:58:23.516 DEBUG 19360 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] content-type: application/json
-2023-11-27 19:58:23.516 DEBUG 19360 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] date: Mon, 27 Nov 2023 11:58:23 GMT
-2023-11-27 19:58:23.516 DEBUG 19360 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] keep-alive: timeout=60
-2023-11-27 19:58:23.516 DEBUG 19360 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] transfer-encoding: chunked
-2023-11-27 19:58:23.516 DEBUG 19360 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] 
-2023-11-27 19:58:23.518 DEBUG 19360 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] {"code":1,"data":{"fid":2,"fname":"蛋炒饭","normprice":22.0,"realprice":20.0,"detail":"营养丰富","fphoto":"500022.jpg","detail_count":null}}
-2023-11-27 19:58:23.518 DEBUG 19360 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] <--- END HTTP (147-byte body)
-2023-11-27 19:58:23.522 DEBUG 19360 --- [http-nio-8000-exec-4] o.s.w.c.HttpMessageConverterExtractor    : Reading to [java.util.Map<java.lang.String, java.lang.Object>]
-2023-11-27 19:58:23.524  INFO 19360 --- [http-nio-8000-exec-4] c.yc.web.controller.ResorderController   : 发送请求后得到商品信息：{code=1, data={fid=2, fname=蛋炒饭, normprice=22.0, realprice=20.0, detail=营养丰富, fphoto=500022.jpg, detail_count=null}}
-2023-11-27 19:58:23.530 DEBUG 19360 --- [http-nio-8000-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-11-27 19:58:23.530 DEBUG 19360 --- [http-nio-8000-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [{}]
-2023-11-27 19:58:23.537 DEBUG 19360 --- [http-nio-8000-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-11-28 21:02:17.179  INFO 7988 --- [restartedMain] c.a.n.client.env.SearchableProperties    : properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+2023-11-28 21:02:17.334  INFO 7988 --- [restartedMain] com.yc.ResfoodApp                        : Starting ResfoodApp using Java 1.8.0_372 on DESKTOP-2GHSLBQ with PID 7988 (D:\workspaceYC134\res134_cloud\res_food\target\classes started by xinye in D:\workspaceYC134\res134_cloud)
+2023-11-28 21:02:17.335  INFO 7988 --- [restartedMain] com.yc.ResfoodApp                        : No active profile set, falling back to 1 default profile: "default"
+2023-11-28 21:02:17.374  INFO 7988 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-28 21:02:17.374  INFO 7988 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-28 21:02:18.302  INFO 7988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-11-28 21:02:18.304  INFO 7988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-28 21:02:18.325  INFO 7988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-11-28 21:02:18.485  INFO 7988 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=687256cf-2ea5-388d-9056-54b0e363ecfd
+2023-11-28 21:02:18.830  INFO 7988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2023-11-28 21:02:18.858  INFO 7988 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-28 21:02:18.858  INFO 7988 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-11-28 21:02:18.962  INFO 7988 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-28 21:02:18.962  INFO 7988 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1587 ms
+2023-11-28 21:02:19.068  INFO 7988 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-28 21:02:19.633  INFO 7988 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-28 21:02:23.033  WARN 7988 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'enableRedisKeyspaceNotificationsInitializer' defined in org.springframework.session.data.redis.config.annotation.web.http.RedisHttpSessionConfiguration: Invocation of init method failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1:6379
+2023-11-28 21:02:23.250  INFO 7988 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-11-28 21:02:23.255  INFO 7988 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-11-28 21:02:23.257  INFO 7988 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-11-28 21:02:23.280  INFO 7988 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-11-28 21:02:23.305 ERROR 7988 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'enableRedisKeyspaceNotificationsInitializer' defined in org.springframework.session.data.redis.config.annotation.web.http.RedisHttpSessionConfiguration: Invocation of init method failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1:6379
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) [spring-boot-2.7.0.jar:2.7.0]
+	at com.yc.ResfoodApp.main(ResfoodApp.java:17) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_372]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_372]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_372]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_372]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.0.jar:2.7.0]
+Caused by: org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1:6379
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1689) ~[spring-data-redis-2.7.0.jar:2.7.0]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1597) ~[spring-data-redis-2.7.0.jar:2.7.0]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1383) ~[spring-data-redis-2.7.0.jar:2.7.0]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1366) ~[spring-data-redis-2.7.0.jar:2.7.0]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedConnection(LettuceConnectionFactory.java:1093) ~[spring-data-redis-2.7.0.jar:2.7.0]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getConnection(LettuceConnectionFactory.java:421) ~[spring-data-redis-2.7.0.jar:2.7.0]
+	at org.springframework.session.data.redis.config.annotation.web.http.RedisHttpSessionConfiguration$EnableRedisKeyspaceNotificationsInitializer.afterPropertiesSet(RedisHttpSessionConfiguration.java:331) ~[spring-session-data-redis-2.7.0.jar:2.7.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.20.jar:5.3.20]
+	... 21 common frames omitted
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78) ~[lettuce-core-6.1.8.RELEASE.jar:6.1.8.RELEASE]
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56) ~[lettuce-core-6.1.8.RELEASE.jar:6.1.8.RELEASE]
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:330) ~[lettuce-core-6.1.8.RELEASE.jar:6.1.8.RELEASE]
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:216) ~[lettuce-core-6.1.8.RELEASE.jar:6.1.8.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:115) ~[spring-data-redis-2.7.0.jar:2.7.0]
+	at java.util.Optional.orElseGet(Optional.java:267) ~[na:1.8.0_372]
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:115) ~[spring-data-redis-2.7.0.jar:2.7.0]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1595) ~[spring-data-redis-2.7.0.jar:2.7.0]
+	... 28 common frames omitted
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /127.0.0.1:6379
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_372]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716) ~[na:1.8.0_372]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:995) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at java.lang.Thread.run(Thread.java:750) ~[na:1.8.0_372]
+
+2023-11-28 21:02:55.530  INFO 10152 --- [restartedMain] c.a.n.client.env.SearchableProperties    : properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+2023-11-28 21:02:55.660  INFO 10152 --- [restartedMain] com.yc.ResfoodApp                        : Starting ResfoodApp using Java 1.8.0_372 on DESKTOP-2GHSLBQ with PID 10152 (D:\workspaceYC134\res134_cloud\res_food\target\classes started by xinye in D:\workspaceYC134\res134_cloud)
+2023-11-28 21:02:55.661  INFO 10152 --- [restartedMain] com.yc.ResfoodApp                        : No active profile set, falling back to 1 default profile: "default"
+2023-11-28 21:02:55.702  INFO 10152 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-28 21:02:55.703  INFO 10152 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-28 21:02:56.604  INFO 10152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-11-28 21:02:56.606  INFO 10152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-28 21:02:56.625  INFO 10152 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-11-28 21:02:56.771  INFO 10152 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=687256cf-2ea5-388d-9056-54b0e363ecfd
+2023-11-28 21:02:57.061  INFO 10152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2023-11-28 21:02:57.068  INFO 10152 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-28 21:02:57.069  INFO 10152 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-11-28 21:02:57.173  INFO 10152 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-28 21:02:57.173  INFO 10152 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1470 ms
+2023-11-28 21:02:57.270  INFO 10152 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-28 21:02:57.736  INFO 10152 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-28 21:03:00.583  INFO 10152 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-11-28 21:03:01.095  INFO 10152 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-28 21:03:02.315  INFO 10152 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-11-28 21:03:02.338  INFO 10152 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-11-28 21:03:02.407  INFO 10152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2023-11-28 21:03:02.458  INFO 10152 --- [restartedMain] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-11-28 21:03:02.458  INFO 10152 --- [restartedMain] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-11-28 21:03:04.030  INFO 10152 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP resfood 192.168.16.7:9001 register finished
+2023-11-28 21:03:04.858  INFO 24508 --- [main] c.a.n.client.env.SearchableProperties    : properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+2023-11-28 21:03:04.942  INFO 24508 --- [main] com.yc.ResorderApp                       : Starting ResorderApp using Java 1.8.0_372 on DESKTOP-2GHSLBQ with PID 24508 (D:\workspaceYC134\res134_cloud\res_order\target\classes started by xinye in D:\workspaceYC134\res134_cloud)
+2023-11-28 21:03:04.942  INFO 24508 --- [main] com.yc.ResorderApp                       : No active profile set, falling back to 1 default profile: "default"
+2023-11-28 21:03:05.240  INFO 10152 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-11-28 21:03:05.310  INFO 10152 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-11-28 21:03:05.318  INFO 10152 --- [restartedMain] com.yc.ResfoodApp                        : Started ResfoodApp in 11.459 seconds (JVM running for 12.355)
+2023-11-28 21:03:05.520  INFO 24508 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ac5d29e9-1b50-319d-a49b-3b022afb8bbb
+2023-11-28 21:03:05.716  INFO 24508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2023-11-28 21:03:05.727  INFO 24508 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-28 21:03:05.727  INFO 24508 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-11-28 21:03:05.791  INFO 10152 --- [RMI TCP Connection(5)-192.168.16.7] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-28 21:03:05.792  INFO 10152 --- [RMI TCP Connection(5)-192.168.16.7] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-28 21:03:05.793  INFO 10152 --- [RMI TCP Connection(5)-192.168.16.7] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-28 21:03:05.839  INFO 24508 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-28 21:03:05.839  INFO 24508 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 838 ms
+2023-11-28 21:03:06.017  INFO 24508 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'resfood' URL not provided. Will try picking an instance via load-balancing.
+2023-11-28 21:03:06.080  WARN 24508 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 3956f698-765a-4d50-96f9-797c0bd2fc85
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-11-28 21:03:06.155  INFO 24508 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@71945bc0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@22a0d4ea, org.springframework.security.web.context.SecurityContextPersistenceFilter@119c745c, org.springframework.security.web.header.HeaderWriterFilter@3f685162, org.springframework.security.web.csrf.CsrfFilter@2b037cfc, org.springframework.security.web.authentication.logout.LogoutFilter@3e47a03, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@42b6d0cc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b1ed14b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1debc91c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@49ede9c7, org.springframework.security.web.session.SessionManagementFilter@574cd322, org.springframework.security.web.access.ExceptionTranslationFilter@71b6d77f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2123064f]
+2023-11-28 21:03:06.290 DEBUG 24508 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-28 21:03:06.334 DEBUG 24508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2023-11-28 21:03:06.346 DEBUG 24508 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-11-28 21:03:06.351 DEBUG 24508 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-11-28 21:03:07.568  INFO 24508 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-11-28 21:03:08.991  INFO 24508 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-11-28 21:03:09.016  WARN 24508 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-11-28 21:03:09.063  INFO 24508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2023-11-28 21:03:09.090  INFO 24508 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-11-28 21:03:09.090  INFO 24508 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-11-28 21:03:10.066  INFO 24508 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP resorder 192.168.16.7:8000 register finished
+2023-11-28 21:03:11.273  INFO 24508 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-11-28 21:03:11.278  INFO 24508 --- [main] com.yc.ResorderApp                       : Started ResorderApp in 7.974 seconds (JVM running for 8.665)
+2023-11-28 21:03:28.242  INFO 17144 --- [main] c.a.n.client.env.SearchableProperties    : properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+2023-11-28 21:03:28.346  INFO 17144 --- [main] com.yc.ResorderApp                       : Starting ResorderApp using Java 1.8.0_372 on DESKTOP-2GHSLBQ with PID 17144 (D:\workspaceYC134\res134_cloud\res_order\target\classes started by xinye in D:\workspaceYC134\res134_cloud)
+2023-11-28 21:03:28.347  INFO 17144 --- [main] com.yc.ResorderApp                       : No active profile set, falling back to 1 default profile: "default"
+2023-11-28 21:03:28.853  INFO 17144 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ac5d29e9-1b50-319d-a49b-3b022afb8bbb
+2023-11-28 21:03:29.024  INFO 17144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2023-11-28 21:03:29.029  INFO 17144 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-28 21:03:29.030  INFO 17144 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-11-28 21:03:29.107  INFO 17144 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-28 21:03:29.108  INFO 17144 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 706 ms
+2023-11-28 21:03:29.249  INFO 17144 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'resfood' URL not provided. Will try picking an instance via load-balancing.
+2023-11-28 21:03:29.301  WARN 17144 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: d5484cc7-9f3c-4451-847a-ca70eec8a291
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-11-28 21:03:29.361  INFO 17144 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@71945bc0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@22a0d4ea, org.springframework.security.web.context.SecurityContextPersistenceFilter@119c745c, org.springframework.security.web.header.HeaderWriterFilter@3f685162, org.springframework.security.web.csrf.CsrfFilter@2b037cfc, org.springframework.security.web.authentication.logout.LogoutFilter@3e47a03, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@42b6d0cc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b1ed14b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1debc91c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@49ede9c7, org.springframework.security.web.session.SessionManagementFilter@574cd322, org.springframework.security.web.access.ExceptionTranslationFilter@71b6d77f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2123064f]
+2023-11-28 21:03:29.465 DEBUG 17144 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-28 21:03:29.498 DEBUG 17144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2023-11-28 21:03:29.508 DEBUG 17144 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-11-28 21:03:29.512 DEBUG 17144 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-11-28 21:03:30.742  INFO 17144 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-11-28 21:03:32.155  INFO 17144 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-11-28 21:03:32.180  WARN 17144 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-11-28 21:03:32.234  INFO 17144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2023-11-28 21:03:32.263  INFO 17144 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-11-28 21:03:32.263  INFO 17144 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-11-28 21:03:33.263  INFO 17144 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP resorder 192.168.16.7:8000 register finished
+2023-11-28 21:03:34.458  INFO 17144 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-11-28 21:03:34.463  INFO 17144 --- [main] com.yc.ResorderApp                       : Started ResorderApp in 7.741 seconds (JVM running for 8.334)
+2023-11-28 21:04:20.424  INFO 17144 --- [http-nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-28 21:04:20.424  INFO 17144 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-28 21:04:20.424 DEBUG 17144 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-11-28 21:04:20.424 DEBUG 17144 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-11-28 21:04:20.424 DEBUG 17144 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-11-28 21:04:20.425 DEBUG 17144 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@79591d24
+2023-11-28 21:04:20.425 DEBUG 17144 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@367d035e
+2023-11-28 21:04:20.426 DEBUG 17144 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-11-28 21:04:20.426  INFO 17144 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-11-28 21:04:56.860 DEBUG 17144 --- [http-nio-8000-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2023-11-28 21:04:56.864 DEBUG 17144 --- [http-nio-8000-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-28 21:04:56.865 DEBUG 17144 --- [http-nio-8000-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-11-28 21:04:56.865 DEBUG 17144 --- [http-nio-8000-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-11-28 21:04:56.868 DEBUG 17144 --- [http-nio-8000-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2023-11-28 21:04:56.870 DEBUG 17144 --- [http-nio-8000-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-11-28 21:04:56.890 DEBUG 17144 --- [http-nio-8000-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2023-11-28 21:04:56.894 DEBUG 17144 --- [http-nio-8000-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-11-28 21:04:56.935 DEBUG 17144 --- [http-nio-8000-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2023-11-28 21:04:56.937 DEBUG 17144 --- [http-nio-8000-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-28 21:04:56.938 DEBUG 17144 --- [http-nio-8000-exec-6] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-11-28 21:04:56.938 DEBUG 17144 --- [http-nio-8000-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-11-28 21:04:56.939 DEBUG 17144 --- [http-nio-8000-exec-6] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2023-11-28 21:04:56.940 DEBUG 17144 --- [http-nio-8000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-11-28 21:04:56.947 DEBUG 17144 --- [http-nio-8000-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-28 21:04:56.948 DEBUG 17144 --- [http-nio-8000-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Nov 28 21:04:56 CST 2023, status=404, error=Not Found, path=/favicon.ico}]
+2023-11-28 21:04:56.963 DEBUG 17144 --- [http-nio-8000-exec-6] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-11-28 21:06:37.239  INFO 13496 --- [main] c.a.n.client.env.SearchableProperties    : properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+2023-11-28 21:06:37.317  INFO 13496 --- [main] com.yc.ResorderApp                       : Starting ResorderApp using Java 1.8.0_372 on DESKTOP-2GHSLBQ with PID 13496 (D:\workspaceYC134\res134_cloud\res_order\target\classes started by xinye in D:\workspaceYC134\res134_cloud)
+2023-11-28 21:06:37.318  INFO 13496 --- [main] com.yc.ResorderApp                       : No active profile set, falling back to 1 default profile: "default"
+2023-11-28 21:06:37.818  INFO 13496 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ac5d29e9-1b50-319d-a49b-3b022afb8bbb
+2023-11-28 21:06:37.998  INFO 13496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2023-11-28 21:06:38.005  INFO 13496 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-28 21:06:38.005  INFO 13496 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-11-28 21:06:38.087  INFO 13496 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-28 21:06:38.087  INFO 13496 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 717 ms
+2023-11-28 21:06:38.226  INFO 13496 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'resfood' URL not provided. Will try picking an instance via load-balancing.
+2023-11-28 21:06:38.275  WARN 13496 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 47b5de1f-2f65-4392-ab83-2576de9f4e15
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-11-28 21:06:38.341  INFO 13496 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@71945bc0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@22a0d4ea, org.springframework.security.web.context.SecurityContextPersistenceFilter@119c745c, org.springframework.security.web.header.HeaderWriterFilter@3f685162, org.springframework.security.web.csrf.CsrfFilter@2b037cfc, org.springframework.security.web.authentication.logout.LogoutFilter@3e47a03, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@42b6d0cc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b1ed14b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1debc91c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@49ede9c7, org.springframework.security.web.session.SessionManagementFilter@574cd322, org.springframework.security.web.access.ExceptionTranslationFilter@71b6d77f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2123064f]
+2023-11-28 21:06:38.449 DEBUG 13496 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-28 21:06:38.462  INFO 13496 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-11-28 21:06:38.492 DEBUG 13496 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2023-11-28 21:06:38.505 DEBUG 13496 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-11-28 21:06:38.513 DEBUG 13496 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-11-28 21:06:39.767  INFO 13496 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-11-28 21:06:41.186  INFO 13496 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-11-28 21:06:41.209  WARN 13496 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-11-28 21:06:41.262  INFO 13496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2023-11-28 21:06:41.289  INFO 13496 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-11-28 21:06:41.290  INFO 13496 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-11-28 21:06:42.271  INFO 13496 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP resorder 192.168.16.7:8000 register finished
+2023-11-28 21:06:43.474  INFO 13496 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-11-28 21:06:43.480  INFO 13496 --- [main] com.yc.ResorderApp                       : Started ResorderApp in 7.751 seconds (JVM running for 8.436)
+2023-11-28 21:06:46.845  INFO 13496 --- [http-nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-28 21:06:46.845  INFO 13496 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-28 21:06:46.845 DEBUG 13496 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-11-28 21:06:46.845 DEBUG 13496 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-11-28 21:06:46.845 DEBUG 13496 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-11-28 21:06:46.846 DEBUG 13496 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6c1118fe
+2023-11-28 21:06:46.846 DEBUG 13496 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@7cbe3937
+2023-11-28 21:06:46.847 DEBUG 13496 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-11-28 21:06:46.847  INFO 13496 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-11-28 21:06:54.327 DEBUG 13496 --- [http-nio-8000-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2023-11-28 21:06:54.334 DEBUG 13496 --- [http-nio-8000-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8]
+2023-11-28 21:06:54.334 DEBUG 13496 --- [http-nio-8000-exec-9] o.s.w.servlet.view.InternalResourceView  : View name 'forward:', model {}
+2023-11-28 21:06:54.335 DEBUG 13496 --- [http-nio-8000-exec-9] o.s.w.servlet.view.InternalResourceView  : Forwarding to [index.html]
+2023-11-28 21:06:54.335 DEBUG 13496 --- [http-nio-8000-exec-9] o.s.web.servlet.DispatcherServlet        : "FORWARD" dispatch for GET "/index.html", parameters={}
+2023-11-28 21:06:54.337 DEBUG 13496 --- [http-nio-8000-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-28 21:06:54.352 DEBUG 13496 --- [http-nio-8000-exec-9] o.s.web.servlet.DispatcherServlet        : Exiting from "FORWARD" dispatch, status 200
+2023-11-28 21:06:54.355 DEBUG 13496 --- [http-nio-8000-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-11-28 21:06:54.423 DEBUG 13496 --- [http-nio-8000-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2023-11-28 21:06:54.424 DEBUG 13496 --- [http-nio-8000-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-28 21:06:54.426 DEBUG 13496 --- [http-nio-8000-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-11-28 21:06:54.427 DEBUG 13496 --- [http-nio-8000-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-11-28 21:06:54.433 DEBUG 13496 --- [http-nio-8000-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2023-11-28 21:06:54.437 DEBUG 13496 --- [http-nio-8000-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-11-28 21:06:54.463 DEBUG 13496 --- [http-nio-8000-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2023-11-28 21:06:54.466 DEBUG 13496 --- [http-nio-8000-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-11-28 21:07:00.802 DEBUG 13496 --- [http-nio-8000-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2023-11-28 21:07:00.803 DEBUG 13496 --- [http-nio-8000-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8]
+2023-11-28 21:07:00.804 DEBUG 13496 --- [http-nio-8000-exec-4] o.s.w.servlet.view.InternalResourceView  : View name 'forward:', model {}
+2023-11-28 21:07:00.804 DEBUG 13496 --- [http-nio-8000-exec-4] o.s.w.servlet.view.InternalResourceView  : Forwarding to [index.html]
+2023-11-28 21:07:00.804 DEBUG 13496 --- [http-nio-8000-exec-4] o.s.web.servlet.DispatcherServlet        : "FORWARD" dispatch for GET "/index.html", parameters={}
+2023-11-28 21:07:00.805 DEBUG 13496 --- [http-nio-8000-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-28 21:07:00.808 DEBUG 13496 --- [http-nio-8000-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "FORWARD" dispatch, status 200
+2023-11-28 21:07:00.809 DEBUG 13496 --- [http-nio-8000-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-11-28 21:07:05.819 DEBUG 13496 --- [http-nio-8000-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2023-11-28 21:07:05.821 DEBUG 13496 --- [http-nio-8000-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8]
+2023-11-28 21:07:05.821 DEBUG 13496 --- [http-nio-8000-exec-6] o.s.w.servlet.view.InternalResourceView  : View name 'forward:', model {}
+2023-11-28 21:07:05.822 DEBUG 13496 --- [http-nio-8000-exec-6] o.s.w.servlet.view.InternalResourceView  : Forwarding to [index.html]
+2023-11-28 21:07:05.822 DEBUG 13496 --- [http-nio-8000-exec-6] o.s.web.servlet.DispatcherServlet        : "FORWARD" dispatch for GET "/index.html", parameters={}
+2023-11-28 21:07:05.823 DEBUG 13496 --- [http-nio-8000-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-28 21:07:05.826 DEBUG 13496 --- [http-nio-8000-exec-6] o.s.web.servlet.DispatcherServlet        : Exiting from "FORWARD" dispatch, status 200
+2023-11-28 21:07:05.826 DEBUG 13496 --- [http-nio-8000-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-11-28 21:07:05.888 DEBUG 13496 --- [http-nio-8000-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2023-11-28 21:07:05.889 DEBUG 13496 --- [http-nio-8000-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-28 21:07:05.892 DEBUG 13496 --- [http-nio-8000-exec-5] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-11-28 21:07:05.892 DEBUG 13496 --- [http-nio-8000-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-11-28 21:07:05.893 DEBUG 13496 --- [http-nio-8000-exec-5] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2023-11-28 21:07:05.894 DEBUG 13496 --- [http-nio-8000-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-11-28 21:07:05.903 DEBUG 13496 --- [http-nio-8000-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-28 21:07:05.904 DEBUG 13496 --- [http-nio-8000-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Nov 28 21:07:05 CST 2023, status=404, error=Not Found, path=/favicon.ico}]
+2023-11-28 21:07:05.923 DEBUG 13496 --- [http-nio-8000-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-11-28 21:07:28.009 DEBUG 13496 --- [http-nio-8000-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2023-11-28 21:07:28.011 DEBUG 13496 --- [http-nio-8000-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8]
+2023-11-28 21:07:28.011 DEBUG 13496 --- [http-nio-8000-exec-8] o.s.w.servlet.view.InternalResourceView  : View name 'forward:', model {}
+2023-11-28 21:07:28.011 DEBUG 13496 --- [http-nio-8000-exec-8] o.s.w.servlet.view.InternalResourceView  : Forwarding to [index.html]
+2023-11-28 21:07:28.012 DEBUG 13496 --- [http-nio-8000-exec-8] o.s.web.servlet.DispatcherServlet        : "FORWARD" dispatch for GET "/index.html", parameters={}
+2023-11-28 21:07:28.012 DEBUG 13496 --- [http-nio-8000-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-28 21:07:28.017 DEBUG 13496 --- [http-nio-8000-exec-8] o.s.web.servlet.DispatcherServlet        : Exiting from "FORWARD" dispatch, status 200
+2023-11-28 21:07:28.018 DEBUG 13496 --- [http-nio-8000-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-11-28 21:07:29.385 DEBUG 13496 --- [http-nio-8000-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2023-11-28 21:07:29.386 DEBUG 13496 --- [http-nio-8000-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8]
+2023-11-28 21:07:29.386 DEBUG 13496 --- [http-nio-8000-exec-7] o.s.w.servlet.view.InternalResourceView  : View name 'forward:', model {}
+2023-11-28 21:07:29.386 DEBUG 13496 --- [http-nio-8000-exec-7] o.s.w.servlet.view.InternalResourceView  : Forwarding to [index.html]
+2023-11-28 21:07:29.386 DEBUG 13496 --- [http-nio-8000-exec-7] o.s.web.servlet.DispatcherServlet        : "FORWARD" dispatch for GET "/index.html", parameters={}
+2023-11-28 21:07:29.387 DEBUG 13496 --- [http-nio-8000-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-28 21:07:29.389 DEBUG 13496 --- [http-nio-8000-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "FORWARD" dispatch, status 200
+2023-11-28 21:07:29.389 DEBUG 13496 --- [http-nio-8000-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-11-28 21:17:09.005  INFO 25128 --- [main] c.a.n.client.env.SearchableProperties    : properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+2023-11-28 21:17:09.082  INFO 25128 --- [main] com.yc.ResorderApp                       : Starting ResorderApp using Java 1.8.0_372 on DESKTOP-2GHSLBQ with PID 25128 (D:\workspaceYC134\res134_cloud\res_order\target\classes started by xinye in D:\workspaceYC134\res134_cloud)
+2023-11-28 21:17:09.083  INFO 25128 --- [main] com.yc.ResorderApp                       : No active profile set, falling back to 1 default profile: "default"
+2023-11-28 21:17:09.580  INFO 25128 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ac5d29e9-1b50-319d-a49b-3b022afb8bbb
+2023-11-28 21:17:09.749  INFO 25128 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2023-11-28 21:17:09.755  INFO 25128 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-28 21:17:09.755  INFO 25128 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-11-28 21:17:09.834  INFO 25128 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-28 21:17:09.834  INFO 25128 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 699 ms
+2023-11-28 21:17:09.993  INFO 25128 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'resfood' URL not provided. Will try picking an instance via load-balancing.
+2023-11-28 21:17:10.044  WARN 25128 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: d51c9078-de42-4e51-b222-8db71c745db1
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-11-28 21:17:10.112  INFO 25128 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3dd4a6fa, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@19f7222e, org.springframework.security.web.context.SecurityContextPersistenceFilter@1bc776b7, org.springframework.security.web.header.HeaderWriterFilter@1f3165e7, org.springframework.security.web.csrf.CsrfFilter@4487c0c2, org.springframework.security.web.authentication.logout.LogoutFilter@5d425813, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@750ff7d3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@a0f53fc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2d272b0d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f725306, org.springframework.security.web.session.SessionManagementFilter@3b1ed14b, org.springframework.security.web.access.ExceptionTranslationFilter@3f685162, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6cfd9a54]
+2023-11-28 21:17:10.219 DEBUG 25128 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-28 21:17:10.230  INFO 25128 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-11-28 21:17:10.254 DEBUG 25128 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2023-11-28 21:17:10.265 DEBUG 25128 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-11-28 21:17:10.271 DEBUG 25128 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-11-28 21:17:11.503  INFO 25128 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-11-28 21:17:12.920  INFO 25128 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-11-28 21:17:12.938  WARN 25128 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-11-28 21:17:12.986  INFO 25128 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2023-11-28 21:17:13.015  INFO 25128 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-11-28 21:17:13.015  INFO 25128 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-11-28 21:17:14.010  INFO 25128 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP resorder 192.168.16.7:8000 register finished
+2023-11-28 21:17:15.217  INFO 25128 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-11-28 21:17:15.223  INFO 25128 --- [main] com.yc.ResorderApp                       : Started ResorderApp in 7.711 seconds (JVM running for 8.29)
+2023-11-28 21:17:18.615  INFO 25128 --- [http-nio-8000-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-28 21:17:18.616  INFO 25128 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-28 21:17:18.616 DEBUG 25128 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-11-28 21:17:18.616 DEBUG 25128 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-11-28 21:17:18.616 DEBUG 25128 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-11-28 21:17:18.616 DEBUG 25128 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5ffc159a
+2023-11-28 21:17:18.616 DEBUG 25128 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@81380c7
+2023-11-28 21:17:18.616 DEBUG 25128 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-11-28 21:17:18.616  INFO 25128 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-11-28 21:17:25.823 DEBUG 25128 --- [http-nio-8000-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2023-11-28 21:17:25.830 DEBUG 25128 --- [http-nio-8000-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8]
+2023-11-28 21:17:25.831 DEBUG 25128 --- [http-nio-8000-exec-5] o.s.w.servlet.view.InternalResourceView  : View name 'forward:', model {}
+2023-11-28 21:17:25.832 DEBUG 25128 --- [http-nio-8000-exec-5] o.s.w.servlet.view.InternalResourceView  : Forwarding to [index.html]
+2023-11-28 21:17:25.832 DEBUG 25128 --- [http-nio-8000-exec-5] o.s.web.servlet.DispatcherServlet        : "FORWARD" dispatch for GET "/index.html", parameters={}
+2023-11-28 21:17:25.834 DEBUG 25128 --- [http-nio-8000-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-28 21:17:25.842 DEBUG 25128 --- [http-nio-8000-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "FORWARD" dispatch, status 200
+2023-11-28 21:17:25.846 DEBUG 25128 --- [http-nio-8000-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-11-28 21:17:25.923 DEBUG 25128 --- [http-nio-8000-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2023-11-28 21:17:25.924 DEBUG 25128 --- [http-nio-8000-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-28 21:17:25.926 DEBUG 25128 --- [http-nio-8000-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-11-28 21:17:25.926 DEBUG 25128 --- [http-nio-8000-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-11-28 21:17:25.935 DEBUG 25128 --- [http-nio-8000-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2023-11-28 21:17:25.939 DEBUG 25128 --- [http-nio-8000-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2023-11-28 21:17:25.966 DEBUG 25128 --- [http-nio-8000-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2023-11-28 21:17:25.969 DEBUG 25128 --- [http-nio-8000-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-11-28 21:18:40.326 DEBUG 25128 --- [http-nio-8000-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/resorder/addCart?fid=2&num=1", parameters={masked}
+2023-11-28 21:18:40.327 DEBUG 25128 --- [http-nio-8000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.yc.web.controller.ResorderController#addCart(Integer, Integer, HttpSession)
+2023-11-28 21:18:40.342 DEBUG 25128 --- [http-nio-8000-exec-6] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] ---> GET http://resfood/resfood/findById/2 HTTP/1.1
+2023-11-28 21:18:40.343 DEBUG 25128 --- [http-nio-8000-exec-6] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] Accept-Encoding: gzip
+2023-11-28 21:18:40.343 DEBUG 25128 --- [http-nio-8000-exec-6] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] Accept-Encoding: deflate
+2023-11-28 21:18:40.343 DEBUG 25128 --- [http-nio-8000-exec-6] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] ---> END HTTP (0-byte body)
+2023-11-28 21:18:40.498  INFO 25128 --- [http-nio-8000-exec-6] com.yc.config.OnlyOneLoadBalancer        : 自定义负载
+2023-11-28 21:18:40.748 DEBUG 25128 --- [http-nio-8000-exec-6] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] <--- HTTP/1.1 200 (402ms)
+2023-11-28 21:18:40.748 DEBUG 25128 --- [http-nio-8000-exec-6] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] connection: keep-alive
+2023-11-28 21:18:40.748 DEBUG 25128 --- [http-nio-8000-exec-6] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] content-type: application/json
+2023-11-28 21:18:40.748 DEBUG 25128 --- [http-nio-8000-exec-6] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] date: Tue, 28 Nov 2023 13:18:40 GMT
+2023-11-28 21:18:40.748 DEBUG 25128 --- [http-nio-8000-exec-6] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] keep-alive: timeout=60
+2023-11-28 21:18:40.748 DEBUG 25128 --- [http-nio-8000-exec-6] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] transfer-encoding: chunked
+2023-11-28 21:18:40.749 DEBUG 25128 --- [http-nio-8000-exec-6] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] 
+2023-11-28 21:18:40.750 DEBUG 25128 --- [http-nio-8000-exec-6] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] {"code":1,"data":{"fid":2,"fname":"蛋炒饭","normprice":22.0,"realprice":20.0,"detail":"营养丰富","fphoto":"500022.jpg","detail_count":null}}
+2023-11-28 21:18:40.750 DEBUG 25128 --- [http-nio-8000-exec-6] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] <--- END HTTP (147-byte body)
+2023-11-28 21:18:40.753 DEBUG 25128 --- [http-nio-8000-exec-6] o.s.w.c.HttpMessageConverterExtractor    : Reading to [java.util.Map<java.lang.String, java.lang.Object>]
+2023-11-28 21:18:40.755  INFO 25128 --- [http-nio-8000-exec-6] c.yc.web.controller.ResorderController   : 发送请求后得到商品信息：{code=1, data={fid=2, fname=蛋炒饭, normprice=22.0, realprice=20.0, detail=营养丰富, fphoto=500022.jpg, detail_count=null}}
+2023-11-28 21:18:40.758 DEBUG 25128 --- [http-nio-8000-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-28 21:18:40.759 DEBUG 25128 --- [http-nio-8000-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [{}]
+2023-11-28 21:18:40.762 DEBUG 25128 --- [http-nio-8000-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-11-28 21:19:33.679 DEBUG 25128 --- [http-nio-8000-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/resorder/addCart?fid=2&num=1", parameters={masked}
+2023-11-28 21:19:33.680 DEBUG 25128 --- [http-nio-8000-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.yc.web.controller.ResorderController#addCart(Integer, Integer, HttpSession)
+2023-11-28 21:19:33.680 DEBUG 25128 --- [http-nio-8000-exec-9] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] ---> GET http://resfood/resfood/findById/2 HTTP/1.1
+2023-11-28 21:19:33.681 DEBUG 25128 --- [http-nio-8000-exec-9] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] Accept-Encoding: gzip
+2023-11-28 21:19:33.681 DEBUG 25128 --- [http-nio-8000-exec-9] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] Accept-Encoding: deflate
+2023-11-28 21:19:33.681 DEBUG 25128 --- [http-nio-8000-exec-9] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] ---> END HTTP (0-byte body)
+2023-11-28 21:19:33.681  INFO 25128 --- [http-nio-8000-exec-9] com.yc.config.OnlyOneLoadBalancer        : 自定义负载
+2023-11-28 21:19:33.691 DEBUG 25128 --- [http-nio-8000-exec-9] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] <--- HTTP/1.1 200 (10ms)
+2023-11-28 21:19:33.691 DEBUG 25128 --- [http-nio-8000-exec-9] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] connection: keep-alive
+2023-11-28 21:19:33.691 DEBUG 25128 --- [http-nio-8000-exec-9] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] content-type: application/json
+2023-11-28 21:19:33.691 DEBUG 25128 --- [http-nio-8000-exec-9] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] date: Tue, 28 Nov 2023 13:19:33 GMT
+2023-11-28 21:19:33.691 DEBUG 25128 --- [http-nio-8000-exec-9] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] keep-alive: timeout=60
+2023-11-28 21:19:33.691 DEBUG 25128 --- [http-nio-8000-exec-9] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] transfer-encoding: chunked
+2023-11-28 21:19:33.691 DEBUG 25128 --- [http-nio-8000-exec-9] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] 
+2023-11-28 21:19:33.692 DEBUG 25128 --- [http-nio-8000-exec-9] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] {"code":1,"data":{"fid":2,"fname":"蛋炒饭","normprice":22.0,"realprice":20.0,"detail":"营养丰富","fphoto":"500022.jpg","detail_count":null}}
+2023-11-28 21:19:33.692 DEBUG 25128 --- [http-nio-8000-exec-9] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] <--- END HTTP (147-byte body)
+2023-11-28 21:19:33.692 DEBUG 25128 --- [http-nio-8000-exec-9] o.s.w.c.HttpMessageConverterExtractor    : Reading to [java.util.Map<java.lang.String, java.lang.Object>]
+2023-11-28 21:19:33.692  INFO 25128 --- [http-nio-8000-exec-9] c.yc.web.controller.ResorderController   : 发送请求后得到商品信息：{code=1, data={fid=2, fname=蛋炒饭, normprice=22.0, realprice=20.0, detail=营养丰富, fphoto=500022.jpg, detail_count=null}}
+2023-11-28 21:19:33.693 DEBUG 25128 --- [http-nio-8000-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-28 21:19:33.693 DEBUG 25128 --- [http-nio-8000-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [{}]
+2023-11-28 21:19:33.694 DEBUG 25128 --- [http-nio-8000-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-11-28 21:20:07.211  INFO 29760 --- [restartedMain] c.a.n.client.env.SearchableProperties    : properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+2023-11-28 21:20:07.315  INFO 29760 --- [restartedMain] com.yc.ResfoodApp                        : Starting ResfoodApp using Java 1.8.0_372 on DESKTOP-2GHSLBQ with PID 29760 (D:\workspaceYC134\res134_cloud\res_food\target\classes started by xinye in D:\workspaceYC134\res134_cloud)
+2023-11-28 21:20:07.316  INFO 29760 --- [restartedMain] com.yc.ResfoodApp                        : No active profile set, falling back to 1 default profile: "default"
+2023-11-28 21:20:07.347  INFO 29760 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-28 21:20:07.347  INFO 29760 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-28 21:20:07.977  INFO 29760 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-11-28 21:20:07.978  INFO 29760 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-28 21:20:07.995  INFO 29760 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-11-28 21:20:08.151  INFO 29760 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=687256cf-2ea5-388d-9056-54b0e363ecfd
+2023-11-28 21:20:08.419  INFO 29760 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2023-11-28 21:20:08.425  INFO 29760 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-28 21:20:08.425  INFO 29760 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-11-28 21:20:08.524  INFO 29760 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-28 21:20:08.524  INFO 29760 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1177 ms
+2023-11-28 21:20:08.613  INFO 29760 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-28 21:20:09.070  INFO 29760 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-28 21:20:11.738  INFO 29760 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-11-28 21:20:12.189  INFO 29760 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-28 21:20:13.398  INFO 29760 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-11-28 21:20:13.421  INFO 29760 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-11-28 21:20:13.491  INFO 29760 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2023-11-28 21:20:13.533  INFO 29760 --- [restartedMain] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-11-28 21:20:13.534  INFO 29760 --- [restartedMain] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-11-28 21:20:15.147  INFO 29760 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP resfood 192.168.16.7:9001 register finished
+2023-11-28 21:20:16.398  INFO 29760 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-11-28 21:20:16.463  INFO 29760 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-11-28 21:20:16.469  INFO 29760 --- [restartedMain] com.yc.ResfoodApp                        : Started ResfoodApp in 10.775 seconds (JVM running for 11.554)
+2023-11-28 21:20:16.850  INFO 5856 --- [main] c.a.n.client.env.SearchableProperties    : properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+2023-11-28 21:20:16.853  INFO 29760 --- [RMI TCP Connection(3)-192.168.16.7] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-28 21:20:16.854  INFO 29760 --- [RMI TCP Connection(3)-192.168.16.7] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-28 21:20:16.855  INFO 29760 --- [RMI TCP Connection(3)-192.168.16.7] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-28 21:20:16.951  INFO 5856 --- [main] com.yc.ResorderApp                       : Starting ResorderApp using Java 1.8.0_372 on DESKTOP-2GHSLBQ with PID 5856 (D:\workspaceYC134\res134_cloud\res_order\target\classes started by xinye in D:\workspaceYC134\res134_cloud)
+2023-11-28 21:20:16.951  INFO 5856 --- [main] com.yc.ResorderApp                       : No active profile set, falling back to 1 default profile: "default"
+2023-11-28 21:20:17.486  INFO 5856 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ac5d29e9-1b50-319d-a49b-3b022afb8bbb
+2023-11-28 21:20:17.684  INFO 5856 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2023-11-28 21:20:17.691  INFO 5856 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-28 21:20:17.692  INFO 5856 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-11-28 21:20:17.775  INFO 5856 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-28 21:20:17.775  INFO 5856 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 767 ms
+2023-11-28 21:20:17.913  INFO 5856 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'resfood' URL not provided. Will try picking an instance via load-balancing.
+2023-11-28 21:20:17.967  WARN 5856 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 74d6a57b-eed0-4baf-a27b-b9d8d6741557
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-11-28 21:20:18.031  INFO 5856 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3dd4a6fa, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@19f7222e, org.springframework.security.web.context.SecurityContextPersistenceFilter@1bc776b7, org.springframework.security.web.header.HeaderWriterFilter@1f3165e7, org.springframework.security.web.csrf.CsrfFilter@4487c0c2, org.springframework.security.web.authentication.logout.LogoutFilter@5d425813, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@750ff7d3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@a0f53fc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2d272b0d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f725306, org.springframework.security.web.session.SessionManagementFilter@3b1ed14b, org.springframework.security.web.access.ExceptionTranslationFilter@3f685162, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6cfd9a54]
+2023-11-28 21:20:18.141 DEBUG 5856 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-28 21:20:18.157  INFO 5856 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-11-28 21:20:18.181 DEBUG 5856 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2023-11-28 21:20:18.192 DEBUG 5856 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-11-28 21:20:18.198 DEBUG 5856 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-11-28 21:20:19.417  INFO 5856 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-11-28 21:20:20.851  INFO 5856 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-11-28 21:20:20.871  WARN 5856 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-11-28 21:20:20.922  INFO 5856 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2023-11-28 21:20:20.951  INFO 5856 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-11-28 21:20:20.951  INFO 5856 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-11-28 21:20:21.929  INFO 5856 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP resorder 192.168.16.7:8000 register finished
+2023-11-28 21:20:23.121  INFO 5856 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-11-28 21:20:23.129  INFO 5856 --- [main] com.yc.ResorderApp                       : Started ResorderApp in 7.802 seconds (JVM running for 8.415)
+2023-11-28 21:20:39.032  INFO 5856 --- [http-nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-28 21:20:39.033  INFO 5856 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-28 21:20:39.033 DEBUG 5856 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-11-28 21:20:39.033 DEBUG 5856 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-11-28 21:20:39.033 DEBUG 5856 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-11-28 21:20:39.034 DEBUG 5856 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@480b2467
+2023-11-28 21:20:39.035 DEBUG 5856 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@16cd8af1
+2023-11-28 21:20:39.035 DEBUG 5856 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-11-28 21:20:39.035  INFO 5856 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-11-28 21:20:55.918 DEBUG 5856 --- [http-nio-8000-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/resorder/addCart?fid=2&num=1", parameters={masked}
+2023-11-28 21:20:55.921 DEBUG 5856 --- [http-nio-8000-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.yc.web.controller.ResorderController#addCart(Integer, Integer, HttpSession)
+2023-11-28 21:20:55.932 DEBUG 5856 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] ---> GET http://resfood/resfood/findById/2 HTTP/1.1
+2023-11-28 21:20:55.932 DEBUG 5856 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] Accept-Encoding: gzip
+2023-11-28 21:20:55.932 DEBUG 5856 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] Accept-Encoding: deflate
+2023-11-28 21:20:55.932 DEBUG 5856 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] ---> END HTTP (0-byte body)
+2023-11-28 21:20:56.031  INFO 5856 --- [http-nio-8000-exec-4] com.yc.config.OnlyOneLoadBalancer        : 自定义负载
+2023-11-28 21:20:56.266 DEBUG 5856 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] <--- HTTP/1.1 200 (332ms)
+2023-11-28 21:20:56.266 DEBUG 5856 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] connection: keep-alive
+2023-11-28 21:20:56.266 DEBUG 5856 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] content-type: application/json
+2023-11-28 21:20:56.266 DEBUG 5856 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] date: Tue, 28 Nov 2023 13:20:56 GMT
+2023-11-28 21:20:56.267 DEBUG 5856 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] keep-alive: timeout=60
+2023-11-28 21:20:56.267 DEBUG 5856 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] transfer-encoding: chunked
+2023-11-28 21:20:56.267 DEBUG 5856 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] 
+2023-11-28 21:20:56.268 DEBUG 5856 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] {"code":1,"data":{"fid":2,"fname":"蛋炒饭","normprice":22.0,"realprice":20.0,"detail":"营养丰富","fphoto":"500022.jpg","detail_count":null}}
+2023-11-28 21:20:56.268 DEBUG 5856 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] <--- END HTTP (147-byte body)
+2023-11-28 21:20:56.272 DEBUG 5856 --- [http-nio-8000-exec-4] o.s.w.c.HttpMessageConverterExtractor    : Reading to [java.util.Map<java.lang.String, java.lang.Object>]
+2023-11-28 21:20:56.274  INFO 5856 --- [http-nio-8000-exec-4] c.yc.web.controller.ResorderController   : 发送请求后得到商品信息：{code=1, data={fid=2, fname=蛋炒饭, normprice=22.0, realprice=20.0, detail=营养丰富, fphoto=500022.jpg, detail_count=null}}
+2023-11-28 21:20:56.279 DEBUG 5856 --- [http-nio-8000-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-28 21:20:56.279 DEBUG 5856 --- [http-nio-8000-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [{}]
+2023-11-28 21:20:56.284 DEBUG 5856 --- [http-nio-8000-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-11-28 21:21:38.482 DEBUG 5856 --- [http-nio-8000-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/resorder/addCart?fid=2&num=1", parameters={masked}
+2023-11-28 21:21:38.483 DEBUG 5856 --- [http-nio-8000-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.yc.web.controller.ResorderController#addCart(Integer, Integer, HttpSession)
+2023-11-28 21:21:38.484 DEBUG 5856 --- [http-nio-8000-exec-3] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] ---> GET http://resfood/resfood/findById/2 HTTP/1.1
+2023-11-28 21:21:38.484 DEBUG 5856 --- [http-nio-8000-exec-3] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] Accept-Encoding: gzip
+2023-11-28 21:21:38.484 DEBUG 5856 --- [http-nio-8000-exec-3] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] Accept-Encoding: deflate
+2023-11-28 21:21:38.484 DEBUG 5856 --- [http-nio-8000-exec-3] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] ---> END HTTP (0-byte body)
+2023-11-28 21:21:38.485  INFO 5856 --- [http-nio-8000-exec-3] com.yc.config.OnlyOneLoadBalancer        : 自定义负载
+2023-11-28 21:21:38.499 DEBUG 5856 --- [http-nio-8000-exec-3] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] <--- HTTP/1.1 200 (14ms)
+2023-11-28 21:21:38.499 DEBUG 5856 --- [http-nio-8000-exec-3] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] connection: keep-alive
+2023-11-28 21:21:38.499 DEBUG 5856 --- [http-nio-8000-exec-3] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] content-type: application/json
+2023-11-28 21:21:38.499 DEBUG 5856 --- [http-nio-8000-exec-3] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] date: Tue, 28 Nov 2023 13:21:38 GMT
+2023-11-28 21:21:38.499 DEBUG 5856 --- [http-nio-8000-exec-3] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] keep-alive: timeout=60
+2023-11-28 21:21:38.499 DEBUG 5856 --- [http-nio-8000-exec-3] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] transfer-encoding: chunked
+2023-11-28 21:21:38.499 DEBUG 5856 --- [http-nio-8000-exec-3] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] 
+2023-11-28 21:21:38.499 DEBUG 5856 --- [http-nio-8000-exec-3] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] {"code":1,"data":{"fid":2,"fname":"蛋炒饭","normprice":22.0,"realprice":20.0,"detail":"营养丰富","fphoto":"500022.jpg","detail_count":null}}
+2023-11-28 21:21:38.499 DEBUG 5856 --- [http-nio-8000-exec-3] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] <--- END HTTP (147-byte body)
+2023-11-28 21:21:38.500 DEBUG 5856 --- [http-nio-8000-exec-3] o.s.w.c.HttpMessageConverterExtractor    : Reading to [java.util.Map<java.lang.String, java.lang.Object>]
+2023-11-28 21:21:38.500  INFO 5856 --- [http-nio-8000-exec-3] c.yc.web.controller.ResorderController   : 发送请求后得到商品信息：{code=1, data={fid=2, fname=蛋炒饭, normprice=22.0, realprice=20.0, detail=营养丰富, fphoto=500022.jpg, detail_count=null}}
+2023-11-28 21:21:38.501 DEBUG 5856 --- [http-nio-8000-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-28 21:21:38.501 DEBUG 5856 --- [http-nio-8000-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [{}]
+2023-11-28 21:21:38.501 DEBUG 5856 --- [http-nio-8000-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-11-28 21:22:52.840 DEBUG 5856 --- [http-nio-8000-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/resorder/addCart?fid=2&num=1", parameters={masked}
+2023-11-28 21:22:52.841 DEBUG 5856 --- [http-nio-8000-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.yc.web.controller.ResorderController#addCart(Integer, Integer, HttpSession)
+2023-11-28 21:22:52.842 DEBUG 5856 --- [http-nio-8000-exec-5] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] ---> GET http://resfood/resfood/findById/2 HTTP/1.1
+2023-11-28 21:22:52.842 DEBUG 5856 --- [http-nio-8000-exec-5] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] Accept-Encoding: gzip
+2023-11-28 21:22:52.842 DEBUG 5856 --- [http-nio-8000-exec-5] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] Accept-Encoding: deflate
+2023-11-28 21:22:52.842 DEBUG 5856 --- [http-nio-8000-exec-5] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] ---> END HTTP (0-byte body)
+2023-11-28 21:22:52.843  INFO 5856 --- [http-nio-8000-exec-5] com.yc.config.OnlyOneLoadBalancer        : 自定义负载
+2023-11-28 21:22:52.864 DEBUG 5856 --- [http-nio-8000-exec-5] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] <--- HTTP/1.1 200 (21ms)
+2023-11-28 21:22:52.864 DEBUG 5856 --- [http-nio-8000-exec-5] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] connection: keep-alive
+2023-11-28 21:22:52.865 DEBUG 5856 --- [http-nio-8000-exec-5] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] content-type: application/json
+2023-11-28 21:22:52.865 DEBUG 5856 --- [http-nio-8000-exec-5] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] date: Tue, 28 Nov 2023 13:22:52 GMT
+2023-11-28 21:22:52.865 DEBUG 5856 --- [http-nio-8000-exec-5] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] keep-alive: timeout=60
+2023-11-28 21:22:52.865 DEBUG 5856 --- [http-nio-8000-exec-5] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] transfer-encoding: chunked
+2023-11-28 21:22:52.865 DEBUG 5856 --- [http-nio-8000-exec-5] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] 
+2023-11-28 21:22:52.865 DEBUG 5856 --- [http-nio-8000-exec-5] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] {"code":1,"data":{"fid":2,"fname":"蛋炒饭","normprice":22.0,"realprice":20.0,"detail":"营养丰富","fphoto":"500022.jpg","detail_count":null}}
+2023-11-28 21:22:52.865 DEBUG 5856 --- [http-nio-8000-exec-5] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] <--- END HTTP (147-byte body)
+2023-11-28 21:22:52.866 DEBUG 5856 --- [http-nio-8000-exec-5] o.s.w.c.HttpMessageConverterExtractor    : Reading to [java.util.Map<java.lang.String, java.lang.Object>]
+2023-11-28 21:22:52.866  INFO 5856 --- [http-nio-8000-exec-5] c.yc.web.controller.ResorderController   : 发送请求后得到商品信息：{code=1, data={fid=2, fname=蛋炒饭, normprice=22.0, realprice=20.0, detail=营养丰富, fphoto=500022.jpg, detail_count=null}}
+2023-11-28 21:22:52.866 DEBUG 5856 --- [http-nio-8000-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-28 21:22:52.867 DEBUG 5856 --- [http-nio-8000-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [{}]
+2023-11-28 21:22:52.867 DEBUG 5856 --- [http-nio-8000-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-11-28 21:26:49.926  INFO 27124 --- [main] c.a.n.client.env.SearchableProperties    : properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+2023-11-28 21:26:50.010  INFO 27124 --- [main] com.yc.ResorderApp                       : Starting ResorderApp using Java 1.8.0_372 on DESKTOP-2GHSLBQ with PID 27124 (D:\workspaceYC134\res134_cloud\res_order\target\classes started by xinye in D:\workspaceYC134\res134_cloud)
+2023-11-28 21:26:50.011  INFO 27124 --- [main] com.yc.ResorderApp                       : No active profile set, falling back to 1 default profile: "default"
+2023-11-28 21:26:50.536  INFO 27124 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ac5d29e9-1b50-319d-a49b-3b022afb8bbb
+2023-11-28 21:26:50.730  INFO 27124 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2023-11-28 21:26:50.739  INFO 27124 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-28 21:26:50.739  INFO 27124 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-11-28 21:26:50.832  INFO 27124 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-28 21:26:50.833  INFO 27124 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 766 ms
+2023-11-28 21:26:50.991  INFO 27124 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'resfood' URL not provided. Will try picking an instance via load-balancing.
+2023-11-28 21:26:51.049  WARN 27124 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ef1fe364-e003-42f3-989a-c8197db38a9a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-11-28 21:26:51.111  INFO 27124 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@71945bc0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@22a0d4ea, org.springframework.security.web.context.SecurityContextPersistenceFilter@119c745c, org.springframework.security.web.header.HeaderWriterFilter@3f685162, org.springframework.security.web.csrf.CsrfFilter@2b037cfc, org.springframework.security.web.authentication.logout.LogoutFilter@3e47a03, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@42b6d0cc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b1ed14b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1debc91c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@49ede9c7, org.springframework.security.web.session.SessionManagementFilter@574cd322, org.springframework.security.web.access.ExceptionTranslationFilter@71b6d77f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2123064f]
+2023-11-28 21:26:51.220 DEBUG 27124 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-28 21:26:51.236  INFO 27124 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-11-28 21:26:51.261 DEBUG 27124 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2023-11-28 21:26:51.275 DEBUG 27124 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-11-28 21:26:51.283 DEBUG 27124 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-11-28 21:26:52.534  INFO 27124 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-11-28 21:26:54.000  INFO 27124 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-11-28 21:26:54.022  WARN 27124 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-11-28 21:26:54.076  INFO 27124 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2023-11-28 21:26:54.107  INFO 27124 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-11-28 21:26:54.107  INFO 27124 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-11-28 21:26:55.119  INFO 27124 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP resorder 192.168.16.7:8000 register finished
+2023-11-28 21:26:56.324  INFO 27124 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-11-28 21:26:56.330  INFO 27124 --- [main] com.yc.ResorderApp                       : Started ResorderApp in 7.932 seconds (JVM running for 8.544)
+2023-11-28 21:27:04.464  INFO 27124 --- [http-nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-28 21:27:04.465  INFO 27124 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-28 21:27:04.465 DEBUG 27124 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-11-28 21:27:04.465 DEBUG 27124 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-11-28 21:27:04.465 DEBUG 27124 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-11-28 21:27:04.465 DEBUG 27124 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@47edc962
+2023-11-28 21:27:04.466 DEBUG 27124 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@32bed058
+2023-11-28 21:27:04.466 DEBUG 27124 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-11-28 21:27:04.466  INFO 27124 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-28 21:27:09.106 DEBUG 27124 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/resorder/addCart?fid=2&num=1", parameters={masked}
+2023-11-28 21:27:09.109 DEBUG 27124 --- [http-nio-8000-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.yc.web.controller.ResorderController#addCart(Integer, Integer, HttpSession)
+2023-11-28 21:27:09.123 DEBUG 27124 --- [http-nio-8000-exec-2] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] ---> GET http://resfood/resfood/findById/2 HTTP/1.1
+2023-11-28 21:27:09.124 DEBUG 27124 --- [http-nio-8000-exec-2] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] Accept-Encoding: gzip
+2023-11-28 21:27:09.124 DEBUG 27124 --- [http-nio-8000-exec-2] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] Accept-Encoding: deflate
+2023-11-28 21:27:09.124 DEBUG 27124 --- [http-nio-8000-exec-2] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] ---> END HTTP (0-byte body)
+2023-11-28 21:27:09.227  INFO 27124 --- [http-nio-8000-exec-2] com.yc.config.OnlyOneLoadBalancer        : 自定义负载
+2023-11-28 21:27:09.251 DEBUG 27124 --- [http-nio-8000-exec-2] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] <--- HTTP/1.1 200 (125ms)
+2023-11-28 21:27:09.251 DEBUG 27124 --- [http-nio-8000-exec-2] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] connection: keep-alive
+2023-11-28 21:27:09.252 DEBUG 27124 --- [http-nio-8000-exec-2] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] content-type: application/json
+2023-11-28 21:27:09.252 DEBUG 27124 --- [http-nio-8000-exec-2] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] date: Tue, 28 Nov 2023 13:27:09 GMT
+2023-11-28 21:27:09.252 DEBUG 27124 --- [http-nio-8000-exec-2] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] keep-alive: timeout=60
+2023-11-28 21:27:09.252 DEBUG 27124 --- [http-nio-8000-exec-2] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] transfer-encoding: chunked
+2023-11-28 21:27:09.252 DEBUG 27124 --- [http-nio-8000-exec-2] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] 
+2023-11-28 21:27:09.253 DEBUG 27124 --- [http-nio-8000-exec-2] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] {"code":1,"data":{"fid":2,"fname":"蛋炒饭","normprice":22.0,"realprice":20.0,"detail":"营养丰富","fphoto":"500022.jpg","detail_count":null}}
+2023-11-28 21:27:09.253 DEBUG 27124 --- [http-nio-8000-exec-2] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] <--- END HTTP (147-byte body)
+2023-11-28 21:27:09.257 DEBUG 27124 --- [http-nio-8000-exec-2] o.s.w.c.HttpMessageConverterExtractor    : Reading to [java.util.Map<java.lang.String, java.lang.Object>]
+2023-11-28 21:27:09.260  INFO 27124 --- [http-nio-8000-exec-2] c.yc.web.controller.ResorderController   : 发送请求后得到商品信息：{code=1, data={fid=2, fname=蛋炒饭, normprice=22.0, realprice=20.0, detail=营养丰富, fphoto=500022.jpg, detail_count=null}}
+2023-11-28 21:27:09.265 DEBUG 27124 --- [http-nio-8000-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-28 21:27:09.265 DEBUG 27124 --- [http-nio-8000-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [{}]
+2023-11-28 21:27:09.271 DEBUG 27124 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-11-28 21:27:15.493 DEBUG 27124 --- [http-nio-8000-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/resorder/addCart?fid=2&num=1", parameters={masked}
+2023-11-28 21:27:15.494 DEBUG 27124 --- [http-nio-8000-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.yc.web.controller.ResorderController#addCart(Integer, Integer, HttpSession)
+2023-11-28 21:27:15.495 DEBUG 27124 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] ---> GET http://resfood/resfood/findById/2 HTTP/1.1
+2023-11-28 21:27:15.495 DEBUG 27124 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] Accept-Encoding: gzip
+2023-11-28 21:27:15.495 DEBUG 27124 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] Accept-Encoding: deflate
+2023-11-28 21:27:15.495 DEBUG 27124 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] ---> END HTTP (0-byte body)
+2023-11-28 21:27:15.506  INFO 27124 --- [http-nio-8000-exec-4] com.yc.config.OnlyOneLoadBalancer        : 自定义负载
+2023-11-28 21:27:15.530 DEBUG 27124 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] <--- HTTP/1.1 200 (34ms)
+2023-11-28 21:27:15.530 DEBUG 27124 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] connection: keep-alive
+2023-11-28 21:27:15.530 DEBUG 27124 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] content-type: application/json
+2023-11-28 21:27:15.530 DEBUG 27124 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] date: Tue, 28 Nov 2023 13:27:15 GMT
+2023-11-28 21:27:15.530 DEBUG 27124 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] keep-alive: timeout=60
+2023-11-28 21:27:15.530 DEBUG 27124 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] transfer-encoding: chunked
+2023-11-28 21:27:15.530 DEBUG 27124 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] 
+2023-11-28 21:27:15.531 DEBUG 27124 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] {"code":1,"data":{"fid":2,"fname":"蛋炒饭","normprice":22.0,"realprice":20.0,"detail":"营养丰富","fphoto":"500022.jpg","detail_count":null}}
+2023-11-28 21:27:15.531 DEBUG 27124 --- [http-nio-8000-exec-4] com.yc.api.ResfoodApi                    : [ResfoodApi#findById] <--- END HTTP (147-byte body)
+2023-11-28 21:27:15.531 DEBUG 27124 --- [http-nio-8000-exec-4] o.s.w.c.HttpMessageConverterExtractor    : Reading to [java.util.Map<java.lang.String, java.lang.Object>]
+2023-11-28 21:27:15.532  INFO 27124 --- [http-nio-8000-exec-4] c.yc.web.controller.ResorderController   : 发送请求后得到商品信息：{code=1, data={fid=2, fname=蛋炒饭, normprice=22.0, realprice=20.0, detail=营养丰富, fphoto=500022.jpg, detail_count=null}}
+2023-11-28 21:27:15.532 DEBUG 27124 --- [http-nio-8000-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-28 21:27:15.532 DEBUG 27124 --- [http-nio-8000-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [{}]
+2023-11-28 21:27:15.533 DEBUG 27124 --- [http-nio-8000-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK

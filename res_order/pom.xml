@@ -46,7 +46,11 @@
             <artifactId>res_api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-
+<!--        &lt;!&ndash;security&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-security</artifactId>-->
+<!--        </dependency>-->
     </dependencies>
 
 </project>
