@@ -26,8 +26,9 @@ public class MyBalanceConfiguration {
 //        //随机RandomLoadBalancer；轮询RoundRobinLoadBalancer
 //        return new RoundRobinLoadBalancer(loadBalancerClientFactory.getLazyProvider(name, ServiceInstanceListSupplier.class), name);
 //    }
-    @Bean
+
     //@ConditionalOnMissingBean    spring容器中没有ReactorLoadBalancer这个bean,才能创建
+    @Bean
     public ReactorLoadBalancer<ServiceInstance> reactorServiceInstanceLoadBalancer(Environment environment, LoadBalancerClientFactory loadBalancerClientFactory) {
         String name = environment.getProperty(LoadBalancerClientFactory.PROPERTY_NAME);
         return new OnlyOneLoadBalancer(loadBalancerClientFactory.getLazyProvider(name, ServiceInstanceListSupplier.class));

@@ -7,9 +7,14 @@ import com.yc.web.model.MyPageBean;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -17,6 +22,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/resfood")//localhost:9000/resfood/+xxx
 @Slf4j
+@RefreshScope
 //@Api(tags = "菜品管理")
 public class ResfoodController {
 
@@ -24,6 +30,20 @@ public class ResfoodController {
     private ResfoodBizImpl resfoodBiz;
     @Autowired
     private RedisTemplate redisTemplate;
+
+    @Value("${res.pattern.dateFormat}")
+    private String dateFormatStirng;//利用di机制从属性文件读取配置信息
+
+    @RequestMapping(value = "/timeService", method = {RequestMethod.GET})
+    public Map<String, Object> timeService(Integer fid) {
+        Date d =new Date();
+        DateFormat df=new SimpleDateFormat(dateFormatStirng);
+        String dString=df.format(d);
+        Map<String, Object> map = new HashMap<>();
+        map.put("code",1);
+        map.put("obj",dString);
+        return map;
+    }
 
     @RequestMapping(value = "/detailCountAdd", method = {RequestMethod.GET, RequestMethod.POST})
     // @ApiOperation(value = "查看详情次数增加")

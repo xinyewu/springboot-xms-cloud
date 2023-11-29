@@ -19,6 +19,8 @@
     <bytecodeTargetLevel>
       <module name="test_builder" target="8" />
       <module name="test_builderDesignPattern fluentAPI" target="8" />
+      <module name="test_feign" target="8" />
+      <module name="test_jdkproxy" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
