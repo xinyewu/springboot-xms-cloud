@@ -139,3 +139,103 @@
 2023-11-29 20:48:32.304  INFO 10304 --- [nacos.client.cachedata.internal.notifier] o.s.boot.SpringApplication               : The following 1 profile is active: "prod"
 2023-11-29 20:48:32.312  INFO 10304 --- [nacos.client.cachedata.internal.notifier] o.s.boot.SpringApplication               : Started application in 0.367 seconds (JVM running for 809.939)
 2023-11-29 20:48:32.499  INFO 10304 --- [nacos.client.cachedata.internal.notifier] o.s.c.e.event.RefreshEventListener       : Refresh keys changed: [res.pattern.dateFormat]
+2023-11-29 21:08:15.499  INFO 9980 --- [restartedMain] com.yc.ResfoodApp                        : The following 1 profile is active: "prod"
+2023-11-29 21:08:16.151  INFO 9980 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-11-29 21:08:16.153  INFO 9980 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-29 21:08:16.171  INFO 9980 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-11-29 21:08:16.328  INFO 9980 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=be506967-c855-3144-b9af-508a6a762edd
+2023-11-29 21:08:16.727  INFO 9980 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9200 (http)
+2023-11-29 21:08:16.735  INFO 9980 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-29 21:08:16.735  INFO 9980 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-11-29 21:08:16.805  INFO 9980 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-29 21:08:16.805  INFO 9980 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1292 ms
+2023-11-29 21:08:16.938  INFO 9980 --- [restartedMain] com.yc.config.MyDruidDataSourceConfig    : 使用的编程式的数据源创建 DruidDataSource.
+2023-11-29 21:08:18.992  INFO 9980 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-29 21:08:19.210  INFO 9980 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-11-29 21:08:19.272  INFO 9980 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9200 (http) with context path ''
+2023-11-29 21:08:19.282  INFO 9980 --- [restartedMain] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-11-29 21:08:19.282  INFO 9980 --- [restartedMain] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-11-29 21:08:19.417  INFO 9980 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP resfood 192.168.186.105:9200 register finished
+2023-11-29 21:08:19.681  INFO 9980 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-11-29 21:08:19.687  INFO 9980 --- [restartedMain] com.yc.ResfoodApp                        : Started ResfoodApp in 6.594 seconds (JVM running for 7.341)
+2023-11-29 21:08:19.705  INFO 9980 --- [restartedMain] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=mysql8local.yml, group=DEFAULT_GROUP
+2023-11-29 21:08:19.712  INFO 9980 --- [restartedMain] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=redislocal.yml, group=DEFAULT_GROUP
+2023-11-29 21:08:19.713  INFO 9980 --- [restartedMain] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=res-foods.yml, group=DEFAULT_GROUP
+2023-11-29 21:08:19.714  INFO 9980 --- [restartedMain] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=res-foods, group=DEFAULT_GROUP
+2023-11-29 21:08:19.715  INFO 9980 --- [restartedMain] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=res-foods-prod.yml, group=DEFAULT_GROUP
+2023-11-29 21:08:20.047  INFO 9980 --- [RMI TCP Connection(3)-192.168.186.105] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-29 21:08:20.047  INFO 9980 --- [RMI TCP Connection(3)-192.168.186.105] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-29 21:08:20.048  INFO 9980 --- [RMI TCP Connection(3)-192.168.186.105] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-29 21:08:20.076  INFO 9980 --- [RMI TCP Connection(2)-192.168.186.105] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-29 21:09:21.027  INFO 9980 --- [nacos.client.cachedata.internal.notifier] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-29 21:09:21.088  WARN 9980 --- [nacos.client.cachedata.internal.notifier] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[res-foods] & group[DEFAULT_GROUP]
+2023-11-29 21:09:21.091  WARN 9980 --- [nacos.client.cachedata.internal.notifier] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[res-foods.yml] & group[DEFAULT_GROUP]
+2023-11-29 21:09:21.097  INFO 9980 --- [nacos.client.cachedata.internal.notifier] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-res-foods-prod.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-res-foods.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-res-foods,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-redislocal.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-mysql8local.yml,DEFAULT_GROUP'}]
+2023-11-29 21:09:21.111  INFO 9980 --- [nacos.client.cachedata.internal.notifier] o.s.boot.SpringApplication               : The following 1 profile is active: "prod"
+2023-11-29 21:09:21.118  INFO 9980 --- [nacos.client.cachedata.internal.notifier] o.s.boot.SpringApplication               : Started application in 0.377 seconds (JVM running for 68.772)
+2023-11-29 21:09:21.241  INFO 9980 --- [nacos.client.cachedata.internal.notifier] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-11-29 21:09:21.253  INFO 9980 --- [nacos.client.cachedata.internal.notifier] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-11-29 21:09:21.254  INFO 9980 --- [nacos.client.cachedata.internal.notifier] o.s.c.e.event.RefreshEventListener       : Refresh keys changed: [spring.dataSource.url]
+2023-11-29 21:10:30.051  INFO 9980 --- [http-nio-9200-exec-6] com.yc.config.MyDruidDataSourceConfig    : 使用的编程式的数据源创建 DruidDataSource.
+2023-11-29 21:10:30.058  INFO 9980 --- [http-nio-9200-exec-6] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} inited
+2023-11-29 21:15:28.252  INFO 29376 --- [restartedMain] com.yc.ResfoodApp                        : The following 1 profile is active: "prod"
+2023-11-29 21:15:29.008  INFO 29376 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-11-29 21:15:29.010  INFO 29376 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-11-29 21:15:29.029  INFO 29376 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-11-29 21:15:29.183  INFO 29376 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=be506967-c855-3144-b9af-508a6a762edd
+2023-11-29 21:15:29.593  INFO 29376 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9200 (http)
+2023-11-29 21:15:29.600  INFO 29376 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-29 21:15:29.600  INFO 29376 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-11-29 21:15:29.674  INFO 29376 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-29 21:15:29.674  INFO 29376 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1407 ms
+2023-11-29 21:15:29.808  INFO 29376 --- [restartedMain] com.yc.config.MyDruidDataSourceConfig    : 使用的编程式的数据源创建 DruidDataSource.
+2023-11-29 21:15:31.899  INFO 29376 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-29 21:15:32.128  INFO 29376 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-11-29 21:15:32.186  INFO 29376 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9200 (http) with context path ''
+2023-11-29 21:15:32.197  INFO 29376 --- [restartedMain] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-11-29 21:15:32.197  INFO 29376 --- [restartedMain] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-11-29 21:15:32.335  INFO 29376 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP resfood 192.168.186.105:9200 register finished
+2023-11-29 21:15:32.613  INFO 29376 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-11-29 21:15:32.618  INFO 29376 --- [restartedMain] com.yc.ResfoodApp                        : Started ResfoodApp in 6.625 seconds (JVM running for 7.385)
+2023-11-29 21:15:32.636  INFO 29376 --- [restartedMain] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=mysql8local.yml, group=DEFAULT_GROUP
+2023-11-29 21:15:32.638  INFO 29376 --- [restartedMain] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=redislocal.yml, group=DEFAULT_GROUP
+2023-11-29 21:15:32.639  INFO 29376 --- [restartedMain] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=res-foods.yml, group=DEFAULT_GROUP
+2023-11-29 21:15:32.639  INFO 29376 --- [restartedMain] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=res-foods, group=DEFAULT_GROUP
+2023-11-29 21:15:32.648  INFO 29376 --- [restartedMain] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=res-foods-prod.yml, group=DEFAULT_GROUP
+2023-11-29 21:15:32.797  INFO 29376 --- [RMI TCP Connection(4)-192.168.186.105] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-29 21:15:32.797  INFO 29376 --- [RMI TCP Connection(4)-192.168.186.105] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-29 21:15:32.798  INFO 29376 --- [RMI TCP Connection(4)-192.168.186.105] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-29 21:15:32.827  INFO 29376 --- [RMI TCP Connection(3)-192.168.186.105] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-29 21:15:45.406  INFO 29376 --- [nacos.client.cachedata.internal.notifier] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-29 21:15:45.462  WARN 29376 --- [nacos.client.cachedata.internal.notifier] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[res-foods] & group[DEFAULT_GROUP]
+2023-11-29 21:15:45.464  WARN 29376 --- [nacos.client.cachedata.internal.notifier] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[res-foods.yml] & group[DEFAULT_GROUP]
+2023-11-29 21:15:45.470  INFO 29376 --- [nacos.client.cachedata.internal.notifier] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-res-foods-prod.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-res-foods.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-res-foods,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-redislocal.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-mysql8local.yml,DEFAULT_GROUP'}]
+2023-11-29 21:15:45.484  INFO 29376 --- [nacos.client.cachedata.internal.notifier] o.s.boot.SpringApplication               : The following 1 profile is active: "prod"
+2023-11-29 21:15:45.491  INFO 29376 --- [nacos.client.cachedata.internal.notifier] o.s.boot.SpringApplication               : Started application in 0.346 seconds (JVM running for 20.258)
+2023-11-29 21:15:45.631  INFO 29376 --- [nacos.client.cachedata.internal.notifier] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-11-29 21:15:45.635  INFO 29376 --- [nacos.client.cachedata.internal.notifier] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-11-29 21:15:45.637  INFO 29376 --- [nacos.client.cachedata.internal.notifier] o.s.c.e.event.RefreshEventListener       : Refresh keys changed: [spring.dataSource.url]
+2023-11-29 21:15:55.009  INFO 29376 --- [http-nio-9200-exec-1] com.yc.config.MyDruidDataSourceConfig    : 使用的编程式的数据源创建 DruidDataSource.
+2023-11-29 21:15:55.015  INFO 29376 --- [http-nio-9200-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} inited
+2023-11-29 21:16:09.782  INFO 29376 --- [nacos.client.cachedata.internal.notifier] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-29 21:16:09.841  WARN 29376 --- [nacos.client.cachedata.internal.notifier] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[res-foods] & group[DEFAULT_GROUP]
+2023-11-29 21:16:09.845  WARN 29376 --- [nacos.client.cachedata.internal.notifier] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[res-foods.yml] & group[DEFAULT_GROUP]
+2023-11-29 21:16:09.850  INFO 29376 --- [nacos.client.cachedata.internal.notifier] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-res-foods-prod.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-res-foods.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-res-foods,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-redislocal.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-mysql8local.yml,DEFAULT_GROUP'}]
+2023-11-29 21:16:09.862  INFO 29376 --- [nacos.client.cachedata.internal.notifier] o.s.boot.SpringApplication               : The following 1 profile is active: "prod"
+2023-11-29 21:16:09.868  INFO 29376 --- [nacos.client.cachedata.internal.notifier] o.s.boot.SpringApplication               : Started application in 0.334 seconds (JVM running for 44.634)
+2023-11-29 21:16:09.969  INFO 29376 --- [nacos.client.cachedata.internal.notifier] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closing ...
+2023-11-29 21:16:09.970  INFO 29376 --- [nacos.client.cachedata.internal.notifier] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
+2023-11-29 21:16:09.970  INFO 29376 --- [nacos.client.cachedata.internal.notifier] o.s.c.e.event.RefreshEventListener       : Refresh keys changed: [spring.dataSource.url]
+2023-11-29 21:16:38.962  INFO 29376 --- [http-nio-9200-exec-3] com.yc.config.MyDruidDataSourceConfig    : 使用的编程式的数据源创建 DruidDataSource.
+2023-11-29 21:16:38.967  INFO 29376 --- [http-nio-9200-exec-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} inited
+2023-11-29 21:16:57.965  INFO 29376 --- [nacos.client.cachedata.internal.notifier] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-29 21:16:58.039  WARN 29376 --- [nacos.client.cachedata.internal.notifier] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[res-foods] & group[DEFAULT_GROUP]
+2023-11-29 21:16:58.042  WARN 29376 --- [nacos.client.cachedata.internal.notifier] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[res-foods.yml] & group[DEFAULT_GROUP]
+2023-11-29 21:16:58.047  INFO 29376 --- [nacos.client.cachedata.internal.notifier] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-res-foods-prod.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-res-foods.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-res-foods,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-redislocal.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-mysql8local.yml,DEFAULT_GROUP'}]
+2023-11-29 21:16:58.060  INFO 29376 --- [nacos.client.cachedata.internal.notifier] o.s.boot.SpringApplication               : The following 1 profile is active: "prod"
+2023-11-29 21:16:58.068  INFO 29376 --- [nacos.client.cachedata.internal.notifier] o.s.boot.SpringApplication               : Started application in 0.374 seconds (JVM running for 92.835)
+2023-11-29 21:16:58.181  INFO 29376 --- [nacos.client.cachedata.internal.notifier] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closing ...
+2023-11-29 21:16:58.182  INFO 29376 --- [nacos.client.cachedata.internal.notifier] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closed
+2023-11-29 21:16:58.183  INFO 29376 --- [nacos.client.cachedata.internal.notifier] o.s.c.e.event.RefreshEventListener       : Refresh keys changed: [spring.dataSource.url]
+2023-11-29 21:17:25.190  INFO 29376 --- [http-nio-9200-exec-4] com.yc.config.MyDruidDataSourceConfig    : 使用的编程式的数据源创建 DruidDataSource.
+2023-11-29 21:17:25.196  INFO 29376 --- [http-nio-9200-exec-4] com.alibaba.druid.pool.DruidDataSource   : {dataSource-4} inited
