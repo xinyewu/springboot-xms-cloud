@@ -1,6 +1,5 @@
 package com.yc.web.controller;
 
-import com.yc.bean.Resfood;
 import com.yc.biz.ResfoodBizImpl;
 import com.yc.config.RedisKeys;
 import com.yc.web.model.MyPageBean;
@@ -16,7 +15,6 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 @RestController
