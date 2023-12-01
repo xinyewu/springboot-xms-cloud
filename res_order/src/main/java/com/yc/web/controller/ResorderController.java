@@ -1,7 +1,9 @@
 package com.yc.web.controller;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.yc.api.ResfoodApi;
 import com.yc.bean.Resfood;
+import com.yc.web.model.CartItem;
 import feign.Client;
 import feign.Feign;
 import lombok.extern.slf4j.Slf4j;
@@ -23,7 +25,8 @@ public class ResorderController {
     private RestTemplate restTemplate;//spring的东西，不是cloud的东西
     @Autowired
     private ResfoodApi resfoodApi;
-//    public ResorderController(){
+
+//      public ResorderController(){
 //        this.resfoodApi = Feign.builder()
 //                .client(new OkHttpClient())
 //                .decoder(new GsonDecoder())
@@ -31,6 +34,26 @@ public class ResorderController {
 //                .target(GitHub2_javax.class, "https://api.github.com");
 //    }
 
+    @RequestMapping(value = "getCartInfo", method = {RequestMethod.GET, RequestMethod.POST})
+    public Map<String, Object> getCartInfo(HttpSession session) {
+        Map<String, Object> map = new HashMap<>();
+        if (session.getAttribute("cart") == null || ((Map<Integer, CartItem>) session.getAttribute("cart")).size() <= 0) {
+            map.put("code", 0);
+            return map;
+        }
+        Map<Integer, CartItem> cart = (Map<Integer, CartItem>) session.getAttribute("cart");
+        map.put("code", 1);
+        map.put("obj", cart.values());//返回的是map的值的set
+        return map;
+    }
+
+    @RequestMapping(value = "clearAll", method = {RequestMethod.GET, RequestMethod.POST})
+    public Map<String, Object> clearAll(HttpSession session) {
+        Map<String, Object> map = new HashMap<>();
+        session.removeAttribute("cart");
+        map.put("code", 1);
+        return map;
+    }
 
     //@RolesAllowed(value = "r1")
     @RequestMapping(value = "addCart", method = {RequestMethod.GET, RequestMethod.POST})
@@ -44,6 +67,42 @@ public class ResorderController {
         //方案三：利用openfeign发送请求
         Map<String, Object> result = this.resfoodApi.findById(fid);
         log.info("发送请求后得到商品信息：" + result);
+        if (result == null) {
+            map.put("code", -1);
+            map.put("msg", "查无此商品");
+        }
+
+        ObjectMapper objectMapper=new ObjectMapper();
+        Resfood food=objectMapper.convertValue(result.get("obj"),Resfood.class);
+
+        //从session取出Cart(map)
+        Map<Integer, CartItem> cart = new HashMap<Integer, CartItem>();
+        if (session.getAttribute("cart") != null) {
+            cart = (Map<Integer, CartItem>) session.getAttribute("cart");//引用对象
+        } else {
+            session.setAttribute("cart", cart);
+        }
+        CartItem ci;
+        //  判断这个商品在map中是否有
+        if (cart.containsKey(fid)) {
+            //有，加数量，
+            ci = cart.get(fid);
+            ci.setNum(ci.getNum() + num);
+            cart.put(fid, ci);
+        } else {
+            //没有，则创建一个CartItem,存到map中
+            ci = new CartItem();
+            ci.setNum(num);
+            ci.setFood(food);
+            cart.put(fid, ci);
+        }
+        //处理数量
+        if (ci.getNum() <= 0) {
+            cart.remove(fid);
+        }
+        session.setAttribute("cart", cart);//->spring httpSession redis->  监听器监听值的变化
+        map.put("code", 1);
+        map.put("obj", cart.values());
         return map;
     }
 }

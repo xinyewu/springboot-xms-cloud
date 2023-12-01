@@ -79,7 +79,7 @@ public class ResfoodController {
         return map;
     }
 
-    @RequestMapping(value = "findPage", method = {RequestMethod.GET, RequestMethod.POST})
+    @RequestMapping(value = "findByPage", method = {RequestMethod.GET, RequestMethod.POST})
     // @ApiOperation(value = "分页查询操作")
     //@ApiImplicitParams({
     //        @ApiImplicitParam(name = "pageno", value = "页号", required = true),
@@ -91,6 +91,8 @@ public class ResfoodController {
         Map<String, Object> map = new HashMap<>();
         MyPageBean page = null;
         try {
+                sort="desc";
+                sortby="fid";
             page = this.resfoodBiz.findByPage(pageno, pagesize, sortby, sort);
         } catch (Exception e) {
             map.put("code", 0);
