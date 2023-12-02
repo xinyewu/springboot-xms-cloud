@@ -13,9 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 @RestController
 @RequestMapping("/resfood")//localhost:9000/resfood/+xxx
@@ -32,18 +30,30 @@ public class ResfoodController {
     @Value("${res.pattern.dateFormat}")
     private String dateFormatStirng;//利用di机制从属性文件读取配置信息
 
-    @RequestMapping(value = "/timeService", method = {RequestMethod.GET})
+    public Set<Thread> set = new HashSet<>();
+
+    @GetMapping("/test")
+    public Object test() throws InterruptedException {
+        Thread thread = Thread.currentThread();
+        set.add(thread);
+        Thread.sleep(1000);
+        log.info("线程数为:" + set.size() + ",当前线程编号为:" + thread.getId());
+        return thread.toString();
+    }//然后访问服务，查看输出信息
+
+    @RequestMapping(value = "timeService", method = {RequestMethod.GET})
+
     public Map<String, Object> timeService(Integer fid) {
-        Date d =new Date();
-        DateFormat df=new SimpleDateFormat(dateFormatStirng);
-        String dString=df.format(d);
+        Date d = new Date();
+        DateFormat df = new SimpleDateFormat(dateFormatStirng);
+        String dString = df.format(d);
         Map<String, Object> map = new HashMap<>();
-        map.put("code",1);
-        map.put("obj",dString);
+        map.put("code", 1);
+        map.put("obj", dString);
         return map;
     }
 
-    @RequestMapping(value = "/detailCountAdd", method = {RequestMethod.GET, RequestMethod.POST})
+    @RequestMapping(value = "detailCountAdd", method = {RequestMethod.GET, RequestMethod.POST})
     // @ApiOperation(value = "查看详情次数增加")
     // @ApiImplicitParams({@ApiImplicitParam(name = "fid", value = "菜品号", required = true)})
     public Map<String, Object> detailCountAdd(Integer fid) {
@@ -69,10 +79,10 @@ public class ResfoodController {
     }
 
     //@RequestMapping(value = "findById/{fid}",method = {RequestMethod.GET,RequestMethod.POST})//localhost:9000/resfood/findById/1
-    @GetMapping("findById/{fid}")//{fid}路径参数
+    @RequestMapping(value = "findById", method = {RequestMethod.GET, RequestMethod.POST})//{fid}路径参数
     // @ApiOperation(value = "根据菜品编号查询操作")
     // @ApiImplicitParams({@ApiImplicitParam(name = "fid", value = "菜品号", required = true)})
-    public Map<String, Object> findById(@PathVariable Integer fid) {
+    public Map<String, Object> findById(@RequestParam Integer fid) {
         Map<String, Object> map = new HashMap<>();
         map.put("data", resfoodBiz.findById(fid));
         map.put("code", 1);
@@ -91,8 +101,8 @@ public class ResfoodController {
         Map<String, Object> map = new HashMap<>();
         MyPageBean page = null;
         try {
-                sort="desc";
-                sortby="fid";
+            sort = "desc";
+            sortby = "fid";
             page = this.resfoodBiz.findByPage(pageno, pagesize, sortby, sort);
         } catch (Exception e) {
             map.put("code", 0);

@@ -14,6 +14,7 @@
         <module>res_order</module>
         <module>res_api</module>
         <module>test_builderDesignPattern_fluentAPI</module>
+        <module>test_sentinel3</module>
     </modules>
 
     <parent>

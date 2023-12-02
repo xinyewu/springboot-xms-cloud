@@ -21,7 +21,7 @@ public class MyBalanceConfiguration {
 //        return new RandomLoadBalancer(loadBalancerClientFactory.getLazyProvider(name, ServiceInstanceListSupplier.class), name);
 //    }
 
-        //配置成轮询
+    //配置成轮询
     @Bean
     public ReactorServiceInstanceLoadBalancer roundRobinReactorServiceInstanceLoadBalancer(Environment environment, LoadBalancerClientFactory loadBalancerClientFactory) {
         String name = environment.getProperty(LoadBalancerClientFactory.PROPERTY_NAME);

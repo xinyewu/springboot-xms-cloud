@@ -14,5 +14,5 @@ spring:
           - {dataId: 'mysql8local.yml',refresh: true}
           - {dataId: 'redislocal.yml',refresh: true}
   profiles:
-    active: prod9300
+    active: prod
 

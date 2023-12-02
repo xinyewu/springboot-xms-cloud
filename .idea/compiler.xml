@@ -12,6 +12,7 @@
         <module name="res_api" />
         <module name="res_entity" />
         <module name="test_builderDesignPattern_fluentAPI" />
+        <module name="test_sentinel3" />
         <module name="res_food" />
         <module name="test_feign" />
       </profile>
@@ -35,6 +36,7 @@
       <module name="test_builderDesignPattern_fluentAPI" options="-parameters" />
       <module name="test_feign" options="-parameters" />
       <module name="test_jdkproxy" options="-parameters" />
+      <module name="test_sentinel3" options="-parameters" />
     </option>
   </component>
 </project>

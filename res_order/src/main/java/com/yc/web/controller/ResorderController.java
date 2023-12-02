@@ -72,8 +72,8 @@ public class ResorderController {
             map.put("msg", "查无此商品");
         }
 
-        ObjectMapper objectMapper=new ObjectMapper();
-        Resfood food=objectMapper.convertValue(result.get("obj"),Resfood.class);
+        ObjectMapper objectMapper = new ObjectMapper();
+        Resfood food = objectMapper.convertValue(result.get("obj"), Resfood.class);
 
         //从session取出Cart(map)
         Map<Integer, CartItem> cart = new HashMap<Integer, CartItem>();
