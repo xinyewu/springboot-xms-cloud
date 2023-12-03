@@ -11,7 +11,7 @@ public interface ResfoodApi {
     @RequestMapping(value = "resfood/detailCountAdd",method = {RequestMethod.GET})
     public Map<String, Object> detailCountAdd(Integer fid);
 
-    @RequestMapping(value = "resfood/findById",method = {RequestMethod.GET})//{fid}路径参数
+    @RequestMapping(value = "resfood/findById",method = {RequestMethod.GET})//{fid}路径参数 ,headers = {"Origin=resorder"}
     public Map<String, Object> findById(@RequestParam Integer fid);
 
     @GetMapping(value = "resfood/findAll")
