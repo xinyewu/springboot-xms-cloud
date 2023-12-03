@@ -7,6 +7,12 @@ spring:
     nacos:
       discovery:
         server-addr: localhost:8848
+    sentinel: #sentinel配置
+      transport:
+        port: 8720                  #跟控制台交流的端口,随意指定一个未使用的端口即可
+        dashboard: localhost:9999   #dashboard地址与端口
+      eager: true                   #表示 Sentinel 会在应用启动时立即进行初始化。这意味着 Sentinel 会立即加载规则、统计信息等相关的数据，并开始监控和限流
+      web-context-unify: false      #计数功能关闭context整合
   session:
     store-type: redis   #将session保存到Redis中
   redis:

@@ -1,5 +1,6 @@
 package com.yc.web.controller;
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.yc.biz.ResfoodBizImpl;
 import com.yc.config.RedisKeys;
 import com.yc.web.model.MyPageBean;
@@ -90,6 +91,7 @@ public class ResfoodController {
     }
 
     @RequestMapping(value = "findByPage", method = {RequestMethod.GET, RequestMethod.POST})
+    @SentinelResource("hotkey-page")   //流控资源名
     // @ApiOperation(value = "分页查询操作")
     //@ApiImplicitParams({
     //        @ApiImplicitParam(name = "pageno", value = "页号", required = true),

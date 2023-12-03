@@ -3,6 +3,7 @@ package com.yc.web.controller;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.yc.api.ResfoodApi;
 import com.yc.bean.Resfood;
+import com.yc.biz.GoodsBiz;
 import com.yc.web.model.CartItem;
 import feign.Client;
 import feign.Feign;
@@ -15,6 +16,7 @@ import javax.annotation.security.RolesAllowed;
 import javax.servlet.http.HttpSession;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Random;
 
 
 @RestController
@@ -25,14 +27,46 @@ public class ResorderController {
     private RestTemplate restTemplate;//spring的东西，不是cloud的东西
     @Autowired
     private ResfoodApi resfoodApi;
+    @Autowired
+    private GoodsBiz goodsBiz;
 
-//      public ResorderController(){
+    //      public ResorderController(){
 //        this.resfoodApi = Feign.builder()
 //                .client(new OkHttpClient())
 //                .decoder(new GsonDecoder())
 //                .contract(new JAXRSContract())
 //                .target(GitHub2_javax.class, "https://api.github.com");
 //    }
+    //链路测试
+    @RequestMapping(value = "serviceA", method = {RequestMethod.GET, RequestMethod.POST})
+    public Map<String, Object> serviceA() {
+        Map<String, Object> map = new HashMap<>();
+        goodsBiz.goodsInfo();
+        map.put("code", 1);
+        return map;
+    }
+
+    @RequestMapping(value = "serviceB", method = {RequestMethod.GET, RequestMethod.POST})
+    public Map<String, Object> serviceB() {
+        Map<String, Object> map = new HashMap<>();
+        goodsBiz.goodsInfo();
+        map.put("code", 1);
+        return map;
+    }
+
+    @GetMapping("payAction")
+    public Map<String, Object> payAction(Integer flag) throws InterruptedException {
+            //Thread.sleep(1000);  慢调用
+
+        Random r = new Random();//异常数
+        int a = r.nextInt(5);
+        if (a == 0 || a == 1) {
+            throw new RuntimeException("异常了");
+        }
+        Map<String, Object> map = new HashMap<>();
+        map.put("code", 1);
+        return map;
+    }
 
     @RequestMapping(value = "getCartInfo", method = {RequestMethod.GET, RequestMethod.POST})
     public Map<String, Object> getCartInfo(HttpSession session) {
