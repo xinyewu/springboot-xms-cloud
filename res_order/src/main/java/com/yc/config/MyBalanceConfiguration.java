@@ -13,7 +13,7 @@ import org.springframework.core.env.Environment;
 
 @Configuration
 public class MyBalanceConfiguration {
-    //    //配置成随机访问
+//    //配置成随机访问
 //    @Bean
 //    public ReactorServiceInstanceLoadBalancer randomReactorServiceInstanceLoadBalancer(Environment environment, LoadBalancerClientFactory loadBalancerClientFactory) {
 //        String name = environment.getProperty(LoadBalancerClientFactory.PROPERTY_NAME);
@@ -29,7 +29,7 @@ public class MyBalanceConfiguration {
         return new RoundRobinLoadBalancer(loadBalancerClientFactory.getLazyProvider(name, ServiceInstanceListSupplier.class), name);
     }
 
-//    //@ConditionalOnMissingBean    spring容器中没有ReactorLoadBalancer这个bean,才能创建
+//    @ConditionalOnMissingBean    spring容器中没有ReactorLoadBalancer这个bean,才能创建
 //    @Bean
 //    public ReactorLoadBalancer<ServiceInstance> reactorServiceInstanceLoadBalancer(Environment environment, LoadBalancerClientFactory loadBalancerClientFactory) {
 //        String name = environment.getProperty(LoadBalancerClientFactory.PROPERTY_NAME);

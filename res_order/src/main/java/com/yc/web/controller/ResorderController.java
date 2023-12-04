@@ -56,8 +56,7 @@ public class ResorderController {
 
     @GetMapping("payAction")
     public Map<String, Object> payAction(Integer flag) throws InterruptedException {
-            //Thread.sleep(1000);  慢调用
-
+        //Thread.sleep(1000);  慢调用
         Random r = new Random();//异常数
         int a = r.nextInt(5);
         if (a == 0 || a == 1) {
