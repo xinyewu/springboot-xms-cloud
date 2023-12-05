@@ -10,7 +10,6 @@ public class CartItem implements Serializable {
     private Double smallCount;//小计
 
     public CartItem() {
-
     }
 
     public Double getSmallCount() {

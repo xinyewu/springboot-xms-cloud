@@ -76,8 +76,7 @@ public class ResfoodBizImpl implements ResfoodBiz {
                 }//再修改图片的地址
                 list.get(i).setFphoto(nginxAddress+list.get(i).getFphoto());
             }
-            //还要查询下订数
-
+            //还要查询 下订数
             myPageBean.setCode(1);
             myPageBean.setPageno(page1.getCurrent());//当前页数
             myPageBean.setPagesize(page1.getSize());//每页多少
