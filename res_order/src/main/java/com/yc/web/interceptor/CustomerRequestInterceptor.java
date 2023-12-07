@@ -13,7 +13,7 @@ public class CustomerRequestInterceptor implements RequestInterceptor {
     @Override
     public void apply(RequestTemplate requestTemplate) {
         requestTemplate.header("Origin", "resorder");
-        requestTemplate.header("Rere", "resorder1");
+        requestTemplate.header("Rere", "resorder1");//成功
         System.out.println("+++++++++++++++++++++++");
     }
 }
