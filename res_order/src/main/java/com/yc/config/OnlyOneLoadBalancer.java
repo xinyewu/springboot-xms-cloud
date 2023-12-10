@@ -23,7 +23,6 @@ import java.util.List;
  */
 @Slf4j
 public class OnlyOneLoadBalancer implements ReactorServiceInstanceLoadBalancer {
-
     //服务列表
     private ObjectProvider<ServiceInstanceListSupplier> serviceInstanceListSupplierProvider;
 

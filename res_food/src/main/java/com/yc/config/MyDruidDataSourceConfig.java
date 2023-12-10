@@ -14,7 +14,6 @@ import javax.sql.DataSource;
 @Slf4j
 @RefreshScope //druid数据源的创建必须由用户自己创建而不能是自动配置的， why》因为自己配置的才可以加@RefreshScope
 public class MyDruidDataSourceConfig {
-
     //将原来的springboot的自动IOC DruidDatasource方案改为 手工编程
     @Value("${spring.datasource.url}")
     private String url;
