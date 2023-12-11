@@ -14,6 +14,6 @@ import org.springframework.session.data.redis.config.annotation.web.http.EnableR
 @EnableDiscoveryClient//启用服务注册发现客户端
 public class ResfoodApp {
     public static void main(String[] args) {
-        SpringApplication.run(ResfoodApp.class,args);
+        SpringApplication.run(ResfoodApp.class, args);
     }
 }

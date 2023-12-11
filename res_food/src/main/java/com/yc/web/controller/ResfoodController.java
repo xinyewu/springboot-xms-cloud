@@ -1,6 +1,8 @@
 package com.yc.web.controller;
 
 import com.alibaba.csp.sentinel.annotation.SentinelResource;
+import com.alibaba.csp.sentinel.slots.block.BlockException;
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import com.yc.biz.ResfoodBizImpl;
 import com.yc.config.RedisKeys;
 import com.yc.web.model.MyPageBean;
@@ -79,8 +81,18 @@ public class ResfoodController {
         return map;
     }
 
+    private Map<String, Object> handleBlockForFindByID(Integer fid, BlockException exception) {
+        exception.printStackTrace();//控制台中输出异常堆栈信息
+        Map<String, Object> map = new HashMap<>();
+        map.put("code", 0);
+        String errinfo = "调用根据Id查询错误:fid:" + fid + ",exception:" + exception.getRule() + "," + exception.getMessage();
+        map.put("msg:", errinfo);
+        return map;
+    }
+
     //@RequestMapping(value = "findById/{fid}",method = {RequestMethod.GET,RequestMethod.POST})//localhost:9000/resfood/findById/1
     @RequestMapping(value = "findById", method = {RequestMethod.GET, RequestMethod.POST})//{fid}路径参数
+    //@SentinelResource(value = "hotkey-Id", blockHandler = "handleBlockForFindByID")  //流控资源名
     // @ApiOperation(value = "根据菜品编号查询操作")
     // @ApiImplicitParams({@ApiImplicitParam(name = "fid", value = "菜品号", required = true)})
     public Map<String, Object> findById(@RequestParam Integer fid) {
@@ -90,8 +102,27 @@ public class ResfoodController {
         return map;
     }
 
+    private Map<String, Object> handleBlock(int pageno, int pagesize, String sortby, String sort, BlockException exception) {
+        exception.printStackTrace();//控制台中输出异常堆栈信息
+        Map<String, Object> map = new HashMap<>();
+        map.put("code", 0);
+        String errinfo = "调用分页查询错误:pageno:" + pageno + ",pagesize:" + pagesize +
+                ",sortby:" + sortby + ",sort:" + sort + ",exception:" + exception.getRule() + "," + exception.getMessage();
+        map.put("msg:", errinfo);
+        return map;
+    }
+
+    private Map<String, Object> exceptionFallback(int pageno, int pagesize, String sortby, String sort, Throwable ex) {
+        Map<String, Object> map = new HashMap<>();
+        map.put("code", 0);
+        map.put("msg", "pageno:" + pageno + ",pagesize:" + pagesize +
+                ",sortby:" + sortby + ",sort:" + sort + "出异常了,异常信息为：" + ex.getMessage());
+        return map;
+    }
+
     @RequestMapping(value = "findByPage", method = {RequestMethod.GET, RequestMethod.POST})
-    @SentinelResource("hotkey-page")   //流控资源名
+    @SentinelResource(value = "hotkey-page")
+    //@SentinelResource(value = "hotkey-page", blockHandler = "handleBlock", fallback = "exceptionFallback")  //流控资源名
     // @ApiOperation(value = "分页查询操作")
     //@ApiImplicitParams({
     //        @ApiImplicitParam(name = "pageno", value = "页号", required = true),
@@ -100,18 +131,22 @@ public class ResfoodController {
     //      @ApiImplicitParam(name = "sort", value = "排序方式", required = false)
     //  })
     public Map<String, Object> findByPage(@RequestParam("pageno") int pageno, @RequestParam("pagesize") int pagesize, @RequestParam(required = false) String sortby, @RequestParam(required = false) String sort) {
+//        Boolean f = true;
+//        if (f) {
+//            throw new RuntimeException("业务出异常了");
+//        }
         Map<String, Object> map = new HashMap<>();
         MyPageBean page = null;
-        try {
+//        try {
             sort = "desc";
             sortby = "fid";
             page = this.resfoodBiz.findByPage(pageno, pagesize, sortby, sort);
-        } catch (Exception e) {
-            map.put("code", 0);
-            map.put("msg", e.getCause());
-            e.printStackTrace();
-            return map;
-        }
+//        } catch (Exception e) {
+//            map.put("code", 0);
+//            map.put("msg", e.getCause());
+//            e.printStackTrace();
+//            return map;
+//        }
         map.put("code", 1);
         map.put("data", page);
         return map;
