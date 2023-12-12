@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 //自定义springboot针对业务异常的统一处理的切面
-@ControllerAdvice    //  Controller控制器,ioc,     Advice: aop中的增强
+@ControllerAdvice    //  Controller控制器,ioc,  Advice: aop中的增强
 @Order(-100000)    //切面顺序
 //   AOP技术
 public class CustomerExceptionHandlerAdvice {
