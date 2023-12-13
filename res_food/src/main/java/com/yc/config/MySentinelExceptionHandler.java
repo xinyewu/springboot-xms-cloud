@@ -56,7 +56,7 @@ public class MySentinelExceptionHandler implements BlockExceptionHandler {
         Map map = new HashMap();
         map.put("code", 0);
         map.put("msg", msg);
-//利用ObjectMapper将Map对象转换为json字符串
+        //利用ObjectMapper将Map对象转换为json字符串
         ObjectMapper om = new ObjectMapper();
         String json = om.writeValueAsString(map);
         PrintWriter writer = response.getWriter();
