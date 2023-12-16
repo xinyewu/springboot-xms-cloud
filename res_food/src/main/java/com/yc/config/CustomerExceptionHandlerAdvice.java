@@ -18,7 +18,7 @@ public class CustomerExceptionHandlerAdvice {
     public Map<String, Object> handleRuntimeException(RuntimeException exception) {
         Map<String, Object> map = new HashMap<>();
         map.put("code", 0);
-        map.put("msg", "异常信息：" + exception.getMessage()+"msg");
+        map.put("msg", "异常信息：" + exception.getMessage()+"，msg");
         return map;
     }
 }
