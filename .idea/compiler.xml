@@ -11,6 +11,7 @@
         <module name="test_jdkproxy" />
         <module name="res_api" />
         <module name="res_entity" />
+        <module name="res_gateway" />
         <module name="test_builderDesignPattern_fluentAPI" />
         <module name="test_sentinel3" />
         <module name="res_food" />
@@ -20,6 +21,8 @@
     <bytecodeTargetLevel>
       <module name="test_builder" target="8" />
       <module name="test_builderDesignPattern fluentAPI" target="8" />
+      <module name="test_feign" target="8" />
+      <module name="test_jdkproxy" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -28,6 +31,7 @@
       <module name="res_api" options="-parameters" />
       <module name="res_entity" options="-parameters" />
       <module name="res_food" options="-parameters" />
+      <module name="res_gateway" options="-parameters" />
       <module name="res_order" options="-parameters" />
       <module name="test_builder" options="-parameters" />
       <module name="test_builderDesignPattern fluentAPI" options="-parameters" />

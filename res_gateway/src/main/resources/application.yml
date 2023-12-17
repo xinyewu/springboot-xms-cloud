@@ -1,0 +1,13 @@
+server:
+  port: 20001
+
+spring:
+  application:
+    name: res_gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        username: nacos
+        password: nacos
+        namespace: res134
