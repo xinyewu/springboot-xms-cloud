@@ -10,4 +10,21 @@ spring:
         server-addr: localhost:8848
         username: nacos
         password: nacos
-        namespace: res134
+        #namespace: res134
+    gateway:  #基础的路由转发配置
+      routes:   #查看配置源码 ：routes是一个list 集合（有序）
+        - id: res_food
+          #uri: http://localhost:9200 #http://localhost:9200/resfood/findAll
+          uri: lb://resfood     #lb代表loadbalance     resfood服务名-》利用loadbalance保存的服务名获取一台
+          predicates:
+            - Path=/resfood/**  #http://localhost:20001/resfood/findAll
+
+        - id: baidu   #唯 一区别的名字
+          uri: http://www.baidu.com    #都转发到baidu，替换请求路劲http://localhost:20001/
+          predicates:   #断言,比较条件
+            - Path=/**  #所有请求（通用配置）   Loaded RoutePredicateFactory [Path]
+management:                                #通过 actuator暴露此服务的管理端口
+  endpoints:
+    web:                                   #通过web来暴露管理API,
+      exposure:
+        include: "*"                      #  * 代表将所有的端口暴露   一定要加"",因为 *是特殊字符，加""防止转义
