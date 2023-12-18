@@ -25,6 +25,13 @@ public class HeaderOriginParser implements RequestOriginParser {
             origin="blank";
         }
         log.info("收到origin:"+origin);
+
+        String token=request.getHeader("token");
+        if (token==null||"".equals(token)){
+            token="blank";
+        }
+        log.info("收到token:"+token);
+
         return origin;
     }
 }
