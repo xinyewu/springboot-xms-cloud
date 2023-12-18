@@ -19,7 +19,10 @@ spring:
           predicates: #PathRoutePredicateFactory
             - Path=/resfood/**  #http://localhost:20001/resfood/findAll
             - After=2023-12-18T17:15:47.789+08:00[Asia/Shanghai]
-
+            - ServiceTimeBetween=上午06:00,下午09:00  #测试addCart服务时间段控制
+          filters:
+            - AddRequestHeader=token,123
+            - MyTime=hello,world
         - id: baidu   #唯 一区别的名字
           uri: http://www.baidu.com    #都转发到baidu，替换请求路劲http://localhost:20001/
           predicates: #断言,比较条件
