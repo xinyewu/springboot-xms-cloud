@@ -41,6 +41,19 @@ return new OnlyOneLoadBalancer(loadBalancerClientFactory.getLazyProvider(name, S
 3.spring5中的响应式编程模式: Flux类+Mono类
   Flux类  Flux.defer(()->Flux.just(Collection.emptyList())
   Mono类
+4.spring MVC中的WebFlux的用法
+5.spring security
+===============================================
+设计目标：单一职责，接口隔离，依赖倒置，里氏替换原则，开闭原则，迪米特法则
+构建型：
+1.单例模式，DCL双重检查锁的单例
+1.简单工厂->工厂方法模式
+3.构建器模式
+结构性：
+1.代理模式jdk动态代理/cglib代理  mybatisplus或feign如何实现代理模式
+行为型：
+1.模板模式 JDBCTemplate(RowMapper),RedisTemplate
+2.责任链模式 j2ee的Filter,springMVC的Interceptor,Sentinel的Slot,gateWay
 
 
   

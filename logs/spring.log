@@ -1,443 +1,56 @@
-2023-12-17 15:25:07.874  INFO 32356 --- [main] com.yc.ResfoodApp                        : The following 1 profile is active: "prod"
-2023-12-17 15:25:08.789  INFO 32356 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-12-17 15:25:08.792  INFO 32356 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2023-12-17 15:25:08.813  INFO 32356 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
-2023-12-17 15:25:08.990  INFO 32356 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5de21ae7-c65c-32f8-aecd-6b52e9550a9d
-2023-12-17 15:25:09.423  INFO 32356 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9200 (http)
-2023-12-17 15:25:09.432  INFO 32356 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-12-17 15:25:09.432  INFO 32356 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
-2023-12-17 15:25:09.604  INFO 32356 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-12-17 15:25:09.604  INFO 32356 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1705 ms
-2023-12-17 15:25:09.776  INFO 32356 --- [main] com.yc.config.MyDruidDataSourceConfig    : 使用的编程式的数据源创建 DruidDataSource.
-2023-12-17 15:25:11.442  INFO 32356 --- [main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
-2023-12-17 15:25:12.539  INFO 32356 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2023-12-17 15:25:12.618  INFO 32356 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9200 (http) with context path ''
-2023-12-17 15:25:12.630  INFO 32356 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
-2023-12-17 15:25:12.630  INFO 32356 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
-2023-12-17 15:25:12.770  INFO 32356 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP resfood 192.168.186.105:9200 register finished
-2023-12-17 15:25:13.074  INFO 32356 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
-2023-12-17 15:25:13.081  INFO 32356 --- [main] com.yc.ResfoodApp                        : Started ResfoodApp in 7.733 seconds (JVM running for 8.563)
-2023-12-17 15:25:13.099  INFO 32356 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=mysql8local.yml, group=DEFAULT_GROUP
-2023-12-17 15:25:13.102  INFO 32356 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=redislocal.yml, group=DEFAULT_GROUP
-2023-12-17 15:25:13.103  INFO 32356 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=res-foods.yml, group=DEFAULT_GROUP
-2023-12-17 15:25:13.103  INFO 32356 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=res-foods, group=DEFAULT_GROUP
-2023-12-17 15:25:13.105  INFO 32356 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=res-foods-prod.yml, group=DEFAULT_GROUP
-2023-12-17 15:25:13.367  INFO 32356 --- [RMI TCP Connection(1)-192.168.186.105] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-12-17 15:25:13.367  INFO 32356 --- [RMI TCP Connection(1)-192.168.186.105] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-12-17 15:25:13.369  INFO 32356 --- [RMI TCP Connection(1)-192.168.186.105] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2023-12-17 15:25:13.427  INFO 32356 --- [RMI TCP Connection(2)-192.168.186.105] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2023-12-17 15:26:02.637  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:host,对应的值为：localhost:9200
-2023-12-17 15:26:02.637  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:connection,对应的值为：keep-alive
-2023-12-17 15:26:02.637  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua,对应的值为："Not_A Brand";v="8", "Chromium";v="120", "Microsoft Edge";v="120"
-2023-12-17 15:26:02.637  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-mobile,对应的值为：?0
-2023-12-17 15:26:02.637  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-platform,对应的值为："Windows"
-2023-12-17 15:26:02.637  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:upgrade-insecure-requests,对应的值为：1
-2023-12-17 15:26:02.638  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:user-agent,对应的值为：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0
-2023-12-17 15:26:02.638  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:accept,对应的值为：text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
-2023-12-17 15:26:02.638  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-site,对应的值为：none
-2023-12-17 15:26:02.638  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-mode,对应的值为：navigate
-2023-12-17 15:26:02.638  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-user,对应的值为：?1
-2023-12-17 15:26:02.638  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-dest,对应的值为：document
-2023-12-17 15:26:02.638  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:accept-encoding,对应的值为：gzip, deflate, br
-2023-12-17 15:26:02.638  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:accept-language,对应的值为：zh-CN,zh;q=0.9
-2023-12-17 15:26:02.638  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:cookie,对应的值为：Idea-6c97dcf4=943c95ac-9a0a-400d-a31b-48c5c33cb0b9; sentinel_dashboard_cookie=E3EEE13C9639FC7F2C20B65F6C22670F
-2023-12-17 15:26:02.638  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 收到origin:blank
-2023-12-17 15:27:31.051  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua,对应的值为："Not_A Brand";v="8", "Chromium";v="120", "Microsoft Edge";v="120"
-2023-12-17 15:27:31.051  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-mobile,对应的值为：?0
-2023-12-17 15:27:31.051  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-platform,对应的值为："Windows"
-2023-12-17 15:27:31.052  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:upgrade-insecure-requests,对应的值为：1
-2023-12-17 15:27:31.052  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:user-agent,对应的值为：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0
-2023-12-17 15:27:31.052  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:accept,对应的值为：text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
-2023-12-17 15:27:31.052  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-site,对应的值为：none
-2023-12-17 15:27:31.052  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-mode,对应的值为：navigate
-2023-12-17 15:27:31.052  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-user,对应的值为：?1
-2023-12-17 15:27:31.052  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-dest,对应的值为：document
-2023-12-17 15:27:31.052  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:accept-encoding,对应的值为：gzip, deflate, br
-2023-12-17 15:27:31.052  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:accept-language,对应的值为：zh-CN,zh;q=0.9
-2023-12-17 15:27:31.052  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:cookie,对应的值为：Idea-6c97dcf4=943c95ac-9a0a-400d-a31b-48c5c33cb0b9; sentinel_dashboard_cookie=E3EEE13C9639FC7F2C20B65F6C22670F
-2023-12-17 15:27:31.052  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:forwarded,对应的值为：proto=http;host="localhost:20001";for="[0:0:0:0:0:0:0:1]:54374"
-2023-12-17 15:27:31.052  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-for,对应的值为：0:0:0:0:0:0:0:1
-2023-12-17 15:27:31.052  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-proto,对应的值为：http
-2023-12-17 15:27:31.052  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-port,对应的值为：20001
-2023-12-17 15:27:31.052  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-host,对应的值为：localhost:20001
-2023-12-17 15:27:31.053  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:host,对应的值为：localhost:9200
-2023-12-17 15:27:31.053  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:content-length,对应的值为：0
-2023-12-17 15:27:31.053  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 收到origin:blank
-2023-12-17 15:28:51.651  INFO 32356 --- [http-nio-9200-exec-10] com.yc.config.HeaderOriginParser         : 接到对header:host,对应的值为：localhost:9200
-2023-12-17 15:28:51.651  INFO 32356 --- [http-nio-9200-exec-10] com.yc.config.HeaderOriginParser         : 接到对header:connection,对应的值为：keep-alive
-2023-12-17 15:28:51.651  INFO 32356 --- [http-nio-9200-exec-10] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua,对应的值为："Not_A Brand";v="8", "Chromium";v="120", "Microsoft Edge";v="120"
-2023-12-17 15:28:51.651  INFO 32356 --- [http-nio-9200-exec-10] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-mobile,对应的值为：?0
-2023-12-17 15:28:51.651  INFO 32356 --- [http-nio-9200-exec-10] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-platform,对应的值为："Windows"
-2023-12-17 15:28:51.651  INFO 32356 --- [http-nio-9200-exec-10] com.yc.config.HeaderOriginParser         : 接到对header:upgrade-insecure-requests,对应的值为：1
-2023-12-17 15:28:51.651  INFO 32356 --- [http-nio-9200-exec-10] com.yc.config.HeaderOriginParser         : 接到对header:user-agent,对应的值为：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0
-2023-12-17 15:28:51.651  INFO 32356 --- [http-nio-9200-exec-10] com.yc.config.HeaderOriginParser         : 接到对header:accept,对应的值为：text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
-2023-12-17 15:28:51.651  INFO 32356 --- [http-nio-9200-exec-10] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-site,对应的值为：none
-2023-12-17 15:28:51.651  INFO 32356 --- [http-nio-9200-exec-10] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-mode,对应的值为：navigate
-2023-12-17 15:28:51.651  INFO 32356 --- [http-nio-9200-exec-10] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-user,对应的值为：?1
-2023-12-17 15:28:51.652  INFO 32356 --- [http-nio-9200-exec-10] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-dest,对应的值为：document
-2023-12-17 15:28:51.652  INFO 32356 --- [http-nio-9200-exec-10] com.yc.config.HeaderOriginParser         : 接到对header:accept-encoding,对应的值为：gzip, deflate, br
-2023-12-17 15:28:51.652  INFO 32356 --- [http-nio-9200-exec-10] com.yc.config.HeaderOriginParser         : 接到对header:accept-language,对应的值为：zh-CN,zh;q=0.9
-2023-12-17 15:28:51.652  INFO 32356 --- [http-nio-9200-exec-10] com.yc.config.HeaderOriginParser         : 接到对header:cookie,对应的值为：Idea-6c97dcf4=943c95ac-9a0a-400d-a31b-48c5c33cb0b9; sentinel_dashboard_cookie=E3EEE13C9639FC7F2C20B65F6C22670F
-2023-12-17 15:28:51.652  INFO 32356 --- [http-nio-9200-exec-10] com.yc.config.HeaderOriginParser         : 收到origin:blank
-2023-12-17 15:29:51.577  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua,对应的值为："Not_A Brand";v="8", "Chromium";v="120", "Microsoft Edge";v="120"
-2023-12-17 15:29:51.577  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-mobile,对应的值为：?0
-2023-12-17 15:29:51.577  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-platform,对应的值为："Windows"
-2023-12-17 15:29:51.578  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:upgrade-insecure-requests,对应的值为：1
-2023-12-17 15:29:51.578  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:user-agent,对应的值为：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0
-2023-12-17 15:29:51.578  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:accept,对应的值为：text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
-2023-12-17 15:29:51.578  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-site,对应的值为：none
-2023-12-17 15:29:51.578  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-mode,对应的值为：navigate
-2023-12-17 15:29:51.578  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-user,对应的值为：?1
-2023-12-17 15:29:51.578  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-dest,对应的值为：document
-2023-12-17 15:29:51.578  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:accept-encoding,对应的值为：gzip, deflate, br
-2023-12-17 15:29:51.578  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:accept-language,对应的值为：zh-CN,zh;q=0.9
-2023-12-17 15:29:51.578  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:cookie,对应的值为：Idea-6c97dcf4=943c95ac-9a0a-400d-a31b-48c5c33cb0b9; sentinel_dashboard_cookie=E3EEE13C9639FC7F2C20B65F6C22670F
-2023-12-17 15:29:51.578  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:forwarded,对应的值为：proto=http;host="localhost:20001";for="[0:0:0:0:0:0:0:1]:54374"
-2023-12-17 15:29:51.578  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-for,对应的值为：0:0:0:0:0:0:0:1
-2023-12-17 15:29:51.578  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-proto,对应的值为：http
-2023-12-17 15:29:51.578  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-port,对应的值为：20001
-2023-12-17 15:29:51.578  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-host,对应的值为：localhost:20001
-2023-12-17 15:29:51.578  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:host,对应的值为：localhost:9200
-2023-12-17 15:29:51.578  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:content-length,对应的值为：0
-2023-12-17 15:29:51.578  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 收到origin:blank
-2023-12-17 15:29:51.585  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua,对应的值为："Not_A Brand";v="8", "Chromium";v="120", "Microsoft Edge";v="120"
-2023-12-17 15:29:51.585  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-mobile,对应的值为：?0
-2023-12-17 15:29:51.586  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-platform,对应的值为："Windows"
-2023-12-17 15:29:51.586  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:upgrade-insecure-requests,对应的值为：1
-2023-12-17 15:29:51.586  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:user-agent,对应的值为：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0
-2023-12-17 15:29:51.586  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:accept,对应的值为：text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
-2023-12-17 15:29:51.586  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-site,对应的值为：none
-2023-12-17 15:29:51.586  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-mode,对应的值为：navigate
-2023-12-17 15:29:51.586  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-user,对应的值为：?1
-2023-12-17 15:29:51.586  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-dest,对应的值为：document
-2023-12-17 15:29:51.586  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:accept-encoding,对应的值为：gzip, deflate, br
-2023-12-17 15:29:51.586  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:accept-language,对应的值为：zh-CN,zh;q=0.9
-2023-12-17 15:29:51.586  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:cookie,对应的值为：Idea-6c97dcf4=943c95ac-9a0a-400d-a31b-48c5c33cb0b9; sentinel_dashboard_cookie=E3EEE13C9639FC7F2C20B65F6C22670F
-2023-12-17 15:29:51.586  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:forwarded,对应的值为：proto=http;host="localhost:20001";for="[0:0:0:0:0:0:0:1]:54374"
-2023-12-17 15:29:51.586  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-for,对应的值为：0:0:0:0:0:0:0:1
-2023-12-17 15:29:51.586  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-proto,对应的值为：http
-2023-12-17 15:29:51.586  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-port,对应的值为：20001
-2023-12-17 15:29:51.586  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-host,对应的值为：localhost:20001
-2023-12-17 15:29:51.586  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:host,对应的值为：localhost:9200
-2023-12-17 15:29:51.586  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:content-length,对应的值为：0
-2023-12-17 15:29:51.586  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 收到origin:blank
-2023-12-17 15:30:58.715  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:cache-control,对应的值为：max-age=0
-2023-12-17 15:30:58.715  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua,对应的值为："Not_A Brand";v="8", "Chromium";v="120", "Microsoft Edge";v="120"
-2023-12-17 15:30:58.715  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-mobile,对应的值为：?0
-2023-12-17 15:30:58.715  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-platform,对应的值为："Windows"
-2023-12-17 15:30:58.715  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:upgrade-insecure-requests,对应的值为：1
-2023-12-17 15:30:58.715  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:user-agent,对应的值为：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0
-2023-12-17 15:30:58.715  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:accept,对应的值为：text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
-2023-12-17 15:30:58.715  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-site,对应的值为：none
-2023-12-17 15:30:58.716  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-mode,对应的值为：navigate
-2023-12-17 15:30:58.716  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-user,对应的值为：?1
-2023-12-17 15:30:58.716  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-dest,对应的值为：document
-2023-12-17 15:30:58.716  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:accept-encoding,对应的值为：gzip, deflate, br
-2023-12-17 15:30:58.716  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:accept-language,对应的值为：zh-CN,zh;q=0.9
-2023-12-17 15:30:58.716  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:cookie,对应的值为：Idea-6c97dcf4=943c95ac-9a0a-400d-a31b-48c5c33cb0b9; sentinel_dashboard_cookie=E3EEE13C9639FC7F2C20B65F6C22670F
-2023-12-17 15:30:58.716  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:forwarded,对应的值为：proto=http;host="localhost:20001";for="[0:0:0:0:0:0:0:1]:54551"
-2023-12-17 15:30:58.716  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-for,对应的值为：0:0:0:0:0:0:0:1
-2023-12-17 15:30:58.716  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-proto,对应的值为：http
-2023-12-17 15:30:58.716  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-port,对应的值为：20001
-2023-12-17 15:30:58.716  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-host,对应的值为：localhost:20001
-2023-12-17 15:30:58.716  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:host,对应的值为：localhost:9200
-2023-12-17 15:30:58.716  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:content-length,对应的值为：0
-2023-12-17 15:30:58.716  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 收到origin:blank
-2023-12-17 15:30:58.718  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:cache-control,对应的值为：max-age=0
-2023-12-17 15:30:58.719  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua,对应的值为："Not_A Brand";v="8", "Chromium";v="120", "Microsoft Edge";v="120"
-2023-12-17 15:30:58.719  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-mobile,对应的值为：?0
-2023-12-17 15:30:58.719  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-platform,对应的值为："Windows"
-2023-12-17 15:30:58.719  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:upgrade-insecure-requests,对应的值为：1
-2023-12-17 15:30:58.719  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:user-agent,对应的值为：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0
-2023-12-17 15:30:58.719  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:accept,对应的值为：text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
-2023-12-17 15:30:58.719  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-site,对应的值为：none
-2023-12-17 15:30:58.719  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-mode,对应的值为：navigate
-2023-12-17 15:30:58.719  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-user,对应的值为：?1
-2023-12-17 15:30:58.719  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-dest,对应的值为：document
-2023-12-17 15:30:58.719  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:accept-encoding,对应的值为：gzip, deflate, br
-2023-12-17 15:30:58.719  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:accept-language,对应的值为：zh-CN,zh;q=0.9
-2023-12-17 15:30:58.719  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:cookie,对应的值为：Idea-6c97dcf4=943c95ac-9a0a-400d-a31b-48c5c33cb0b9; sentinel_dashboard_cookie=E3EEE13C9639FC7F2C20B65F6C22670F
-2023-12-17 15:30:58.719  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:forwarded,对应的值为：proto=http;host="localhost:20001";for="[0:0:0:0:0:0:0:1]:54551"
-2023-12-17 15:30:58.719  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-for,对应的值为：0:0:0:0:0:0:0:1
-2023-12-17 15:30:58.719  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-proto,对应的值为：http
-2023-12-17 15:30:58.719  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-port,对应的值为：20001
-2023-12-17 15:30:58.719  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-host,对应的值为：localhost:20001
-2023-12-17 15:30:58.719  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:host,对应的值为：localhost:9200
-2023-12-17 15:30:58.719  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:content-length,对应的值为：0
-2023-12-17 15:30:58.719  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 收到origin:blank
-2023-12-17 15:31:00.405  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:cache-control,对应的值为：max-age=0
-2023-12-17 15:31:00.405  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua,对应的值为："Not_A Brand";v="8", "Chromium";v="120", "Microsoft Edge";v="120"
-2023-12-17 15:31:00.405  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-mobile,对应的值为：?0
-2023-12-17 15:31:00.405  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-platform,对应的值为："Windows"
-2023-12-17 15:31:00.405  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:upgrade-insecure-requests,对应的值为：1
-2023-12-17 15:31:00.405  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:user-agent,对应的值为：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0
-2023-12-17 15:31:00.405  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:accept,对应的值为：text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
-2023-12-17 15:31:00.405  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-site,对应的值为：none
-2023-12-17 15:31:00.405  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-mode,对应的值为：navigate
-2023-12-17 15:31:00.405  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-user,对应的值为：?1
-2023-12-17 15:31:00.405  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-dest,对应的值为：document
-2023-12-17 15:31:00.405  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:accept-encoding,对应的值为：gzip, deflate, br
-2023-12-17 15:31:00.405  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:accept-language,对应的值为：zh-CN,zh;q=0.9
-2023-12-17 15:31:00.405  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:cookie,对应的值为：Idea-6c97dcf4=943c95ac-9a0a-400d-a31b-48c5c33cb0b9; sentinel_dashboard_cookie=E3EEE13C9639FC7F2C20B65F6C22670F
-2023-12-17 15:31:00.405  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:forwarded,对应的值为：proto=http;host="localhost:20001";for="[0:0:0:0:0:0:0:1]:54551"
-2023-12-17 15:31:00.405  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-for,对应的值为：0:0:0:0:0:0:0:1
-2023-12-17 15:31:00.405  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-proto,对应的值为：http
-2023-12-17 15:31:00.405  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-port,对应的值为：20001
-2023-12-17 15:31:00.405  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-host,对应的值为：localhost:20001
-2023-12-17 15:31:00.405  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:host,对应的值为：localhost:9200
-2023-12-17 15:31:00.405  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:content-length,对应的值为：0
-2023-12-17 15:31:00.405  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 收到origin:blank
-2023-12-17 15:31:00.407  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:cache-control,对应的值为：max-age=0
-2023-12-17 15:31:00.407  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua,对应的值为："Not_A Brand";v="8", "Chromium";v="120", "Microsoft Edge";v="120"
-2023-12-17 15:31:00.407  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-mobile,对应的值为：?0
-2023-12-17 15:31:00.407  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-platform,对应的值为："Windows"
-2023-12-17 15:31:00.407  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:upgrade-insecure-requests,对应的值为：1
-2023-12-17 15:31:00.407  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:user-agent,对应的值为：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0
-2023-12-17 15:31:00.407  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:accept,对应的值为：text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
-2023-12-17 15:31:00.407  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-site,对应的值为：none
-2023-12-17 15:31:00.407  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-mode,对应的值为：navigate
-2023-12-17 15:31:00.407  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-user,对应的值为：?1
-2023-12-17 15:31:00.407  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-dest,对应的值为：document
-2023-12-17 15:31:00.407  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:accept-encoding,对应的值为：gzip, deflate, br
-2023-12-17 15:31:00.407  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:accept-language,对应的值为：zh-CN,zh;q=0.9
-2023-12-17 15:31:00.407  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:cookie,对应的值为：Idea-6c97dcf4=943c95ac-9a0a-400d-a31b-48c5c33cb0b9; sentinel_dashboard_cookie=E3EEE13C9639FC7F2C20B65F6C22670F
-2023-12-17 15:31:00.407  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:forwarded,对应的值为：proto=http;host="localhost:20001";for="[0:0:0:0:0:0:0:1]:54551"
-2023-12-17 15:31:00.408  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-for,对应的值为：0:0:0:0:0:0:0:1
-2023-12-17 15:31:00.408  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-proto,对应的值为：http
-2023-12-17 15:31:00.408  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-port,对应的值为：20001
-2023-12-17 15:31:00.408  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-host,对应的值为：localhost:20001
-2023-12-17 15:31:00.408  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:host,对应的值为：localhost:9200
-2023-12-17 15:31:00.408  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 接到对header:content-length,对应的值为：0
-2023-12-17 15:31:00.408  INFO 32356 --- [http-nio-9200-exec-3] com.yc.config.HeaderOriginParser         : 收到origin:blank
-2023-12-17 15:31:04.951  INFO 32356 --- [http-nio-9200-exec-1] com.yc.config.HeaderOriginParser         : 接到对header:host,对应的值为：localhost:9200
-2023-12-17 15:31:04.951  INFO 32356 --- [http-nio-9200-exec-1] com.yc.config.HeaderOriginParser         : 接到对header:connection,对应的值为：keep-alive
-2023-12-17 15:31:04.951  INFO 32356 --- [http-nio-9200-exec-1] com.yc.config.HeaderOriginParser         : 接到对header:cache-control,对应的值为：max-age=0
-2023-12-17 15:31:04.951  INFO 32356 --- [http-nio-9200-exec-1] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua,对应的值为："Not_A Brand";v="8", "Chromium";v="120", "Microsoft Edge";v="120"
-2023-12-17 15:31:04.951  INFO 32356 --- [http-nio-9200-exec-1] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-mobile,对应的值为：?0
-2023-12-17 15:31:04.951  INFO 32356 --- [http-nio-9200-exec-1] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-platform,对应的值为："Windows"
-2023-12-17 15:31:04.951  INFO 32356 --- [http-nio-9200-exec-1] com.yc.config.HeaderOriginParser         : 接到对header:upgrade-insecure-requests,对应的值为：1
-2023-12-17 15:31:04.951  INFO 32356 --- [http-nio-9200-exec-1] com.yc.config.HeaderOriginParser         : 接到对header:user-agent,对应的值为：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0
-2023-12-17 15:31:04.951  INFO 32356 --- [http-nio-9200-exec-1] com.yc.config.HeaderOriginParser         : 接到对header:accept,对应的值为：text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
-2023-12-17 15:31:04.951  INFO 32356 --- [http-nio-9200-exec-1] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-site,对应的值为：none
-2023-12-17 15:31:04.951  INFO 32356 --- [http-nio-9200-exec-1] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-mode,对应的值为：navigate
-2023-12-17 15:31:04.951  INFO 32356 --- [http-nio-9200-exec-1] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-user,对应的值为：?1
-2023-12-17 15:31:04.951  INFO 32356 --- [http-nio-9200-exec-1] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-dest,对应的值为：document
-2023-12-17 15:31:04.951  INFO 32356 --- [http-nio-9200-exec-1] com.yc.config.HeaderOriginParser         : 接到对header:accept-encoding,对应的值为：gzip, deflate, br
-2023-12-17 15:31:04.951  INFO 32356 --- [http-nio-9200-exec-1] com.yc.config.HeaderOriginParser         : 接到对header:accept-language,对应的值为：zh-CN,zh;q=0.9
-2023-12-17 15:31:04.951  INFO 32356 --- [http-nio-9200-exec-1] com.yc.config.HeaderOriginParser         : 接到对header:cookie,对应的值为：Idea-6c97dcf4=943c95ac-9a0a-400d-a31b-48c5c33cb0b9; sentinel_dashboard_cookie=E3EEE13C9639FC7F2C20B65F6C22670F
-2023-12-17 15:31:04.951  INFO 32356 --- [http-nio-9200-exec-1] com.yc.config.HeaderOriginParser         : 收到origin:blank
-2023-12-17 15:31:24.709  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua,对应的值为："Not_A Brand";v="8", "Chromium";v="120", "Microsoft Edge";v="120"
-2023-12-17 15:31:24.709  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-mobile,对应的值为：?0
-2023-12-17 15:31:24.709  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-platform,对应的值为："Windows"
-2023-12-17 15:31:24.709  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:upgrade-insecure-requests,对应的值为：1
-2023-12-17 15:31:24.709  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:user-agent,对应的值为：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0
-2023-12-17 15:31:24.709  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:accept,对应的值为：text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
-2023-12-17 15:31:24.709  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-site,对应的值为：none
-2023-12-17 15:31:24.709  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-mode,对应的值为：navigate
-2023-12-17 15:31:24.709  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-user,对应的值为：?1
-2023-12-17 15:31:24.709  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-dest,对应的值为：document
-2023-12-17 15:31:24.709  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:accept-encoding,对应的值为：gzip, deflate, br
-2023-12-17 15:31:24.709  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:accept-language,对应的值为：zh-CN,zh;q=0.9
-2023-12-17 15:31:24.709  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:cookie,对应的值为：Idea-6c97dcf4=943c95ac-9a0a-400d-a31b-48c5c33cb0b9; sentinel_dashboard_cookie=E3EEE13C9639FC7F2C20B65F6C22670F
-2023-12-17 15:31:24.709  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:forwarded,对应的值为：proto=http;host="localhost:20001";for="[0:0:0:0:0:0:0:1]:54551"
-2023-12-17 15:31:24.709  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-for,对应的值为：0:0:0:0:0:0:0:1
-2023-12-17 15:31:24.709  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-proto,对应的值为：http
-2023-12-17 15:31:24.709  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-port,对应的值为：20001
-2023-12-17 15:31:24.709  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-host,对应的值为：localhost:20001
-2023-12-17 15:31:24.709  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:host,对应的值为：localhost:9200
-2023-12-17 15:31:24.709  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:content-length,对应的值为：0
-2023-12-17 15:31:24.710  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 收到origin:blank
-2023-12-17 15:32:34.307  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:cache-control,对应的值为：max-age=0
-2023-12-17 15:32:34.307  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua,对应的值为："Not_A Brand";v="8", "Chromium";v="120", "Microsoft Edge";v="120"
-2023-12-17 15:32:34.307  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-mobile,对应的值为：?0
-2023-12-17 15:32:34.307  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-platform,对应的值为："Windows"
-2023-12-17 15:32:34.307  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:upgrade-insecure-requests,对应的值为：1
-2023-12-17 15:32:34.307  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:user-agent,对应的值为：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0
-2023-12-17 15:32:34.307  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:accept,对应的值为：text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
-2023-12-17 15:32:34.307  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-site,对应的值为：none
-2023-12-17 15:32:34.307  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-mode,对应的值为：navigate
-2023-12-17 15:32:34.307  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-user,对应的值为：?1
-2023-12-17 15:32:34.307  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-dest,对应的值为：document
-2023-12-17 15:32:34.307  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:accept-encoding,对应的值为：gzip, deflate, br
-2023-12-17 15:32:34.307  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:accept-language,对应的值为：zh-CN,zh;q=0.9
-2023-12-17 15:32:34.307  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:cookie,对应的值为：Idea-6c97dcf4=943c95ac-9a0a-400d-a31b-48c5c33cb0b9; sentinel_dashboard_cookie=E3EEE13C9639FC7F2C20B65F6C22670F
-2023-12-17 15:32:34.307  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:forwarded,对应的值为：proto=http;host="localhost:20001";for="[0:0:0:0:0:0:0:1]:54738"
-2023-12-17 15:32:34.307  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-for,对应的值为：0:0:0:0:0:0:0:1
-2023-12-17 15:32:34.307  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-proto,对应的值为：http
-2023-12-17 15:32:34.307  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-port,对应的值为：20001
-2023-12-17 15:32:34.307  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-host,对应的值为：localhost:20001
-2023-12-17 15:32:34.307  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:host,对应的值为：localhost:9200
-2023-12-17 15:32:34.307  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:content-length,对应的值为：0
-2023-12-17 15:32:34.307  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 收到origin:blank
-2023-12-17 15:32:34.692  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:cache-control,对应的值为：max-age=0
-2023-12-17 15:32:34.693  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua,对应的值为："Not_A Brand";v="8", "Chromium";v="120", "Microsoft Edge";v="120"
-2023-12-17 15:32:34.693  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-mobile,对应的值为：?0
-2023-12-17 15:32:34.693  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-platform,对应的值为："Windows"
-2023-12-17 15:32:34.693  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:upgrade-insecure-requests,对应的值为：1
-2023-12-17 15:32:34.693  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:user-agent,对应的值为：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0
-2023-12-17 15:32:34.693  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:accept,对应的值为：text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
-2023-12-17 15:32:34.693  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-site,对应的值为：none
-2023-12-17 15:32:34.693  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-mode,对应的值为：navigate
-2023-12-17 15:32:34.693  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-user,对应的值为：?1
-2023-12-17 15:32:34.693  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-dest,对应的值为：document
-2023-12-17 15:32:34.693  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:accept-encoding,对应的值为：gzip, deflate, br
-2023-12-17 15:32:34.693  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:accept-language,对应的值为：zh-CN,zh;q=0.9
-2023-12-17 15:32:34.693  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:cookie,对应的值为：Idea-6c97dcf4=943c95ac-9a0a-400d-a31b-48c5c33cb0b9; sentinel_dashboard_cookie=E3EEE13C9639FC7F2C20B65F6C22670F
-2023-12-17 15:32:34.693  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:forwarded,对应的值为：proto=http;host="localhost:20001";for="[0:0:0:0:0:0:0:1]:54738"
-2023-12-17 15:32:34.693  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-for,对应的值为：0:0:0:0:0:0:0:1
-2023-12-17 15:32:34.693  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-proto,对应的值为：http
-2023-12-17 15:32:34.693  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-port,对应的值为：20001
-2023-12-17 15:32:34.693  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-host,对应的值为：localhost:20001
-2023-12-17 15:32:34.693  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:host,对应的值为：localhost:9200
-2023-12-17 15:32:34.693  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:content-length,对应的值为：0
-2023-12-17 15:32:34.693  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 收到origin:blank
-2023-12-17 15:32:36.875  INFO 32356 --- [http-nio-9200-exec-7] com.yc.config.HeaderOriginParser         : 接到对header:host,对应的值为：localhost:9200
-2023-12-17 15:32:36.876  INFO 32356 --- [http-nio-9200-exec-7] com.yc.config.HeaderOriginParser         : 接到对header:connection,对应的值为：keep-alive
-2023-12-17 15:32:36.876  INFO 32356 --- [http-nio-9200-exec-7] com.yc.config.HeaderOriginParser         : 接到对header:cache-control,对应的值为：max-age=0
-2023-12-17 15:32:36.876  INFO 32356 --- [http-nio-9200-exec-7] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua,对应的值为："Not_A Brand";v="8", "Chromium";v="120", "Microsoft Edge";v="120"
-2023-12-17 15:32:36.876  INFO 32356 --- [http-nio-9200-exec-7] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-mobile,对应的值为：?0
-2023-12-17 15:32:36.876  INFO 32356 --- [http-nio-9200-exec-7] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-platform,对应的值为："Windows"
-2023-12-17 15:32:36.876  INFO 32356 --- [http-nio-9200-exec-7] com.yc.config.HeaderOriginParser         : 接到对header:upgrade-insecure-requests,对应的值为：1
-2023-12-17 15:32:36.876  INFO 32356 --- [http-nio-9200-exec-7] com.yc.config.HeaderOriginParser         : 接到对header:user-agent,对应的值为：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0
-2023-12-17 15:32:36.876  INFO 32356 --- [http-nio-9200-exec-7] com.yc.config.HeaderOriginParser         : 接到对header:accept,对应的值为：text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
-2023-12-17 15:32:36.876  INFO 32356 --- [http-nio-9200-exec-7] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-site,对应的值为：none
-2023-12-17 15:32:36.876  INFO 32356 --- [http-nio-9200-exec-7] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-mode,对应的值为：navigate
-2023-12-17 15:32:36.876  INFO 32356 --- [http-nio-9200-exec-7] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-user,对应的值为：?1
-2023-12-17 15:32:36.876  INFO 32356 --- [http-nio-9200-exec-7] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-dest,对应的值为：document
-2023-12-17 15:32:36.876  INFO 32356 --- [http-nio-9200-exec-7] com.yc.config.HeaderOriginParser         : 接到对header:accept-encoding,对应的值为：gzip, deflate, br
-2023-12-17 15:32:36.876  INFO 32356 --- [http-nio-9200-exec-7] com.yc.config.HeaderOriginParser         : 接到对header:accept-language,对应的值为：zh-CN,zh;q=0.9
-2023-12-17 15:32:36.876  INFO 32356 --- [http-nio-9200-exec-7] com.yc.config.HeaderOriginParser         : 接到对header:cookie,对应的值为：Idea-6c97dcf4=943c95ac-9a0a-400d-a31b-48c5c33cb0b9; sentinel_dashboard_cookie=E3EEE13C9639FC7F2C20B65F6C22670F
-2023-12-17 15:32:36.876  INFO 32356 --- [http-nio-9200-exec-7] com.yc.config.HeaderOriginParser         : 收到origin:blank
-2023-12-17 15:33:57.018  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:host,对应的值为：localhost:9200
-2023-12-17 15:33:57.018  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:connection,对应的值为：keep-alive
-2023-12-17 15:33:57.018  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:cache-control,对应的值为：max-age=0
-2023-12-17 15:33:57.018  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua,对应的值为："Not_A Brand";v="8", "Chromium";v="120", "Microsoft Edge";v="120"
-2023-12-17 15:33:57.018  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-mobile,对应的值为：?0
-2023-12-17 15:33:57.018  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-platform,对应的值为："Windows"
-2023-12-17 15:33:57.018  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:upgrade-insecure-requests,对应的值为：1
-2023-12-17 15:33:57.018  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:user-agent,对应的值为：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0
-2023-12-17 15:33:57.018  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:accept,对应的值为：text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
-2023-12-17 15:33:57.018  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-site,对应的值为：none
-2023-12-17 15:33:57.018  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-mode,对应的值为：navigate
-2023-12-17 15:33:57.018  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-user,对应的值为：?1
-2023-12-17 15:33:57.018  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-dest,对应的值为：document
-2023-12-17 15:33:57.018  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:accept-encoding,对应的值为：gzip, deflate, br
-2023-12-17 15:33:57.018  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:accept-language,对应的值为：zh-CN,zh;q=0.9
-2023-12-17 15:33:57.018  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 接到对header:cookie,对应的值为：Idea-6c97dcf4=943c95ac-9a0a-400d-a31b-48c5c33cb0b9; sentinel_dashboard_cookie=E3EEE13C9639FC7F2C20B65F6C22670F
-2023-12-17 15:33:57.018  INFO 32356 --- [http-nio-9200-exec-4] com.yc.config.HeaderOriginParser         : 收到origin:blank
-2023-12-17 15:48:56.127  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:cache-control,对应的值为：max-age=0
-2023-12-17 15:48:56.127  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua,对应的值为："Not_A Brand";v="8", "Chromium";v="120", "Microsoft Edge";v="120"
-2023-12-17 15:48:56.127  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-mobile,对应的值为：?0
-2023-12-17 15:48:56.127  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-platform,对应的值为："Windows"
-2023-12-17 15:48:56.127  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:upgrade-insecure-requests,对应的值为：1
-2023-12-17 15:48:56.127  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:user-agent,对应的值为：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0
-2023-12-17 15:48:56.127  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:accept,对应的值为：text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
-2023-12-17 15:48:56.127  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-site,对应的值为：none
-2023-12-17 15:48:56.127  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-mode,对应的值为：navigate
-2023-12-17 15:48:56.127  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-user,对应的值为：?1
-2023-12-17 15:48:56.127  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-dest,对应的值为：document
-2023-12-17 15:48:56.127  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:accept-encoding,对应的值为：gzip, deflate, br
-2023-12-17 15:48:56.127  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:accept-language,对应的值为：zh-CN,zh;q=0.9
-2023-12-17 15:48:56.127  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:cookie,对应的值为：Idea-6c97dcf4=943c95ac-9a0a-400d-a31b-48c5c33cb0b9; sentinel_dashboard_cookie=E3EEE13C9639FC7F2C20B65F6C22670F
-2023-12-17 15:48:56.127  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:forwarded,对应的值为：proto=http;host="localhost:20001";for="[0:0:0:0:0:0:0:1]:55535"
-2023-12-17 15:48:56.127  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-for,对应的值为：0:0:0:0:0:0:0:1
-2023-12-17 15:48:56.127  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-proto,对应的值为：http
-2023-12-17 15:48:56.127  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-port,对应的值为：20001
-2023-12-17 15:48:56.127  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-host,对应的值为：localhost:20001
-2023-12-17 15:48:56.127  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:host,对应的值为：192.168.186.105:9200
-2023-12-17 15:48:56.127  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 接到对header:content-length,对应的值为：0
-2023-12-17 15:48:56.127  INFO 32356 --- [http-nio-9200-exec-2] com.yc.config.HeaderOriginParser         : 收到origin:blank
-2023-12-17 15:48:56.650  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:cache-control,对应的值为：max-age=0
-2023-12-17 15:48:56.650  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua,对应的值为："Not_A Brand";v="8", "Chromium";v="120", "Microsoft Edge";v="120"
-2023-12-17 15:48:56.650  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-mobile,对应的值为：?0
-2023-12-17 15:48:56.650  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-platform,对应的值为："Windows"
-2023-12-17 15:48:56.650  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:upgrade-insecure-requests,对应的值为：1
-2023-12-17 15:48:56.650  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:user-agent,对应的值为：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0
-2023-12-17 15:48:56.650  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:accept,对应的值为：text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
-2023-12-17 15:48:56.650  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-site,对应的值为：none
-2023-12-17 15:48:56.650  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-mode,对应的值为：navigate
-2023-12-17 15:48:56.650  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-user,对应的值为：?1
-2023-12-17 15:48:56.650  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-dest,对应的值为：document
-2023-12-17 15:48:56.650  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:accept-encoding,对应的值为：gzip, deflate, br
-2023-12-17 15:48:56.650  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:accept-language,对应的值为：zh-CN,zh;q=0.9
-2023-12-17 15:48:56.650  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:cookie,对应的值为：Idea-6c97dcf4=943c95ac-9a0a-400d-a31b-48c5c33cb0b9; sentinel_dashboard_cookie=E3EEE13C9639FC7F2C20B65F6C22670F
-2023-12-17 15:48:56.650  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:forwarded,对应的值为：proto=http;host="localhost:20001";for="[0:0:0:0:0:0:0:1]:55535"
-2023-12-17 15:48:56.650  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-for,对应的值为：0:0:0:0:0:0:0:1
-2023-12-17 15:48:56.650  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-proto,对应的值为：http
-2023-12-17 15:48:56.650  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-port,对应的值为：20001
-2023-12-17 15:48:56.650  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-host,对应的值为：localhost:20001
-2023-12-17 15:48:56.650  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:host,对应的值为：192.168.186.105:9200
-2023-12-17 15:48:56.650  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 接到对header:content-length,对应的值为：0
-2023-12-17 15:48:56.650  INFO 32356 --- [http-nio-9200-exec-8] com.yc.config.HeaderOriginParser         : 收到origin:blank
-2023-12-17 15:48:57.301  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:cache-control,对应的值为：max-age=0
-2023-12-17 15:48:57.301  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua,对应的值为："Not_A Brand";v="8", "Chromium";v="120", "Microsoft Edge";v="120"
-2023-12-17 15:48:57.301  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-mobile,对应的值为：?0
-2023-12-17 15:48:57.301  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-platform,对应的值为："Windows"
-2023-12-17 15:48:57.301  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:upgrade-insecure-requests,对应的值为：1
-2023-12-17 15:48:57.301  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:user-agent,对应的值为：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0
-2023-12-17 15:48:57.301  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:accept,对应的值为：text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
-2023-12-17 15:48:57.301  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-site,对应的值为：none
-2023-12-17 15:48:57.301  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-mode,对应的值为：navigate
-2023-12-17 15:48:57.301  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-user,对应的值为：?1
-2023-12-17 15:48:57.301  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-dest,对应的值为：document
-2023-12-17 15:48:57.301  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:accept-encoding,对应的值为：gzip, deflate, br
-2023-12-17 15:48:57.301  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:accept-language,对应的值为：zh-CN,zh;q=0.9
-2023-12-17 15:48:57.301  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:cookie,对应的值为：Idea-6c97dcf4=943c95ac-9a0a-400d-a31b-48c5c33cb0b9; sentinel_dashboard_cookie=E3EEE13C9639FC7F2C20B65F6C22670F
-2023-12-17 15:48:57.302  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:forwarded,对应的值为：proto=http;host="localhost:20001";for="[0:0:0:0:0:0:0:1]:55535"
-2023-12-17 15:48:57.302  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-for,对应的值为：0:0:0:0:0:0:0:1
-2023-12-17 15:48:57.302  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-proto,对应的值为：http
-2023-12-17 15:48:57.302  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-port,对应的值为：20001
-2023-12-17 15:48:57.302  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-host,对应的值为：localhost:20001
-2023-12-17 15:48:57.302  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:host,对应的值为：192.168.186.105:9200
-2023-12-17 15:48:57.302  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 接到对header:content-length,对应的值为：0
-2023-12-17 15:48:57.302  INFO 32356 --- [http-nio-9200-exec-6] com.yc.config.HeaderOriginParser         : 收到origin:blank
-2023-12-17 15:50:30.424  INFO 23032 --- [main] com.yc.ResfoodApp                        : The following 1 profile is active: "prod9300"
-2023-12-17 15:50:31.108  INFO 23032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-12-17 15:50:31.110  INFO 23032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2023-12-17 15:50:31.128  INFO 23032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
-2023-12-17 15:50:31.266  INFO 23032 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5de21ae7-c65c-32f8-aecd-6b52e9550a9d
-2023-12-17 15:50:31.648  INFO 23032 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9300 (http)
-2023-12-17 15:50:31.657  INFO 23032 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-12-17 15:50:31.658  INFO 23032 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
-2023-12-17 15:50:31.779  INFO 23032 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-12-17 15:50:31.779  INFO 23032 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1339 ms
-2023-12-17 15:50:31.965  INFO 23032 --- [main] com.yc.config.MyDruidDataSourceConfig    : 使用的编程式的数据源创建 DruidDataSource.
-2023-12-17 15:50:33.521  INFO 23032 --- [main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
-2023-12-17 15:50:34.778  INFO 23032 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2023-12-17 15:50:34.849  INFO 23032 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9300 (http) with context path ''
-2023-12-17 15:50:34.861  INFO 23032 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
-2023-12-17 15:50:34.861  INFO 23032 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
-2023-12-17 15:50:35.009  INFO 23032 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP resfood 192.168.186.105:9300 register finished
-2023-12-17 15:50:35.309  INFO 23032 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
-2023-12-17 15:50:35.314  INFO 23032 --- [main] com.yc.ResfoodApp                        : Started ResfoodApp in 7.304 seconds (JVM running for 8.046)
-2023-12-17 15:50:35.336  INFO 23032 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=mysql8local.yml, group=DEFAULT_GROUP
-2023-12-17 15:50:35.339  INFO 23032 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=redislocal.yml, group=DEFAULT_GROUP
-2023-12-17 15:50:35.339  INFO 23032 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=res-foods.yml, group=DEFAULT_GROUP
-2023-12-17 15:50:35.340  INFO 23032 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=res-foods, group=DEFAULT_GROUP
-2023-12-17 15:50:35.342  INFO 23032 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=res-foods-prod9300.yml, group=DEFAULT_GROUP
-2023-12-17 15:50:35.709  INFO 23032 --- [RMI TCP Connection(1)-192.168.186.105] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-12-17 15:50:35.709  INFO 23032 --- [RMI TCP Connection(1)-192.168.186.105] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-12-17 15:50:35.710  INFO 23032 --- [RMI TCP Connection(1)-192.168.186.105] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-12-17 15:50:36.032  INFO 23032 --- [RMI TCP Connection(3)-192.168.186.105] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2023-12-17 15:50:55.557  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:cache-control,对应的值为：max-age=0
-2023-12-17 15:50:55.557  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua,对应的值为："Not_A Brand";v="8", "Chromium";v="120", "Microsoft Edge";v="120"
-2023-12-17 15:50:55.557  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-mobile,对应的值为：?0
-2023-12-17 15:50:55.557  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:sec-ch-ua-platform,对应的值为："Windows"
-2023-12-17 15:50:55.557  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:upgrade-insecure-requests,对应的值为：1
-2023-12-17 15:50:55.557  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:user-agent,对应的值为：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0
-2023-12-17 15:50:55.557  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:accept,对应的值为：text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
-2023-12-17 15:50:55.557  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-site,对应的值为：none
-2023-12-17 15:50:55.557  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-mode,对应的值为：navigate
-2023-12-17 15:50:55.557  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-user,对应的值为：?1
-2023-12-17 15:50:55.557  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:sec-fetch-dest,对应的值为：document
-2023-12-17 15:50:55.557  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:accept-encoding,对应的值为：gzip, deflate, br
-2023-12-17 15:50:55.557  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:accept-language,对应的值为：zh-CN,zh;q=0.9
-2023-12-17 15:50:55.557  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:cookie,对应的值为：Idea-6c97dcf4=943c95ac-9a0a-400d-a31b-48c5c33cb0b9; sentinel_dashboard_cookie=E3EEE13C9639FC7F2C20B65F6C22670F
-2023-12-17 15:50:55.557  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:forwarded,对应的值为：proto=http;host="localhost:20001";for="[0:0:0:0:0:0:0:1]:55535"
-2023-12-17 15:50:55.557  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-for,对应的值为：0:0:0:0:0:0:0:1
-2023-12-17 15:50:55.557  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-proto,对应的值为：http
-2023-12-17 15:50:55.557  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-port,对应的值为：20001
-2023-12-17 15:50:55.557  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:x-forwarded-host,对应的值为：localhost:20001
-2023-12-17 15:50:55.557  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:host,对应的值为：192.168.186.105:9200
-2023-12-17 15:50:55.557  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 接到对header:content-length,对应的值为：0
-2023-12-17 15:50:55.557  INFO 32356 --- [http-nio-9200-exec-5] com.yc.config.HeaderOriginParser         : 收到origin:blank
+2023-12-18 18:50:34.053  INFO 19548 --- [main] com.yc.ResfoodApp                        : The following 1 profile is active: "prod9300"
+2023-12-18 18:50:34.956  INFO 19548 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-18 18:50:34.959  INFO 19548 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-18 18:50:34.981  INFO 19548 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2023-12-18 18:50:35.132  INFO 19548 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5de21ae7-c65c-32f8-aecd-6b52e9550a9d
+2023-12-18 18:50:35.530  INFO 19548 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9300 (http)
+2023-12-18 18:50:35.559  INFO 19548 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-18 18:50:35.559  INFO 19548 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-18 18:50:35.694  INFO 19548 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-18 18:50:35.694  INFO 19548 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1620 ms
+2023-12-18 18:50:35.870  INFO 19548 --- [main] com.yc.config.MyDruidDataSourceConfig    : 使用的编程式的数据源创建 DruidDataSource.
+2023-12-18 18:50:37.521  INFO 19548 --- [main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2023-12-18 18:50:38.675  INFO 19548 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-12-18 18:50:38.749  INFO 19548 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9300 (http) with context path ''
+2023-12-18 18:50:38.761  INFO 19548 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-12-18 18:50:38.761  INFO 19548 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-12-18 18:50:38.895  INFO 19548 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP resfood 192.168.16.4:9300 register finished
+2023-12-18 18:50:39.197  INFO 19548 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-12-18 18:50:39.203  INFO 19548 --- [main] com.yc.ResfoodApp                        : Started ResfoodApp in 7.694 seconds (JVM running for 8.654)
+2023-12-18 18:50:39.220  INFO 19548 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=mysql8local.yml, group=DEFAULT_GROUP
+2023-12-18 18:50:39.221  INFO 19548 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=redislocal.yml, group=DEFAULT_GROUP
+2023-12-18 18:50:39.222  INFO 19548 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=res-foods.yml, group=DEFAULT_GROUP
+2023-12-18 18:50:39.222  INFO 19548 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=res-foods, group=DEFAULT_GROUP
+2023-12-18 18:50:39.224  INFO 19548 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=res-foods-prod9300.yml, group=DEFAULT_GROUP
+2023-12-18 18:50:39.492  INFO 19548 --- [RMI TCP Connection(1)-192.168.16.4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-18 18:50:39.492  INFO 19548 --- [RMI TCP Connection(1)-192.168.16.4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-18 18:50:39.494  INFO 19548 --- [RMI TCP Connection(1)-192.168.16.4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-12-18 18:50:39.553  INFO 19548 --- [RMI TCP Connection(2)-192.168.16.4] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-12-18 18:50:50.633  INFO 6408 --- [main] com.yc.ResfoodApp                        : The following 1 profile is active: "prod"
+2023-12-18 18:50:51.424  INFO 6408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-12-18 18:50:51.428  INFO 6408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-18 18:50:51.450  INFO 6408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-12-18 18:50:51.607  INFO 6408 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5de21ae7-c65c-32f8-aecd-6b52e9550a9d
+2023-12-18 18:50:51.996  INFO 6408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9200 (http)
+2023-12-18 18:50:52.003  INFO 6408 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-18 18:50:52.004  INFO 6408 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-12-18 18:50:52.129  INFO 6408 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-18 18:50:52.129  INFO 6408 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1480 ms
+2023-12-18 18:50:52.297  INFO 6408 --- [main] com.yc.config.MyDruidDataSourceConfig    : 使用的编程式的数据源创建 DruidDataSource.
+2023-12-18 18:50:53.818  INFO 6408 --- [main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2023-12-18 18:50:54.907  INFO 6408 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-12-18 18:50:54.977  INFO 6408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9200 (http) with context path ''
+2023-12-18 18:50:54.990  INFO 6408 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-12-18 18:50:54.990  INFO 6408 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-12-18 18:50:55.119  INFO 6408 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP resfood 192.168.16.4:9200 register finished
+2023-12-18 18:50:55.414  INFO 6408 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-12-18 18:50:55.421  INFO 6408 --- [main] com.yc.ResfoodApp                        : Started ResfoodApp in 7.811 seconds (JVM running for 8.553)
+2023-12-18 18:50:55.437  INFO 6408 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=mysql8local.yml, group=DEFAULT_GROUP
+2023-12-18 18:50:55.439  INFO 6408 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=redislocal.yml, group=DEFAULT_GROUP
+2023-12-18 18:50:55.440  INFO 6408 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=res-foods.yml, group=DEFAULT_GROUP
+2023-12-18 18:50:55.440  INFO 6408 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=res-foods, group=DEFAULT_GROUP
+2023-12-18 18:50:55.442  INFO 6408 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=res-foods-prod.yml, group=DEFAULT_GROUP
+2023-12-18 18:50:55.741  INFO 6408 --- [RMI TCP Connection(4)-192.168.16.4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-18 18:50:55.741  INFO 6408 --- [RMI TCP Connection(4)-192.168.16.4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-18 18:50:55.742  INFO 6408 --- [RMI TCP Connection(4)-192.168.16.4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-12-18 18:50:55.783  INFO 6408 --- [RMI TCP Connection(3)-192.168.16.4] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited

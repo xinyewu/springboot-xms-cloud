@@ -13,4 +13,4 @@
 4. 限流算法:
    令牌桶算法,  漏桶算法.
 5. transport:  http客户端
-   spimple-htt
+   spimple-http

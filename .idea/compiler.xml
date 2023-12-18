@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="test_responsibilityChainPattern" />
         <module name="res_order" />
         <module name="test_jdkproxy" />
         <module name="res_api" />
@@ -38,6 +39,7 @@
       <module name="test_builderDesignPattern_fluentAPI" options="-parameters" />
       <module name="test_feign" options="-parameters" />
       <module name="test_jdkproxy" options="-parameters" />
+      <module name="test_responsibilityChainPattern" options="-parameters" />
       <module name="test_sentinel3" options="-parameters" />
     </option>
   </component>

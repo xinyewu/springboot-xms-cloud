@@ -16,6 +16,7 @@
         <module>test_builderDesignPattern_fluentAPI</module>
         <module>test_sentinel3</module>
         <module>res_gateway</module>
+        <module>test_responsibilityChainPattern</module>
     </modules>
 
     <parent>
