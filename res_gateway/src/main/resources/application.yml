@@ -11,7 +11,15 @@ spring:
         username: nacos
         password: nacos
         #namespace: res134
+
     gateway: #基础的路由转发配置
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: "*"
+            allowedHeaders: "*"
+            allowCredentials: true
       routes: #查看配置源码 ：routes是一个list 集合（有序）
         - id: res_food
           #uri: http://localhost:9200 #http://localhost:9200/resfood/findAll
