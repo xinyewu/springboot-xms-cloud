@@ -3,18 +3,21 @@ package com.yc.web.controller;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.yc.api.ResfoodApi;
 import com.yc.bean.Resfood;
+import com.yc.bean.Resorder;
+import com.yc.bean.Resuser;
 import com.yc.biz.GoodsBiz;
+import com.yc.biz.ResorderBiz;
 import com.yc.web.model.CartItem;
-import feign.Client;
-import feign.Feign;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
-import javax.annotation.security.RolesAllowed;
 import javax.servlet.http.HttpSession;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
 import java.util.Random;
 
@@ -28,9 +31,11 @@ public class ResorderController {
     @Autowired
     private ResfoodApi resfoodApi;
     @Autowired
+    private ResorderBiz resorderBiz;
+    @Autowired
     private GoodsBiz goodsBiz;
 
-//    public ResorderController() {
+    //    public ResorderController() {
 //        this.resfoodApi = Feign.builder()
 //                .client(new OkHttpClient())
 //                .decoder(new GsonDecoder())
@@ -106,7 +111,7 @@ public class ResorderController {
         }
 
         ObjectMapper objectMapper = new ObjectMapper();
-        Resfood food = objectMapper.convertValue(result.get("obj"), Resfood.class);
+        Resfood food = objectMapper.convertValue(result.get("data"), Resfood.class);
 
         //从session取出Cart(map)
         Map<Integer, CartItem> cart = new HashMap<Integer, CartItem>();
@@ -138,4 +143,42 @@ public class ResorderController {
         map.put("obj", cart.values());
         return map;
     }
+
+    @RequestMapping(value = "confirmOrder", method = {RequestMethod.GET, RequestMethod.POST})
+    public Map<String, Object> confirmOrder(Resorder order, HttpSession session) {
+        Map<String, Object> map = new HashMap<>();
+        if (session.getAttribute("cart") == null || ((Map<Integer, CartItem>) session.getAttribute("cart")).size() <= 0) {
+            map.put("code", -1);
+            map.put("msg", "暂无任何商品");
+            return map;
+        }
+        Map<Integer, CartItem> cart = (Map<Integer, CartItem>) session.getAttribute("cart");
+        if (session.getAttribute("resuser") == null) {
+            map.put("code", -2);
+            map.put("msg", "非登录用户不能下单");
+            return map;
+        }
+        Resuser resuser = (Resuser) session.getAttribute("resuser");
+        order.setUserid(resuser.getUserid());
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        LocalDateTime now = LocalDateTime.now();
+        order.setOrdertime(formatter.format(now));
+        if (order.getDeliverytime() == null || "".equals(order.getDeliverytime())) {
+            LocalDateTime deliverytime = now.plusHours(1);
+            order.setOrdertime(formatter.format(deliverytime));
+        }
+        order.setStatus(0);
+        try {
+            resorderBiz.order(order, new HashSet(cart.values()), resuser);
+        } catch (Exception e) {
+            map.put("code", -3);
+            map.put("msg", e.getMessage());
+            e.printStackTrace();
+            return map;
+        }
+        session.removeAttribute("cart");
+        map.put("code", 1);
+        return map;
+    }
+
 }

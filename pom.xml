@@ -17,6 +17,8 @@
         <module>test_sentinel3</module>
         <module>res_gateway</module>
         <module>test_responsibilityChainPattern</module>
+        <module>res-index</module>
+        <module>res-user</module>
     </modules>
 
     <parent>
@@ -76,12 +78,12 @@
                 <artifactId>druid-spring-boot-starter</artifactId>
                 <version>${druid.spring.boot.starter.version}</version>
             </dependency>
-            <!--swagger API接口-->
-            <dependency>
-                <groupId>com.spring4all</groupId>
-                <artifactId>swagger-spring-boot-starter</artifactId>
-                <version>1.9.1.RELEASE</version>
-            </dependency>
+<!--            &lt;!&ndash;swagger API接口&ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>com.spring4all</groupId>-->
+<!--                <artifactId>swagger-spring-boot-starter</artifactId>-->
+<!--                <version>1.9.1.RELEASE</version>-->
+<!--            </dependency>-->
         </dependencies>
     </dependencyManagement>
 

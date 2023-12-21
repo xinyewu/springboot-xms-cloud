@@ -22,7 +22,7 @@ import java.util.*;
 @RequestMapping("/resfood")//localhost:9000/resfood/+xxx
 @Slf4j
 @RefreshScope
-//@Api(tags = "菜品管理")
+
 public class ResfoodController {
 
     @Autowired
@@ -120,7 +120,7 @@ public class ResfoodController {
         return map;
     }
 
-    @RequestMapping(value = "findByPage", method = {RequestMethod.GET, RequestMethod.POST})
+    @RequestMapping(value = "findPage", method = {RequestMethod.GET, RequestMethod.POST})
     @SentinelResource(value = "hotkey-page")
     //@SentinelResource(value = "hotkey-page", blockHandler = "handleBlock", fallback = "exceptionFallback")  //流控资源名
     // @ApiOperation(value = "分页查询操作")
